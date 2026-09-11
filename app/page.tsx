@@ -66,41 +66,31 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* Short, expandable back matter */}
-      <section className="mx-auto mt-12 max-w-3xl space-y-3">
-        <details className="rounded-md border border-rule bg-paper-2 px-5 py-4">
-          <summary className="text-lg font-semibold">Why this exists, in sixty seconds</summary>
-          <div className="mt-3 space-y-3 text-ink-2">
-            <p>
-              Most 3D reconstructions of famous buildings are pretty and unsourced. This one takes the opposite bet.
-              The tenant list is a September 2001 listing compiled by CoStar and published by CNN, preserved by the
-              Internet Archive. The geometry comes from the NIST engineering reports, page by page. Where the record is
-              silent, the model says so instead of filling the gap. {formatInt(totalSqFt)} square feet of leases are
-              accounted for, and every one of them can be traced.
-            </p>
-            <p>
-              It is also an experiment in how one person can use AI to build an interactive learning experience
-              without letting the AI make anything up: every dimension, tenant and sentence was checked against a
-              source before it shipped, and the checking is public on the <Link href="/method">method page</Link>.
-            </p>
-          </div>
-        </details>
-        <details className="rounded-md border border-rule bg-paper-2 px-5 py-4">
-          <summary className="text-lg font-semibold">Build it yourself</summary>
-          <div className="mt-3 text-ink-2">
-            <p>The code, the data and the reasoning are open. Clone it, run it, make it better, and give credit.</p>
-            <pre className="mt-3 overflow-x-auto rounded-sm border border-rule bg-paper p-4 text-sm"><code>{`git clone ${GITHUB_URL}.git
+      {/* About and build, side by side */}
+      <section className="mx-auto mt-12 grid max-w-6xl gap-4 lg:grid-cols-2">
+        <div className="rounded-md border border-rule bg-paper-2 p-6">
+          <h2 className="text-xl font-semibold">Why this exists</h2>
+          <p className="mt-3 text-ink-2">
+            Most 3D reconstructions of famous buildings are pretty and unsourced. This one takes the opposite bet: a
+            2001 tenant listing preserved by the Internet Archive, geometry from the NIST engineering reports page by
+            page, and a model that says "no record" instead of filling a gap. {formatInt(totalSqFt)} square feet of
+            leases, every one traceable.
+          </p>
+          <p className="mt-3 text-ink-2">
+            It is also a test of whether one person can use AI to build a learning experience without letting the AI
+            make anything up. The checking is public.
+          </p>
+          <Link href="/method" className="mt-4 inline-block rounded-sm border border-ink px-4 py-2 text-sm no-underline">How it was built</Link>
+        </div>
+        <div className="rounded-md border border-rule bg-navy p-6 text-paper">
+          <h2 className="text-xl font-semibold">Build it yourself</h2>
+          <p className="mt-3 text-paper/80">Open code, open data, open reasoning. Clone it, run it, make it better, give credit.</p>
+          <pre className="mt-3 overflow-x-auto rounded-sm bg-navy-2 p-4 text-sm text-paper/90"><code>{`git clone ${GITHUB_URL}.git
 cd walk-the-twin-towers
-pnpm install
-pnpm dev`}</code></pre>
-            <ol className="mt-3 list-decimal space-y-1 pl-5 text-sm">
-              <li>Open http://localhost:3000. The towers build their geometry from the cited parameters on first run.</li>
-              <li>Found a mistake or a better source? Open an issue or a pull request with the citation.</li>
-              <li>Code is MIT. Data and text are CC BY 4.0. Cite the project and link back. The tenant list belongs to CNN and CoStar.</li>
-            </ol>
-            <a href={GITHUB_URL} className="mt-3 inline-block rounded-sm border border-ink px-4 py-2 text-sm no-underline" rel="noreferrer noopener">View on GitHub</a>
-          </div>
-        </details>
+pnpm install && pnpm dev`}</code></pre>
+          <p className="mt-3 text-sm text-paper/70">Code MIT. Data and text CC BY 4.0, cite and link back. The tenant list belongs to CNN and CoStar.</p>
+          <a href={GITHUB_URL} className="mt-4 inline-block rounded-sm bg-signal px-4 py-2 text-sm font-semibold text-paper no-underline" rel="noreferrer noopener">View on GitHub</a>
+        </div>
       </section>
 
       <section className="mx-auto mt-12 max-w-3xl border-t border-rule pt-6 text-sm text-ink-2">

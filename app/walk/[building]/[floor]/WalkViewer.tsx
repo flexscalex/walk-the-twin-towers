@@ -112,6 +112,9 @@ export function WalkViewer({ data }: { data: WalkData }) {
   const [locked, setLocked] = useState(false);
   const [stats, setStats] = useState<WalkStats | null>(null);
   const [showSources, setShowSources] = useState(false);
+  const [showInfo, setShowInfo] = useState(false);
+  const [debug, setDebug] = useState(false);
+  useEffect(() => { try { setDebug(new URLSearchParams(window.location.search).get("debug") === "1"); } catch { /* ignore */ } }, []);
   const [nearCore, setNearCore] = useState(false);
   const [panel, setPanel] = useState(false);
 
@@ -211,16 +214,12 @@ export function WalkViewer({ data }: { data: WalkData }) {
                 <EvidenceBadge level={data.level?.evidence ?? data.story.evidence} />
               </span>
             </div>
-            <div className="mt-1.5 hidden sm:block">
-              <HudLines data={data} />
-            </div>
-            {isLobby ? (
-              <div className="mt-1 sm:hidden">
-                <p className="text-ink-2">You are in the Plaza lobby of {data.buildingName}.</p>
-                <p className="text-clay">Lobby height not cited; ceiling omitted.</p>
+            {showInfo ? (
+              <div className="mt-1.5">
+                <HudLines data={data} />
+                {isLobby ? <p className="mt-1 text-ink-3">Lobby height is not cited, so no ceiling is drawn.</p> : null}
               </div>
             ) : null}
-            <p className="mt-1 text-ink-3">City context not yet built.</p>
           </div>
 
           {/* Layer toggle, exit, jump fallback. */}
@@ -228,6 +227,9 @@ export function WalkViewer({ data }: { data: WalkData }) {
             <Link href="/towers" className="rounded-sm border border-rule bg-paper/92 px-2 py-1 no-underline shadow-sm hover:bg-paper-2">
               Exit to Towers
             </Link>
+            <button type="button" onClick={() => setShowInfo((v) => !v)} aria-pressed={showInfo} className="rounded-sm border border-rule bg-paper/92 px-2 py-1 shadow-sm hover:bg-paper-2">
+              {showInfo ? "Hide info" : "Info"}
+            </button>
             {!isLobby ? (
               <label className="inline-flex cursor-pointer items-center gap-2 rounded-sm border border-rule bg-paper/92 px-2 py-1 shadow-sm">
                 <input type="checkbox" checked={illustration} onChange={toggleIllustration} className="accent-ink" />
@@ -295,18 +297,16 @@ export function WalkViewer({ data }: { data: WalkData }) {
           )
         ) : null}
 
-        {probe && inputMode === "pointer" ? (
+        {debug && probe && inputMode === "pointer" ? (
           <p className="pointer-events-none absolute bottom-2 left-2 z-20 max-w-[40%] truncate rounded-sm bg-paper/85 px-2 py-1 font-mono text-[11px] text-ink-3" title={describeWalkProbe(probe, stats, illustration)}>
             {describeWalkProbe(probe, stats, illustration)}
           </p>
         ) : null}
       </div>
 
-      <div className="mt-3 rounded-sm border border-rule bg-paper-2 px-3 py-2 text-xs sm:hidden">
-        <HudLines data={data} />
-      </div>
-
-      <div className="mt-4 grid gap-6 text-xs text-ink-2 lg:grid-cols-2">
+      <details className="mt-4 rounded-sm border border-rule bg-paper-2 px-4 py-3 text-xs text-ink-2">
+        <summary className="cursor-pointer text-sm font-medium text-ink">Sources and method for {isLobby ? "the lobby" : "this floor"}</summary>
+      <div className="mt-3 grid gap-6 lg:grid-cols-2">
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-3">{isLobby ? "How the lobby is drawn" : "How this floor is drawn"}</h2>
           <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -404,6 +404,7 @@ export function WalkViewer({ data }: { data: WalkData }) {
           {data.manifestGeneratedAt ? ` Geometry manifest generated ${data.manifestGeneratedAt}.` : ""}
         </p>
       </div>
+      </details>
     </div>
   );
 }

@@ -41,8 +41,6 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* Expanders on long reference pages */
+/* Expanders: plain, no marker */
 details > summary { cursor: pointer; list-style: none; }
 details > summary::-webkit-details-marker { display: none; }
-details > summary::before { content: "+"; display: inline-block; width: 1.1em; color: var(--color-signal); font-weight: 700; }
-details[open] > summary::before { content: "\2013"; }
