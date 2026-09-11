@@ -1,0 +1,2634 @@
+[
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Alan Anthony",
+  "sf": "N/A",
+  "industry": "Business Services",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Royal Thai Embassy Office",
+  "sf": "N/A",
+  "industry": "Government",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "NY Coffee Station",
+  "sf": "N/A",
+  "industry": "",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Tes USA, Inc.",
+  "sf": "400",
+  "industry": "Financial Institutions",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Strawberry",
+  "sf": "7,106",
+  "industry": "Retailers/Wholesalers",
+  "floor": "CNCR"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Ann Taylor Loft",
+  "sf": "7,200",
+  "industry": "",
+  "floor": "CNCR"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Delta Airlines",
+  "sf": "400",
+  "industry": "Transportation",
+  "floor": "LBBY"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Olympia Airport Express",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "LBBY"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Avis",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "LBBY"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Port Authority of New York & New Jersey",
+  "sf": "22,411",
+  "industry": "Government",
+  "floor": "3,14,19,24,28,31"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Geiger & Geiger",
+  "sf": "1,588",
+  "industry": "Law Firms",
+  "floor": "4,25,78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Gayer, Shyu & Wiesel",
+  "sf": "800",
+  "industry": "Accountants",
+  "floor": "5"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Thai Farmers Bank",
+  "sf": "4,512",
+  "industry": "Financial Institutions",
+  "floor": "7"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Amerson Group Co., Inc.",
+  "sf": "N/A",
+  "industry": "Personal Services",
+  "floor": "8"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Bank of America",
+  "sf": "132,586",
+  "industry": "Financial Institutions",
+  "floor": "9-11,81"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Porcella Vicini & Co.",
+  "sf": "2,200",
+  "industry": "Transportation",
+  "floor": "11"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Primarch Decision Economics",
+  "sf": "4,954",
+  "industry": "Business Services",
+  "floor": "11"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Instinet, Inc.",
+  "sf": "65,844",
+  "industry": "Financial Institutions",
+  "floor": "13,14"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Dun & Bradstreet, Inc.",
+  "sf": "22,750",
+  "industry": "Personal Services",
+  "floor": "14"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Landmark Education Corporation",
+  "sf": "44,407",
+  "industry": "Personal Services",
+  "floor": "15"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Zim-American Israeli Shipping Co.",
+  "sf": "10,000",
+  "industry": "Transportation",
+  "floor": "17"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Empire Health Choice",
+  "sf": "461,000",
+  "industry": "Insurance",
+  "floor": "17,19,20,23,24,27-31"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Tower Computer Service",
+  "sf": "585",
+  "industry": "Retailers/Wholesalers",
+  "floor": "21,29"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "United Seamen's Service AMMLA",
+  "sf": "2,400",
+  "industry": "Personal Services",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "United Hercules Inc.",
+  "sf": "10,000",
+  "industry": "Transportation",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Avesta Computer Services, Ltd.",
+  "sf": "1,464",
+  "industry": "Computers/Data Processing",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Continental Logistics, Inc.",
+  "sf": "734",
+  "industry": "Personal Services",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Dongwon Securities Co. Ltd.",
+  "sf": "1,171",
+  "industry": "Financial Institutions",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Dr. Tadasu Tokumaru, M.D.",
+  "sf": "520",
+  "industry": "Medical",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Friends Villas Fischer Trust",
+  "sf": "N/A",
+  "industry": "Financial Institutions",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Friends Ivory & Sime, Inc.",
+  "sf": "13,262",
+  "industry": "Financial Institutions",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Infotech",
+  "sf": "1,400",
+  "industry": "",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Law Offices of Roman V. Popik",
+  "sf": "586",
+  "industry": "Law Firms",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Lief International USA",
+  "sf": "3,100",
+  "industry": "Manufacturing",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Unicom Capital Advisors LLP",
+  "sf": "5,483",
+  "industry": "Financial Institutions",
+  "floor": "22,84"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Chicago Options Exchange Corp.",
+  "sf": "3,608",
+  "industry": "Financial Institutions",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Cheng Xiang Trading USA Inc.",
+  "sf": "1,900",
+  "industry": "Computers/Data Processing",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "G.C. Services",
+  "sf": "2,561",
+  "industry": "Financial Institutions",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Gold Sky Inc.",
+  "sf": "421",
+  "industry": "Manufacturing",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Kaiser Overseas Inc.",
+  "sf": "265",
+  "industry": "Manufacturing",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Karoon Capital Management",
+  "sf": "991",
+  "industry": "Financial Institutions",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "MLU Investment",
+  "sf": "1,175",
+  "industry": "",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "P. Wolfe Consultants",
+  "sf": "2,165",
+  "industry": "Business Services",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "The SCPIE Companies",
+  "sf": "2,582",
+  "industry": "",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Tai Fook Securities",
+  "sf": "1,500",
+  "industry": "Financial Institutions",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "R.H. Wrightson & Associates, Inc.",
+  "sf": "N/A",
+  "industry": "Financial Institutions",
+  "floor": "25"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Garban-Intercapital",
+  "sf": "60,548",
+  "industry": "Financial Institutions",
+  "floor": "25,26"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "China Patent & Trademark USA",
+  "sf": "400",
+  "industry": "Law Firms",
+  "floor": "29"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "World Travel",
+  "sf": "25,000",
+  "industry": "Transportation",
+  "floor": "29"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Banco LatinoAmericano de",
+  "sf": "3,000",
+  "industry": "Financial Institutions",
+  "floor": "32"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Chang HWA Commercial Bank",
+  "sf": "12,182",
+  "industry": "Financial Institutions",
+  "floor": "32"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Rohde & Liesenfeld, Inc.",
+  "sf": "5,000",
+  "industry": "Transportation",
+  "floor": "32"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Berel & Mullen",
+  "sf": "2,786",
+  "industry": "Law Firms",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "China Daily Distribution Corp.",
+  "sf": "800",
+  "industry": "Personal Services",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Data Transmission Network Corp.",
+  "sf": "342",
+  "industry": "",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Golden King (USA) Limited",
+  "sf": "190",
+  "industry": "Transportation",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Hu Tong International (USA) Co., Ltd.",
+  "sf": "583",
+  "industry": "Retailers/Wholesalers",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Koudis International Inc.",
+  "sf": "600",
+  "industry": "Transportation",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "MANAA Trading Group, Inc.",
+  "sf": "1,013",
+  "industry": "Financial Institutions",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "MIS Service Co.",
+  "sf": "2,000",
+  "industry": "",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Rachel & Associates, Inc.",
+  "sf": "814",
+  "industry": "Manufacturing",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Serko & Simon",
+  "sf": "8,605",
+  "industry": "Law Firms",
+  "floor": "33"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Anne Pope, Law Offices of",
+  "sf": "N/A",
+  "industry": "Law Firms",
+  "floor": "35"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Kemper Insurance Companies",
+  "sf": "92,232",
+  "industry": "Insurance",
+  "floor": "35,36"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Commodity Futures Trading Commission",
+  "sf": "35,000",
+  "industry": "Financial Institutions",
+  "floor": "37"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Government of Thailand",
+  "sf": "5,109",
+  "industry": "",
+  "floor": "37"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Lehman Brothers",
+  "sf": "45,100",
+  "industry": "",
+  "floor": "38-40"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Regional Alliance Small",
+  "sf": "1,692",
+  "industry": "Business Services",
+  "floor": "38"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Turner Construction Company",
+  "sf": "1,000",
+  "industry": "Agri/Mining/Utilities",
+  "floor": "38"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "The Cultural Institutions Retirement Systems",
+  "sf": "5,416",
+  "industry": "Financial Institutions",
+  "floor": "39"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Overseas Union Bank, Ltd.",
+  "sf": "3,750",
+  "industry": "Financial Institutions",
+  "floor": "39"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Xcel Federal Credit Union",
+  "sf": "4,200",
+  "industry": "Financial Institutions",
+  "floor": "39"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Mechanical Floor",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "41-43"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "N.Y. Society of Security",
+  "sf": "3,000",
+  "industry": "Government",
+  "floor": "44"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "American Lota International",
+  "sf": "626",
+  "industry": "Transportation",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "China Construction America, Inc.",
+  "sf": "2,000",
+  "industry": "Business Services",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "The Company Store",
+  "sf": "800",
+  "industry": "Retailers/Wholesalers",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Dunavant Commodity Corp",
+  "sf": "1,437",
+  "industry": "Financial Institutions",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Employee Merit",
+  "sf": "763",
+  "industry": "Business Services",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Fertitta Enterprises",
+  "sf": "600",
+  "industry": "",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "M.A. Katz, CPA",
+  "sf": "400",
+  "industry": "Accountants",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "SRA",
+  "sf": "1,000",
+  "industry": "",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Pure Energy Corp.",
+  "sf": "5,935",
+  "industry": "Retailers/Wholesalers",
+  "floor": "45,53"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Sassoons Inc.",
+  "sf": "1,000",
+  "industry": "",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Security Traders Association, Inc.",
+  "sf": "1,520",
+  "industry": "Personal Services",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Streamline Capital, LLC",
+  "sf": "2,024",
+  "industry": "",
+  "floor": "45"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "ASTDC, Inc.",
+  "sf": "3,760",
+  "industry": "Personal Services",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Auto Imperial Co.",
+  "sf": "374",
+  "industry": "Retailers/Wholesalers",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Blue Sky Technologies, Inc.",
+  "sf": "350",
+  "industry": "Computers/Data Processing",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Can-Achieve",
+  "sf": "392",
+  "industry": "Business Services",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Consolidated Steelex Corp.",
+  "sf": "2,277",
+  "industry": "Manufacturing",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Dahao USA Corp",
+  "sf": "N/A",
+  "industry": "Retailers/Wholesalers",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "J & X Tans International",
+  "sf": "338",
+  "industry": "Transportation",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Kanebo Information Systems Corp.",
+  "sf": "800",
+  "industry": "Computers/Data Processing",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Meganet Management Consultants, Inc.",
+  "sf": "600",
+  "industry": "Computers/Data Processing",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Prospect International, Inc.",
+  "sf": "966",
+  "industry": "",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Sinopec USA, Inc.",
+  "sf": "4,584",
+  "industry": "Retailers/Wholesalers",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Suggested Open Systems, Inc.",
+  "sf": "600",
+  "industry": "Computers/Data Processing",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Suntendy America, Inc.",
+  "sf": "1,000",
+  "industry": "Retailers/Wholesalers",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "T&T Enterprises International, Inc.",
+  "sf": "1,006",
+  "industry": "Financial Institutions",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Yong Ren America, Inc.",
+  "sf": "394",
+  "industry": "",
+  "floor": "46"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "G. Z. Stephens, Inc.",
+  "sf": "1,200",
+  "industry": "Business Services",
+  "floor": "47"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "NFA/GGG, Inc.",
+  "sf": "2,053",
+  "industry": "",
+  "floor": "47"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "American TCC Int'l Group, Inc.",
+  "sf": "5,736",
+  "industry": "Financial Institutions",
+  "floor": "47,90"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Pacific American Co.",
+  "sf": "4,753",
+  "industry": "Retailers/Wholesalers",
+  "floor": "47"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Quint Amasis, L.L.C.",
+  "sf": "1,000",
+  "industry": "Personal Services",
+  "floor": "47"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "W.J. Export-Import, Inc.",
+  "sf": "800",
+  "industry": "Retailers/Wholesalers",
+  "floor": "47"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Dai-Ichi Kangyo Trust Co.",
+  "sf": "100,000",
+  "industry": "Financial Institutions",
+  "floor": "48-50"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "AT&T Corporation",
+  "sf": "11,612",
+  "industry": "Communications",
+  "floor": "51"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "C & P Press",
+  "sf": "N/A",
+  "industry": "Personal Services",
+  "floor": "51"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "The Williams Capital Group",
+  "sf": "578",
+  "industry": "",
+  "floor": "52"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Bramax Manufacturing (USA) Corp.",
+  "sf": "800",
+  "industry": "Retailers/Wholesalers",
+  "floor": "52"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Gayer Shyu & Wiesel",
+  "sf": "N/A",
+  "industry": "Financial Institutions",
+  "floor": "52"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Hill Betts & Nash, LLP",
+  "sf": "21,609",
+  "industry": "Law Firms",
+  "floor": "52"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Temenos USA, Inc.",
+  "sf": "6,000",
+  "industry": "Retailers/Wholesalers",
+  "floor": "52,84"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Howly (US) Corporation",
+  "sf": "1,150",
+  "industry": "",
+  "floor": "52"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Leeds & Morrelli",
+  "sf": "1,617",
+  "industry": "Law Firms",
+  "floor": "52"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Okasan International (American) Inc.",
+  "sf": "2,250",
+  "industry": "Financial Institutions",
+  "floor": "52"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "RGL Gallagher PC",
+  "sf": "984",
+  "industry": "Accountants",
+  "floor": "52"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Richard A. Zimmerman, Esq.",
+  "sf": "1,150",
+  "industry": "Law Firms",
+  "floor": "52"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "A I G Aviation Brokerage, Inc.",
+  "sf": "2,500",
+  "industry": "Insurance",
+  "floor": "53"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Bank of Taiwan",
+  "sf": "7,500",
+  "industry": "Financial Institutions",
+  "floor": "53"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "China Resource Products USA Ltd.",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "53"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Keenan Powers & Andrews",
+  "sf": "4,500",
+  "industry": "Law Firms",
+  "floor": "53"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "LoCurto & Funk, Inc.",
+  "sf": "N/A",
+  "industry": "Financial Institutions",
+  "floor": "53"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Natural Nydegger Transport Corp.",
+  "sf": "3,500",
+  "industry": "Transportation",
+  "floor": "53"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Pacrim Trading & Shipping, Inc.",
+  "sf": "1,200",
+  "industry": "Transportation",
+  "floor": "53"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Brown & Wood, L.L.P.",
+  "sf": "223,100",
+  "industry": "Law Firms",
+  "floor": "54,56-59"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Pace University",
+  "sf": "45,943",
+  "industry": "Personal Services",
+  "floor": "55"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "World Trade Institute",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "55"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Asahi Bank, Ltd.",
+  "sf": "40,000",
+  "industry": "Financial Institutions",
+  "floor": "60"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Airport Access Program",
+  "sf": "N/A",
+  "industry": "Financial Institutions",
+  "floor": "63"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Hal Roth Agency, Inc.",
+  "sf": "2,250",
+  "industry": "Insurance",
+  "floor": "77"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Jun He Law Office, LLC",
+  "sf": "894",
+  "industry": "Law Firms",
+  "floor": "77"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Martin Progressive LLC",
+  "sf": "13,789",
+  "industry": "Computers/Data Processing",
+  "floor": "77"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "New-ey International Corp.",
+  "sf": "894",
+  "industry": "Personal Services",
+  "floor": "77"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Partner Reinsurance Corp.",
+  "sf": "N/A",
+  "industry": "Insurance",
+  "floor": "77"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "World Trade Centers Association",
+  "sf": "5,400",
+  "industry": "Personal Services",
+  "floor": "77"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Avenir, Inc.",
+  "sf": "2,162",
+  "industry": "Computers/Data Processing",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Baltic Oil Corporation",
+  "sf": "981",
+  "industry": "",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Cedar Capital Management Associates",
+  "sf": "909",
+  "industry": "",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Cheng Cheng Enterprises Holding Inc.",
+  "sf": "4,073",
+  "industry": "Retailers/Wholesalers",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Hyundai Securities Co., Ltd.",
+  "sf": "1,600",
+  "industry": "Financial Institutions",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "International Trade Center, Inc.",
+  "sf": "3,298",
+  "industry": "Business Services",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Korea Local Authorities",
+  "sf": "1,000",
+  "industry": "Government",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Meridian Ventures Holding, Inc.",
+  "sf": "3,315",
+  "industry": "",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Phink Path",
+  "sf": "1,214",
+  "industry": "Business Services",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Traders Access Center",
+  "sf": "1,027",
+  "industry": "Financial Institutions",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Daynard & Van Thunen Co.",
+  "sf": "4,750",
+  "industry": "Insurance",
+  "floor": "79"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "First Liberty Investment Group",
+  "sf": "1,000",
+  "industry": "Financial Institutions",
+  "floor": "79"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "International Office Centers",
+  "sf": "26,367",
+  "industry": "Personal Services",
+  "floor": "79"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Nikko Securities",
+  "sf": "9,340",
+  "industry": "Financial Institutions",
+  "floor": "79"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Okato Shoji Company, Ltd.",
+  "sf": "2,729",
+  "industry": "Computers/Data Processing",
+  "floor": "79"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Securant Technologies",
+  "sf": "2,729",
+  "industry": "Computers/Data Processing",
+  "floor": "79"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Agricor Commodities Corp.",
+  "sf": "3,200",
+  "industry": "Financial Institutions",
+  "floor": "80"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "The Beast.Comm",
+  "sf": "21,000",
+  "industry": "Computers/Data Processing",
+  "floor": "80"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Intrust Investment Realty, Inc.",
+  "sf": "3,320",
+  "industry": "",
+  "floor": "80"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Noga Commodities Overseas, Inc.",
+  "sf": "6,518",
+  "industry": "Financial Institutions",
+  "floor": "80"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "RLI Insurance Company",
+  "sf": "3,900",
+  "industry": "Insurance",
+  "floor": "80"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Shizuoka Bank Ltd.",
+  "sf": "2,200",
+  "industry": "Financial Institutions",
+  "floor": "80"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "New Continental Enterprises",
+  "sf": "2,055",
+  "industry": "Transportation",
+  "floor": "81"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Network Plus",
+  "sf": "8,500",
+  "industry": "Communications",
+  "floor": "81"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "NY Metro Transportation Council",
+  "sf": "7,000",
+  "industry": "Government",
+  "floor": "82"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "General Telecommunications",
+  "sf": "8,994",
+  "industry": "",
+  "floor": "83"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Global Crossings Holdings Ltd.",
+  "sf": "N/A",
+  "industry": "Computers/Data Processing",
+  "floor": "83"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Lava Trading, LLC",
+  "sf": "7,589",
+  "industry": "",
+  "floor": "83"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Taipei Bank",
+  "sf": "12,111",
+  "industry": "Financial Institutions",
+  "floor": "83"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "eMeritus Communications",
+  "sf": "7,203",
+  "industry": "Communications",
+  "floor": "83"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Bright China Capital, Ltd.",
+  "sf": "2,016",
+  "industry": "Financial Institutions",
+  "floor": "84"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "David Peterson",
+  "sf": "1,863",
+  "industry": "Law Firms",
+  "floor": "84"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "LG Securities America, Inc.",
+  "sf": "1,800",
+  "industry": "Financial Institutions",
+  "floor": "84"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "San-In Godo Bank Ltd.",
+  "sf": "2,000",
+  "industry": "Financial Institutions",
+  "floor": "84"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Daehan International",
+  "sf": "1,200",
+  "industry": "Financial Institutions",
+  "floor": "84,89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "SMW Trading Corp.",
+  "sf": "3,000",
+  "industry": "Financial Institutions",
+  "floor": "85"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Thermo Electron",
+  "sf": "2,289",
+  "industry": "",
+  "floor": "85"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Julien J. Studley, Inc.",
+  "sf": "6,372",
+  "industry": "Real Estate",
+  "floor": "86"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "May Davis Group",
+  "sf": "12,824",
+  "industry": "Financial Institutions",
+  "floor": "87"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Barcley Dwyer",
+  "sf": "12,211",
+  "industry": "",
+  "floor": "89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Broad USA, Inc.",
+  "sf": "N/A",
+  "industry": "Retailers/Wholesalers",
+  "floor": "89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "CIIC Group (USA), Ltd.",
+  "sf": "2,500",
+  "industry": "Financial Institutions",
+  "floor": "89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Drinker Biddle & Reath",
+  "sf": "10,000",
+  "industry": "Law Firms",
+  "floor": "89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Metropolitan Life Insurance Co.",
+  "sf": "7,119",
+  "industry": "Insurance",
+  "floor": "89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Mutual International Forwarding",
+  "sf": "1,200",
+  "industry": "Transportation",
+  "floor": "89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Strategic Communications, Inc.",
+  "sf": "2,400",
+  "industry": "Communications",
+  "floor": "89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Wai Gao Qiao USA, Inc.",
+  "sf": "1,528",
+  "industry": "Business Services",
+  "floor": "89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Wall Street Planning Association",
+  "sf": "2,154",
+  "industry": "",
+  "floor": "89"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "The Chugoku Bank, Ltd.",
+  "sf": "1,500",
+  "industry": "Financial Institutions",
+  "floor": "90"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "American Bureau of Shipping",
+  "sf": "8,400",
+  "industry": "Engineers",
+  "floor": "91"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Fred Alger Management",
+  "sf": "36,078",
+  "industry": "Investments",
+  "floor": "93"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Marsh USA",
+  "sf": "361,000",
+  "industry": "Insurance",
+  "floor": "93-100"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Kidder Peabody & Co.",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "101"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Cantor Fitzgerald Securities",
+  "sf": "22,000",
+  "industry": "Investments",
+  "floor": "101-105"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "The Nishi-Nippon Bank, Ltd.",
+  "sf": "10,325",
+  "industry": "Banks/Financial Institutions",
+  "floor": "102"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Channel 4 (NBC)",
+  "sf": "400",
+  "industry": "Cable/Television",
+  "floor": "104"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Windows on the World",
+  "sf": "40,000",
+  "industry": "",
+  "floor": "106"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Greatest Bar on Earth",
+  "sf": "13,333",
+  "industry": "",
+  "floor": "107"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "World Trade Club",
+  "sf": "13,333",
+  "industry": "",
+  "floor": "107"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Channel 5 (WNYW)",
+  "sf": "200",
+  "industry": "Cable/Television",
+  "floor": "110"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Channel 31 (WBIS)",
+  "sf": "1,400",
+  "industry": "Cable/Television",
+  "floor": "110"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Channel 47 (WNJU)",
+  "sf": "800",
+  "industry": "Cable/Television",
+  "floor": "110"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Channel 2 (WCBS)",
+  "sf": "400",
+  "industry": "Cable/Television",
+  "floor": "110"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Channel 11 (WPIX)",
+  "sf": "400",
+  "industry": "Cable/Television",
+  "floor": "110"
+ },
+ {
+  "file": "cnn_t1.html",
+  "building": "1 World Trade Center - North Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "CNN",
+  "sf": "200",
+  "industry": "Cable/Television",
+  "floor": "110"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Continental Insurance Company",
+  "sf": "40,000",
+  "industry": "",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "CINDE",
+  "sf": "N/A",
+  "industry": "",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Xerox Document Company",
+  "sf": "5,400",
+  "industry": "Manufacturing",
+  "floor": "BSMT"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Johnston & Murphy",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "CNCR"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Nichols Foundation, Inc.",
+  "sf": "1,000",
+  "industry": "Government",
+  "floor": "GRND"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Verizon Communications",
+  "sf": "155,490",
+  "industry": "Communications",
+  "floor": "LL,9-12"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Colortek Kodak Imaging Center",
+  "sf": "731",
+  "industry": "Personal Services",
+  "floor": "1"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "EuroBrokers, Inc.",
+  "sf": "32,104",
+  "industry": "Financial Institutions",
+  "floor": "12"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Union Bank of California",
+  "sf": "25,146",
+  "industry": "Financial Institutions",
+  "floor": "14"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Patinka International (USA) Inc.",
+  "sf": "N/A",
+  "industry": "Personal Services",
+  "floor": "14"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Charna Chemicals, Inc.",
+  "sf": "N/A",
+  "industry": "Manufacturing",
+  "floor": "14"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Paging Network of New York",
+  "sf": "19,203",
+  "industry": "Communications",
+  "floor": "14"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Mancini Duffy",
+  "sf": "28,091",
+  "industry": "Engineers/Architects",
+  "floor": "15,22"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Candia Shipping",
+  "sf": "1,600",
+  "industry": "Retailers/Wholesalers",
+  "floor": "15"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "John W. Loofbourrow Associates, Inc.",
+  "sf": "1,807",
+  "industry": "Financial Institutions",
+  "floor": "15"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "John J. McMullen Associates, Inc.",
+  "sf": "15,000",
+  "industry": "Engineers/Architects",
+  "floor": "15"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Orient International",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "15"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "James T. Ratner, Law Office of",
+  "sf": "N/A",
+  "industry": "Law Firms",
+  "floor": "15"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "National Development & Research Institute",
+  "sf": "44,325",
+  "industry": "Personal Services",
+  "floor": "16"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "N.Y. Institute of Finance",
+  "sf": "24,539",
+  "industry": "Business Services",
+  "floor": "17"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Showtime Pictures",
+  "sf": "5,470",
+  "industry": "Business Services",
+  "floor": "18,107"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Professional Assistance & Consulting",
+  "sf": "1,163",
+  "industry": "Business Services",
+  "floor": "18"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Intera Group Inc.",
+  "sf": "1,180",
+  "industry": "Business Services",
+  "floor": "18"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Alliance Consulting",
+  "sf": "N/A",
+  "industry": "Business Services",
+  "floor": "18"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Pines Investment, Inc.",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "18"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Caserta & Company",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "18"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Law Offices of Abad, Castilla, and Mallonga",
+  "sf": "N/A",
+  "industry": "Law Firms",
+  "floor": "18"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Weiland International",
+  "sf": "1,000",
+  "industry": "Financial Institutions",
+  "floor": "18"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Chen, Lin, Li, & Jiang, LLP",
+  "sf": "1,994",
+  "industry": "Financial Institutions",
+  "floor": "18"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Waterfront Commission of New York Harbor",
+  "sf": "2,000",
+  "industry": "Government",
+  "floor": "19"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "N.Y. Shipping Association",
+  "sf": "80,000",
+  "industry": "Transportation",
+  "floor": "19,20"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Thacher, Proffitt & Wood",
+  "sf": "120,000",
+  "industry": "Law Firms",
+  "floor": "20,38-40"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Career Engine",
+  "sf": "7,183",
+  "industry": "Personal Services",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Adecco SA",
+  "sf": "2,000",
+  "industry": "Business Services",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Charoen Pokphand USA, Inc.",
+  "sf": "2,000",
+  "industry": "Transportation",
+  "floor": "21"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Sinochem American Holdings, Inc.",
+  "sf": "N/A",
+  "industry": "Financial Institutions",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Washington Mutual, Inc.",
+  "sf": "1,117",
+  "industry": "",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Antal International, Inc.",
+  "sf": "2,086",
+  "industry": "Business Services",
+  "floor": "22"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "SCOR U.S. Corporation",
+  "sf": "59,000",
+  "industry": "Insurance",
+  "floor": "23,24"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Unistrat Corporation of America",
+  "sf": "10,000",
+  "industry": "Business Services",
+  "floor": "23"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Allstate Insurance Company",
+  "sf": "N/A",
+  "industry": "Insurance",
+  "floor": "24"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "TD Waterhouse Group, Inc.",
+  "sf": "18,591",
+  "industry": "Financial Institutions",
+  "floor": "24"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "China Chamber of Commerce, Inc.",
+  "sf": "N/A",
+  "industry": "Personal Services",
+  "floor": "24"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Globe Tour & Travel",
+  "sf": "N/A",
+  "industry": "Transportation",
+  "floor": "24"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Sinolion (USA)",
+  "sf": "694",
+  "industry": "",
+  "floor": "24"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "December First Productions, LLC",
+  "sf": "821",
+  "industry": "",
+  "floor": "24"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Sun Microsystems, Inc.",
+  "sf": "89,162",
+  "industry": "Computers/Data Processing",
+  "floor": "25,26"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "New York Stock Exchange, Inc.",
+  "sf": "10,853",
+  "industry": "",
+  "floor": "28-30"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Big A Travel Agency",
+  "sf": "N/A",
+  "industry": "Transportation",
+  "floor": "28"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Law Office of Joseph Bellard",
+  "sf": "3,400",
+  "industry": "Law Firms",
+  "floor": "28"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Hua Nan Commercial Bank Ltd.",
+  "sf": "12,500",
+  "industry": "Financial Institutions",
+  "floor": "28"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Weatherly Securities Corp.",
+  "sf": "18,801",
+  "industry": "Financial Institutions",
+  "floor": "29"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Hartford Steam Boiler",
+  "sf": "1,600",
+  "industry": "Insurance",
+  "floor": "30"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Oppenheimer Funds, Inc.",
+  "sf": "231,000",
+  "industry": "Financial Institutions",
+  "floor": "31,32"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Commerzbank Capital Markets",
+  "sf": "45,540",
+  "industry": "Financial Institutions",
+  "floor": "32"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "ABN-AMRO, Inc.",
+  "sf": "40,000",
+  "industry": "Financial Institutions",
+  "floor": "35"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Frenkel & Company, Inc.",
+  "sf": "59,670",
+  "industry": "Insurance",
+  "floor": "35,36"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Sitailong International USA, Inc.",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "40"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Morgan Stanley",
+  "sf": "840,000",
+  "industry": "Financial Institutions",
+  "floor": "43-46,56,59-74"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Guy Carpenter",
+  "sf": "320,000",
+  "industry": "Insurance",
+  "floor": "47-54"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Seabury & Smith",
+  "sf": "40,000",
+  "industry": "Insurance",
+  "floor": "49"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Garban Intercapital",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "55"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Dow Jones & Company, Inc.",
+  "sf": "72,133",
+  "industry": "Communications",
+  "floor": "57,58"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "First Commercial Bank",
+  "sf": "4,500",
+  "industry": "Financial Institutions",
+  "floor": "78"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Fuji Bank",
+  "sf": "182,956",
+  "industry": "Financial Institutions",
+  "floor": "79-82"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "bepaid.com",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "84"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Harris Beach & Wilcox, LLP",
+  "sf": "48,800",
+  "industry": "Law Firms",
+  "floor": "85"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Keefe, Bruyette & Woods",
+  "sf": "97,600",
+  "industry": "Financial Institutions",
+  "floor": "85,88,89"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "NY State Department of Taxation & Finance",
+  "sf": "73,982",
+  "industry": "Government",
+  "floor": "86,87"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Corporation Service Company",
+  "sf": "22,916",
+  "industry": "",
+  "floor": "87"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Fiduciary Trust Company International",
+  "sf": "245,156",
+  "industry": "Financial Institutions",
+  "floor": "90,94-97"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Gibbs & Hill",
+  "sf": "",
+  "industry": "Engineers",
+  "floor": "91"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Raytheon Company",
+  "sf": "48,800",
+  "industry": "Manufacturing",
+  "floor": "91"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "AON Corporation",
+  "sf": "219,133",
+  "industry": "Insurance",
+  "floor": "92,99,100"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Regus Business Centres",
+  "sf": "49,028",
+  "industry": "Employment Agencies",
+  "floor": "93"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Sandler O'Neil & Partners",
+  "sf": "30,000",
+  "industry": "Investments",
+  "floor": "104"
+ },
+ {
+  "file": "cnn_t2.html",
+  "building": "2 World Trade Center - South Tower\n\n\n\n \n \n \n \n \n  Tenant\n  SF Leased\n  Industry",
+  "tenant": "Atlantic Bank of New York",
+  "sf": "50,061",
+  "industry": "Banks/Financial Institutions",
+  "floor": "106"
+ },
+ {
+  "file": "cnn_t4.html",
+  "building": "4 World Trade Center - Commodities Exchange Center\n\n\n \n \n \n \n \n  Tenant\n  Square",
+  "tenant": "Deutsche Bank",
+  "sf": "273,991",
+  "industry": "4,5,6",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t4.html",
+  "building": "4 World Trade Center - Commodities Exchange Center\n\n\n \n \n \n \n \n  Tenant\n  Square",
+  "tenant": "New York Board of Trade",
+  "sf": "125,000",
+  "industry": "7,8,9",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t4.html",
+  "building": "4 World Trade Center - Commodities Exchange Center\n\n\n \n \n \n \n \n  Tenant\n  Square",
+  "tenant": "Overseas-Chinese Banking Corp.",
+  "sf": "6,516",
+  "industry": "7",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t4.html",
+  "building": "4 World Trade Center - Commodities Exchange Center\n\n\n \n \n \n \n \n  Tenant\n  Square",
+  "tenant": "Green Coffee Association",
+  "sf": "7,500",
+  "industry": "5",
+  "floor": "Personal Services"
+ },
+ {
+  "file": "cnn_t4.html",
+  "building": "4 World Trade Center - Commodities Exchange Center\n\n\n \n \n \n \n \n  Tenant\n  Square",
+  "tenant": "Gelderman, Inc.",
+  "sf": "4,000",
+  "industry": "7",
+  "floor": "Personal Services"
+ },
+ {
+  "file": "cnn_t4.html",
+  "building": "4 World Trade Center - Commodities Exchange Center\n\n\n \n \n \n \n \n  Tenant\n  Square",
+  "tenant": "Tony May's Gemelli Restaurant & Bar",
+  "sf": "10,000",
+  "industry": "GRND",
+  "floor": "Retailers/Wholesalers"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "JP Morgan Chase & Co.",
+  "sf": "N/A",
+  "industry": "1",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "FedEx Corporation",
+  "sf": "N/A",
+  "industry": "1",
+  "floor": "Transportation"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "The Charles Schwab Corporation",
+  "sf": "N/A",
+  "industry": "CNCR",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Morgan Stanley",
+  "sf": "325,200",
+  "industry": "4,5,6",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Credit Suisse First Boston",
+  "sf": "179,244",
+  "industry": "7,8,9",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "US Airways",
+  "sf": "400",
+  "industry": "",
+  "floor": "Transportation"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Sam Goody",
+  "sf": "4,000",
+  "industry": "CNCR",
+  "floor": "Retailers/Wholesalers"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "American Airlines",
+  "sf": "N/A",
+  "industry": "CNCR,PLAZ",
+  "floor": "Transportation"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Lower Manhattan Cultural Council",
+  "sf": "4,467",
+  "industry": "9",
+  "floor": "Personal Services"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Howard Publications, Inc.",
+  "sf": "1,180",
+  "industry": "9",
+  "floor": "Manufacturing"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Council of State Governments",
+  "sf": "N/A",
+  "industry": "9",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Children's Discovery Center",
+  "sf": "N/A",
+  "industry": "PLAZ",
+  "floor": "Personal Services"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Affiliated Physicians of St. Vincent",
+  "sf": "6,250",
+  "industry": "3",
+  "floor": "Medical"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "NYS Court of Claims",
+  "sf": "24,909",
+  "industry": "8",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "World Trade Center Dental Group",
+  "sf": "4,500",
+  "industry": "3",
+  "floor": "Medical"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "DHL Courier Services",
+  "sf": "N/A",
+  "industry": "1",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Perfumeria Milano",
+  "sf": "1,200",
+  "industry": "CNCR",
+  "floor": "Retailers/Wholesalers"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "American Shipper Magazine",
+  "sf": "N/A",
+  "industry": "9",
+  "floor": "Manufacturing"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Express Mail",
+  "sf": "N/A",
+  "industry": "",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Our Planet Mgmt. Institute, Ltd.",
+  "sf": "5,500",
+  "industry": "9",
+  "floor": "Personal Services"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Hunan Resources & Tech. Institute",
+  "sf": "N/A",
+  "industry": "9",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Hon. Christopher J. Mega",
+  "sf": "N/A",
+  "industry": "8",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Daniel Pehr, Inc.",
+  "sf": "1,000",
+  "industry": "LBBY",
+  "floor": "Personal Services"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Borders Books & Music",
+  "sf": "N/A",
+  "industry": "PLAZ",
+  "floor": "Retailers/Wholesalers"
+ },
+ {
+  "file": "cnn_t5.html",
+  "building": "5 World Trade Center - Northeast Plaza\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased",
+  "tenant": "Continental Forwarding",
+  "sf": "N/A",
+  "industry": "8",
+  "floor": "Transportation"
+ },
+ {
+  "file": "cnn_t6.html",
+  "building": "6 World Trade Center - U.S. Customs House\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Lea",
+  "tenant": "U.S. Department of Commerce",
+  "sf": "4,500",
+  "industry": "6",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t6.html",
+  "building": "6 World Trade Center - U.S. Customs House\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Lea",
+  "tenant": "BATF (Alcohol Tobacco & Firearms)",
+  "sf": "1,200",
+  "industry": "2,6",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t6.html",
+  "building": "6 World Trade Center - U.S. Customs House\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Lea",
+  "tenant": "U.S. Department of Agriculture - AAPHIS",
+  "sf": "N/A",
+  "industry": "2",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t6.html",
+  "building": "6 World Trade Center - U.S. Customs House\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Lea",
+  "tenant": "U.S. Department of Labor",
+  "sf": "10,200",
+  "industry": "6",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t6.html",
+  "building": "6 World Trade Center - U.S. Customs House\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Lea",
+  "tenant": "Export-Import Bank of the U.S.",
+  "sf": "N/A",
+  "industry": "6",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t6.html",
+  "building": "6 World Trade Center - U.S. Customs House\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Lea",
+  "tenant": "Eastco Building Services",
+  "sf": "N/A",
+  "industry": "",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "Salomon Smith Barney",
+  "sf": "1,202,900",
+  "industry": "GRND,1-6,13,18-46",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "Internal Revenue Service Regional Council",
+  "sf": "90,430",
+  "industry": "24,25",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "U.S. Secret Service",
+  "sf": "85,343",
+  "industry": "9,10",
+  "floor": "Government"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "American Express Bank International",
+  "sf": "106,117",
+  "industry": "7,8,13",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "Standard Chartered Bank",
+  "sf": "111,398",
+  "industry": "10,13,26,27",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "Provident Financial Management",
+  "sf": "9,000",
+  "industry": "7,13",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "ITT Hartford Insurance Group",
+  "sf": "122,590",
+  "industry": "19-21",
+  "floor": ""
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "First State Management Group, Inc",
+  "sf": "4,000",
+  "industry": "21",
+  "floor": "Insurance"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "Federal Home Loan Bank",
+  "sf": "47,490",
+  "industry": "22",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "NAIC Securities",
+  "sf": "22,500",
+  "industry": "19",
+  "floor": "Insurance"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "Securities & Exchange Commission",
+  "sf": "106,117",
+  "industry": "11,12,13",
+  "floor": "Financial Institutions"
+ },
+ {
+  "file": "cnn_t7.html",
+  "building": "7 World Trade Center\n\n\n \n \n \n \n \n  Tenant\n  Square Feet Leased\n  Floor\n  Industr",
+  "tenant": "Mayor's Office of Emergency Mgmt",
+  "sf": "45,815",
+  "industry": "23",
+  "floor": "Government"
+ }
+]

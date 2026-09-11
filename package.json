@@ -1,0 +1,43 @@
+{
+  "name": "walk-the-twin-towers",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Phase 0 tenant directory. An evidence-based reconstruction of documented commercial tenancy in the World Trade Center as of September 2001.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "node --experimental-strip-types scripts/generate-geometry.ts && node --experimental-strip-types scripts/generate-context.ts && next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.scripts.json",
+    "seed": "tsx scripts/seed.ts",
+    "generate:geometry": "node --experimental-strip-types scripts/generate-geometry.ts && node --experimental-strip-types scripts/generate-context.ts",
+    "validate": "node --experimental-strip-types scripts/validate-geometry.ts && node --experimental-strip-types scripts/validate-tenants.ts && node --experimental-strip-types scripts/validate-manifest.ts",
+    "generate:context": "node --experimental-strip-types scripts/generate-context.ts",
+    "fetch:context": "node --experimental-strip-types scripts/fetch-context.ts"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.8",
+    "@react-three/fiber": "^9.7.0",
+    "@vercel/analytics": "^2.0.1",
+    "meshoptimizer": "^1.2.0",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.186.0",
+    "three-mesh-bvh": "^0.9.15"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.5.0",
+    "@gltf-transform/extensions": "^4.5.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.185.4",
+    "gltfpack": "^1.2.0",
+    "pg": "^8.16.0",
+    "tailwindcss": "^4.1.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "slug": "port-authority-and-the-founding-thesis",
+  "title": "The Port Authority and the Founding Thesis",
+  "building_id": "wtc1",
+  "floors": [
+    "3",
+    "14",
+    "19",
+    "24",
+    "28",
+    "31"
+  ],
+  "tenant_ids": [
+    "wtc1-010"
+  ],
+  "status": "draft",
+  "sources": [
+    {
+      "id": "s1",
+      "citation": "CNN.com, \"List of World Trade Center tenants\" (tenant list provided by CoStar Group, Inc.), as archived by the Internet Archive on 2001-09-13; re-parsed in data/tenants.clean.json",
+      "url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants1.html",
+      "archived_url": "https://web.archive.org/web/20010913191234/http://www2.cnn.com/SPECIALS/2001/trade.center/tenants1.html",
+      "local_file": "data/cnn_t1.html",
+      "retrieved_at": "2026-09-10",
+      "kind": "contemporaneous"
+    },
+    {
+      "id": "s2",
+      "citation": "Courtesy Sandwich Shop, Inc. v. Port of New York Authority, 12 N.Y.2d 379 (N.Y. Court of Appeals, decided April 4, 1963), quoting L. 1962, ch. 209 (McKinney's Unconsolidated Laws sections 6601 et seq.)",
+      "url": "https://case-law.vlex.com/vid/courtesy-sandwich-shop-inc-884498461",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/courtesy_sandwich_1963.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary",
+      "note": "Used for the statutory definition of the World Trade Center and the court's reading of it; the case itself concerned condemnation of the site."
+    },
+    {
+      "id": "s3",
+      "citation": "The Port Authority of New York and New Jersey, press release 68-01, \"Port Authority to Lease World Trade Center to Silverstein Properties, Inc. and Westfield America, Inc.,\" April 26, 2001",
+      "url": "http://www.panynj.gov/pr/68-01.html",
+      "archived_url": "https://web.archive.org/web/20010507001215/http://www.panynj.gov/pr/68-01.html",
+      "local_file": "data/exhibits/sources/pa/68.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary"
+    },
+    {
+      "id": "s4",
+      "citation": "The Port Authority of New York and New Jersey, press release 101-01, \"Governor Pataki, Acting Governor DiFrancesco Laud Historic Port Authority Agreement to Privatize World Trade Center,\" July 24, 2001",
+      "url": "http://www.panynj.gov/pr/101-01.html",
+      "archived_url": "https://web.archive.org/web/20010728134056/http://www.panynj.gov/pr/101-01.html",
+      "local_file": "data/exhibits/sources/pa/101.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary"
+    },
+    {
+      "id": "s5",
+      "citation": "The Skyscraper Museum, \"Giants: The Twin Towers and the Twentieth Century\" (online exhibition)",
+      "url": "https://www.skyscraper.org/exhibitions/giants-twin-towers-and-the-twentieth-century/",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/skyscraper_museum_giants.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "retrospective"
+    },
+    {
+      "id": "s6",
+      "citation": "Michele Beckerman and Andrea Cadornigara, \"Photo Essay: Building the World Trade Center in Lower Manhattan,\" RE:source, Rockefeller Archive Center",
+      "url": "https://resource.rockarch.org/story/photo-essay-building-the-world-trade-center-in-lower-manhattan/",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/rockarch_wtc_essay.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "retrospective",
+      "note": "Quotes the Downtown-Lower Manhattan Association's First Report of October 14, 1958, held in the RAC's DLMA collection."
+    },
+    {
+      "id": "s7",
+      "citation": "Henry Stewart, \"Why New Yorkers Couldn't Stand The Twin Towers,\" Gothamist, September 8, 2016",
+      "url": "https://gothamist.com/news/why-new-yorkers-couldnt-stand-the-twin-towers",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/gothamist_2016_twin_towers.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "retrospective"
+    },
+    {
+      "id": "s8",
+      "citation": "Brian C. Anderson, \"The Twin Towers Project: A Cautionary Tale,\" City Journal, November 1, 2001",
+      "url": "https://www.city-journal.org/article/the-twin-towers-project-a-cautionary-tale",
+      "archived_url": null,
+      "local_file": null,
+      "retrieved_at": "2026-09-11",
+      "kind": "retrospective",
+      "note": "Published after the period end; only the lease terms are taken from it."
+    },
+    {
+      "id": "s9",
+      "citation": "The Port Authority of New York and New Jersey, \"World Trade Center\" office overview, panynj.gov/wtc/officeoverview.htm, as archived by the Internet Archive on 2001-02-11",
+      "url": "http://www.panynj.gov/wtc/officeoverview.htm",
+      "archived_url": "https://web.archive.org/web/20010211083837/http://www.panynj.gov/wtc/officeoverview.htm",
+      "local_file": "data/exhibits/sources/pa_site/officeoverview.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary"
+    },
+    {
+      "id": "s10",
+      "citation": "The Port Authority of New York and New Jersey, \"WTC Amenities and Services,\" panynj.gov/wtc/amenities.htm, as archived by the Internet Archive on 2001-04-26",
+      "url": "http://www.panynj.gov/wtc/amenities.htm",
+      "archived_url": "https://web.archive.org/web/20010426171825/http://www.panynj.gov/wtc/amenities.htm",
+      "local_file": "data/exhibits/sources/pa_site/amenities.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "claim_text": "The Downtown-Lower Manhattan Association, founded in 1958 with David Rockefeller as its first chairman, recommended in its First Report of October 14, 1958 the creation of a World Trade complex to bring together the many activities related to the financing of the imports and exports running through the Port of New York.",
+      "source_ids": [
+        "s6"
+      ],
+      "confidence": "reported",
+      "note": "The Rockefeller Archive Center essay quotes the 1958 report it holds; the report itself was not retrieved."
+    },
+    {
+      "id": "c2",
+      "claim_text": "The DLMA enlisted the Port of New York Authority as developer; the Authority issued a report favoring the plan in March 1961, and in spring 1962 the two states approved a West Side site, joining the Trade Center legislation to the Authority's purchase and modernization of the Hudson and Manhattan railroad, which became PATH.",
+      "source_ids": [
+        "s5",
+        "s6"
+      ],
+      "confidence": "reported",
+      "note": "Two retrospective institutional sources agree."
+    },
+    {
+      "id": "c3",
+      "claim_text": "The 1962 statute defined the World Trade Center as a facility of commerce for the centralized accommodation of functions, activities and services for or incidental to the transportation of persons, the exchange, buying, selling and transportation of commodities in world trade and commerce, and governmental services, and allowed portions of the structures to be used solely for the production of incidental revenue toward the project's expenses.",
+      "source_ids": [
+        "s2"
+      ],
+      "confidence": "documented",
+      "note": "Quoted by the Court of Appeals from L. 1962, ch. 209."
+    },
+    {
+      "id": "c4",
+      "claim_text": "On April 4, 1963 the New York Court of Appeals held that the World Trade Center concept was a public purpose and that any use of the site functionally related to the centralizing of all port business was unobjectionable even though private persons were to be the immediate lessees.",
+      "source_ids": [
+        "s2"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c5",
+      "claim_text": "The Port Authority's program was 10 million square feet of office space built over a mass transit station, with more than 4 million square feet available in each tower.",
+      "source_ids": [
+        "s5"
+      ],
+      "confidence": "reported"
+    },
+    {
+      "id": "c6",
+      "claim_text": "The World Trade Center welcomed its first tenant in December 1970.",
+      "source_ids": [
+        "s3",
+        "s4",
+        "s6"
+      ],
+      "confidence": "documented",
+      "note": "Both 2001 press releases state this; the RAC essay gives December 15, 1970."
+    },
+    {
+      "id": "c7",
+      "claim_text": "Leasing to private companies was slow in the early years; a major portion of each tower was filled by the government offices of New York State and by the operations of the Port Authority itself, public agencies including the Authority, U.S. Customs and New York State departments leased about a third of the complex, and by 1979 more than a million square feet were still unoccupied.",
+      "source_ids": [
+        "s5",
+        "s7"
+      ],
+      "confidence": "reported",
+      "note": "Two retrospective sources agree on the pattern. A contemporaneous account of the State's lease (size, tower, rent) was not retrieved; see cut list."
+    },
+    {
+      "id": "c8",
+      "claim_text": "In 2001 the Port Authority itself described the complex as having been considered a white elephant in its early years.",
+      "source_ids": [
+        "s3"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c9",
+      "claim_text": "The CoStar list compiled for CNN records the Port Authority of New York and New Jersey as a tenant of 1 World Trade Center on floors 3, 14, 19, 24, 28 and 31, industry Government, with a single square-footage figure of 22,411.",
+      "source_ids": [
+        "s1"
+      ],
+      "confidence": "documented",
+      "note": "Row wtc1-010. The list gives one figure for six floors; it cannot be the Authority's whole occupancy in the tower and should not be rendered as such."
+    },
+    {
+      "id": "c10",
+      "claim_text": "The World Trade Institute of Pace University, on the 55th floor of One World Trade Center, offered seminars on international trade, logistics and transportation and language training in ten languages.",
+      "source_ids": [
+        "s10"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c11",
+      "claim_text": "In 2001 the Port Authority marketed the complex as offering office space from 400 to 500,000 square feet, atop the largest indoor mall in New York City and a regional transportation hub, beside a five-acre public plaza.",
+      "source_ids": [
+        "s9"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c12",
+      "claim_text": "By April 2001 more than 430 companies from 28 countries leased space, engaged in banking and finance, insurance, transportation, import, export, freight forwarding, customs brokerage, trade associations and representation of foreign governments; an estimated 40,000 people worked in the complex and 140,000 visited daily.",
+      "source_ids": [
+        "s3"
+      ],
+      "confidence": "documented",
+      "note": "The July release gives 150,000 daily visitors; the Skyscraper Museum gives about 47,000 workers in 2001. Figures vary by source."
+    },
+    {
+      "id": "c13",
+      "claim_text": "Occupancy stood at about 97 percent in April 2001, described by the Authority as a historic high, and asking rents for offices and shops had doubled over the previous five years.",
+      "source_ids": [
+        "s3"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c14",
+      "claim_text": "On April 26, 2001 the Port Authority's Board of Commissioners approved a 99-year net lease of One, Two, Four and Five World Trade Center and about 400,000 square feet of retail space to Silverstein Properties, Inc. and Westfield America, Inc., valued at an estimated $3.2 billion on a present-value basis; Three (the Marriott hotel), Six (the U.S. Customs House) and Seven World Trade Center were already under separate leases.",
+      "source_ids": [
+        "s3"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c15",
+      "claim_text": "The lease closed on July 24, 2001, covering the same four buildings and about 425,000 square feet of retail space, with JP Morgan/Chase, Cushman and Wakefield and Milstein Realty Advisors advising the Authority, which retained oversight of the complex's building, fire, environmental and health codes and physical plant.",
+      "source_ids": [
+        "s4"
+      ],
+      "confidence": "documented",
+      "note": "Retail figure is 400,000 in April and 425,000 in July."
+    },
+    {
+      "id": "c16",
+      "claim_text": "The lease included $616 million paid up front and an in-lieu-of-taxes payment to the city of $25 million a year.",
+      "source_ids": [
+        "s8"
+      ],
+      "confidence": "reported",
+      "note": "Single retrospective source; the Authority's releases do not state the upfront amount."
+    },
+    {
+      "id": "c17",
+      "claim_text": "The Authority's stated rationale was to free its resources for airports, seaports, bridges, tunnels and PATH, which it called its primary mission, while keeping a revenue stream from the complex for 99 years; Governor Pataki described privatizing the complex as a goal from his first days in office.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c18",
+      "claim_text": "Austin J. Tobin was the Port Authority's executive director from 1942 to 1972, and the five-acre plaza between the towers was named for him.",
+      "source_ids": [
+        "s4"
+      ],
+      "confidence": "documented"
+    }
+  ],
+  "draft_body": "The World Trade Center began as a business association's idea: the Downtown-Lower Manhattan Association, formed in 1958 under David Rockefeller, recommended a complex that would gather in one place the many activities tied to financing the imports and exports moving through the Port of New York [c1]. The Port of New York Authority was enlisted as developer and endorsed the plan in 1961; in 1962 the two states approved a West Side site and tied the project to the Authority's takeover of the Hudson and Manhattan railroad, later PATH [c2]. The founding thesis was written into law: the 1962 statute defined the center as a facility of commerce for the centralized accommodation of functions, activities and services in world trade and commerce, including governmental services, and let parts of the buildings simply produce incidental revenue [c3]. In April 1963 the Court of Appeals upheld that purpose, holding that any use related to centralizing port business was acceptable even with private firms as lessees [c4]. The program was 10 million square feet of offices over a transit station [c5]. The first tenant arrived in December 1970 [c6]. Filling the rest took most of a decade: private leasing was slow, much of each tower went to New York State offices and to the Authority's own operations, public agencies including U.S. Customs took about a third of the complex, and more than a million square feet were still empty in 1979 [c7]. The Authority later said the complex had been considered a white elephant in its early years [c8]. In 2001 the Authority itself appears in the CoStar list on six floors of the North Tower [c9]. The trade mission survived in the World Trade Institute of Pace University on the 55th floor, teaching international trade, logistics and ten languages [c10]. By 2001 the Authority marketed the complex as offices from 400 to 500,000 square feet over the largest indoor mall in the city [c11]. More than 430 companies from 28 countries leased space, in banking, insurance, transportation, import and export, freight forwarding, customs brokerage and foreign government offices; about 40,000 people worked there [c12]. Occupancy was about 97 percent, a historic high, and asking rents had doubled in five years [c13]. The Authority chose that moment to step back: on April 26, 2001 its board approved a 99-year net lease of the two towers, Four and Five World Trade Center and about 400,000 square feet of retail to Silverstein Properties and Westfield America, valued at about $3.2 billion in present value, while the hotel, the Customs House and Seven World Trade Center were already leased separately [c14]. The deal closed on July 24, 2001, with the Authority keeping code oversight of the buildings [c15]. It included $616 million up front and $25 million a year to the city in lieu of taxes [c16]. The stated reason was focus: airports, seaports, bridges, tunnels and PATH were the Authority's primary mission, and the lease kept the revenue flowing for 99 years [c17].",
+  "cut": [
+    {
+      "claim_text": "The Port Authority moved its headquarters from 111 Eighth Avenue into 1 World Trade Center in 1973.",
+      "why": "No citable source retrieved. Appears in uncited web summaries and a photo caption; the Authority's 2001 site captures do not state it. A contemporaneous press item or a Port Authority annual report would resolve it."
+    },
+    {
+      "claim_text": "New York State leased about 25 percent of the complex (56 floors of the South Tower) at about $10 per square foot, moving in 1974.",
+      "why": "Figures appear only in tertiary web sources (EBSCO research starter, uncited summaries). The retained claim c7 states the pattern without figures. A 1964 or 1974 press account or a State lease record is needed."
+    },
+    {
+      "claim_text": "By law at least 75 percent of tenants had to have a direct connection to international trade.",
+      "why": "Stated only in a tertiary source; the statute as quoted by the Court of Appeals (c3) contains no percentage. Not sourced."
+    },
+    {
+      "claim_text": "The Port Authority was created in 1921 by interstate compact.",
+      "why": "Retrieved only from a retrospective PBS page; not central to the exhibit. Restore with the compact text if the founding is wanted."
+    },
+    {
+      "claim_text": "McKinsey's feasibility study for the DLMA concluded that major corporations would gain little advantage from a World Trade Center, and the report was not released.",
+      "why": "Single retrospective source (Gothamist 2016) without a document citation; omitted rather than softened."
+    },
+    {
+      "claim_text": "Vornado Realty Trust was tentatively awarded the lease at $3.25 billion in February 2001 and withdrew in March, after which the Authority negotiated with Silverstein.",
+      "why": "Only uncited web summaries retrieved; the Authority's February and March 2001 releases were not fetched. Could be restored from the Wayback press-release index (pr/*-01.html)."
+    }
+  ],
+  "research_notes": "Looked at: Wayback CDX index of panynj.gov (2000-2001), from which press releases 68-01 and 101-01 and the WTC office-marketing pages were retrieved verbatim; the modern panynj.gov press archive page renders only a headline. The 1962 statute is quoted through the 1963 Court of Appeals opinion on vLex (Justia and CourtListener copies were blocked). Skyscraper Museum, Rockefeller Archive Center, Gothamist and City Journal are retrospective and are marked 'reported'. nytimes.com is blocked to the fetcher, so no 1960s or 1970s press was read directly; that is the largest gap. Conflicts: retail square footage in the lease (400,000 in April, 425,000 in July); daily visitors (140,000 in April, 150,000 in July); workers in 2001 (40,000 per the Authority, about 47,000 per the Skyscraper Museum); dedication date (RAC essay says August 4, 1973, other sources say April 4, 1973; not used in the draft). The 22,411 square feet in the CoStar row for the Authority is a single-row value for six floors and must not be rendered as the Authority's total footprint."
+}

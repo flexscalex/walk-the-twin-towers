@@ -1,0 +1,39 @@
+{
+  "meta": { "generated_at": "2026-09-10T00:00:00Z", "generator": "fixture (data/fixtures/tenants.sample.json)", "tenant_count": 3 },
+  "sources": [{
+    "id": "cnn-2001-09-13",
+    "citation": "CNN.com, \"List of World Trade Center tenants\" (tenant list provided by CoStar Group, Inc.), as archived by the Internet Archive on 2001-09-13",
+    "url": null,
+    "archived_url": null,
+    "retrieved_at": "2026-09-10",
+    "local_files": ["data/cnn_t1.html", "data/cnn_t2.html"]
+  }],
+  "buildings": [
+    { "id": "wtc1", "name": "1 World Trade Center", "cnn_label": "1 World Trade Center - North Tower", "source_file": "data/cnn_t1.html", "column_order": ["tenant","sq_ft","industry","floor"], "tenant_count": 2, "sq_ft_total": 7106 },
+    { "id": "wtc2", "name": "2 World Trade Center", "cnn_label": "2 World Trade Center - South Tower", "source_file": "data/cnn_t2.html", "column_order": ["tenant","sq_ft","industry","floor"], "tenant_count": 1, "sq_ft_total": 0 }
+  ],
+  "floor_codes": { "CNCR": "Concourse", "LBBY": "Lobby", "BSMT": "Basement", "GRND": "Ground", "LL": "Lower level", "PLAZ": "Plaza" },
+  "tenants": [
+    {
+      "id": "wtc1-001", "building_id": "wtc1", "name": "Strawberry",
+      "sq_ft": 7106, "sq_ft_raw": "7,106",
+      "industry": "Retailers/Wholesalers", "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "CNCR", "floors": ["CNCR"], "floor_unresolved": null,
+      "evidence": "documented", "source_id": "cnn-2001-09-13", "source_row": 1
+    },
+    {
+      "id": "wtc1-002", "building_id": "wtc1", "name": "Royal Thai Embassy Office",
+      "sq_ft": null, "sq_ft_raw": "N/A",
+      "industry": "Government", "industry_raw": "Government",
+      "floor_raw": "", "floors": [], "floor_unresolved": null,
+      "evidence": "documented", "source_id": "cnn-2001-09-13", "source_row": 2
+    },
+    {
+      "id": "wtc2-001", "building_id": "wtc2", "name": "Sample Tenant With Unresolved Floor",
+      "sq_ft": null, "sq_ft_raw": "",
+      "industry": null, "industry_raw": "",
+      "floor_raw": "9-11,CINDE", "floors": ["9", "10", "11"], "floor_unresolved": "CINDE",
+      "evidence": "reported", "source_id": "cnn-2001-09-13", "source_row": 1
+    }
+  ]
+}

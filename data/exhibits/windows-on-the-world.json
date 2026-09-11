@@ -1,0 +1,319 @@
+{
+  "slug": "windows-on-the-world",
+  "title": "Windows on the World",
+  "building_id": "wtc1",
+  "floors": [
+    "106",
+    "107"
+  ],
+  "tenant_ids": [
+    "wtc1-195",
+    "wtc1-196",
+    "wtc1-197"
+  ],
+  "status": "draft",
+  "sources": [
+    {
+      "id": "s1",
+      "citation": "CNN.com, \"List of World Trade Center tenants\" (tenant list provided by CoStar Group, Inc.), as archived by the Internet Archive on 2001-09-13; re-parsed in data/tenants.clean.json",
+      "url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants1.html",
+      "archived_url": "https://web.archive.org/web/20010913191234/http://www2.cnn.com/SPECIALS/2001/trade.center/tenants1.html",
+      "local_file": "data/cnn_t1.html",
+      "retrieved_at": "2026-09-10",
+      "kind": "contemporaneous"
+    },
+    {
+      "id": "s2",
+      "citation": "Fred Ferretti, \"It's Ambiance Will Go From Snack to Posh,\" The New York Times, October 28, 1970, p. 83",
+      "url": "https://www.foodtimeline.org/windows.html",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/foodtimeline.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous",
+      "note": "nytimes.com blocks the fetcher; the article text was read as compiled, with page numbers, at foodtimeline.org/windows.html (Lynne Olver, The Food Timeline). Verify against the NYT archive before approval."
+    },
+    {
+      "id": "s3",
+      "citation": "Mimi Sheraton, \"Restaurants: Abundance of Riches, and Infinity of Dishes,\" The New York Times, July 9, 1976, p. 61",
+      "url": "https://www.foodtimeline.org/windows.html",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/foodtimeline.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous",
+      "note": "nytimes.com blocks the fetcher; the article text was read as compiled, with page numbers, at foodtimeline.org/windows.html (Lynne Olver, The Food Timeline). Verify against the NYT archive before approval."
+    },
+    {
+      "id": "s4",
+      "citation": "Terry Robards, \"Spotlight: Showman for Food,\" The New York Times, December 19, 1976, p. F7",
+      "url": "https://www.foodtimeline.org/windows.html",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/foodtimeline.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous",
+      "note": "nytimes.com blocks the fetcher; the article text was read as compiled, with page numbers, at foodtimeline.org/windows.html (Lynne Olver, The Food Timeline). Verify against the NYT archive before approval."
+    },
+    {
+      "id": "s5",
+      "citation": "Raymond A. Sokolov, \"Joe Baum's Food Machine,\" The New York Times, March 6, 1977, p. 216",
+      "url": "https://www.foodtimeline.org/windows.html",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/foodtimeline.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous",
+      "note": "nytimes.com blocks the fetcher; the article text was read as compiled, with page numbers, at foodtimeline.org/windows.html (Lynne Olver, The Food Timeline). Verify against the NYT archive before approval."
+    },
+    {
+      "id": "s6",
+      "citation": "Bryan Miller, \"Familiar Face Behind New 'Windows',\" The New York Times, May 13, 1994, p. B3",
+      "url": "https://www.foodtimeline.org/windows.html",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/foodtimeline.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous",
+      "note": "nytimes.com blocks the fetcher; the article text was read as compiled, with page numbers, at foodtimeline.org/windows.html (Lynne Olver, The Food Timeline). Verify against the NYT archive before approval."
+    },
+    {
+      "id": "s7",
+      "citation": "Florence Fabricant, \"New Windows on a New World; Can the Food Ever Match the View?\" The New York Times, June 19, 1996, p. C1",
+      "url": "https://www.foodtimeline.org/windows.html",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/foodtimeline.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous",
+      "note": "nytimes.com blocks the fetcher; the article text was read as compiled, with page numbers, at foodtimeline.org/windows.html (Lynne Olver, The Food Timeline). Verify against the NYT archive before approval."
+    },
+    {
+      "id": "s8",
+      "citation": "New York Times News Service, \"World Trade Center Restaurant Reopens,\" Deseret News, June 30, 1996",
+      "url": "https://www.deseret.com/1996/6/30/19251720/world-trade-center-restaurant-reopens/",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/deseret.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous"
+    },
+    {
+      "id": "s9",
+      "citation": "The Port Authority of New York and New Jersey, \"WTC Amenities and Services,\" panynj.gov/wtc/amenities.htm, as archived by the Internet Archive on 2001-04-26",
+      "url": "http://www.panynj.gov/wtc/amenities.htm",
+      "archived_url": "https://web.archive.org/web/20010426171825/http://www.panynj.gov/wtc/amenities.htm",
+      "local_file": "data/exhibits/sources/pa_site/amenities.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary"
+    },
+    {
+      "id": "s10",
+      "citation": "Wine Spectator staff, \"Broken Windows,\" Wine Spectator, September 21, 2001",
+      "url": "https://www.winespectator.com/articles/broken-windows-21021",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/ws.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "retrospective",
+      "note": "Published after the period end. Only business facts about the restaurant as it operated were taken; nothing else from the piece is used."
+    },
+    {
+      "id": "s11",
+      "citation": "Kevin Zraly, Windows on the World Complete Wine Course (New York: Sterling, first published 1985); Internet Archive catalog record for the 2014 Sterling Epicure edition",
+      "url": "https://archive.org/details/windowsonworldco0000zral_n9d5",
+      "archived_url": null,
+      "local_file": null,
+      "retrieved_at": "2026-09-11",
+      "kind": "primary",
+      "note": "Catalog record only; used solely to document that a wine course was published under the restaurant's name in 1985."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "claim_text": "The CoStar list compiled for CNN records three entries at the top of 1 World Trade Center: Windows on the World, 40,000 square feet, floor 106; Greatest Bar on Earth, 13,333 square feet, floor 107; and World Trade Club, 13,333 square feet, floor 107. No industry is given for any of the three.",
+      "source_ids": [
+        "s1"
+      ],
+      "confidence": "documented",
+      "note": "Rows wtc1-195, wtc1-196, wtc1-197 in data/tenants.clean.json."
+    },
+    {
+      "id": "c2",
+      "claim_text": "In October 1970, before the North Tower was finished, the Port Authority's food-service plan for the complex, developed with Joseph Baum, called for a luncheon club atop the North Tower that was expected to operate by day as a 1,000-member, dues-paying private eatery, alongside roughly 20 restaurants and about 60 snack operations across the complex.",
+      "source_ids": [
+        "s2"
+      ],
+      "confidence": "documented",
+      "note": "Ferretti also reports the complex was 'already 85 per cent rented' in October 1970; that figure is a leasing-agent claim quoted in a food story and is not used."
+    },
+    {
+      "id": "c3",
+      "claim_text": "Windows on the World opened in 1976 on the 107th floor of the North Tower, with a dining room by architect Warren Platner terraced so that every table had a view.",
+      "source_ids": [
+        "s3",
+        "s4",
+        "s7"
+      ],
+      "confidence": "documented",
+      "note": "Sheraton (July 1976) places it on the 107th floor; Robards names Platner; Fabricant (1996) dates 'Windows I' to 1976. The exact opening date was not retrieved (see cut list)."
+    },
+    {
+      "id": "c4",
+      "claim_text": "By day the restaurant operated as a private club, the Club at the World Trade Center, which in December 1976 had 2,280 members paying between $50 and $420 a year; the public could lunch there on payment of a $10 cover for the host and $3 per guest, and at dinner it was a fully public restaurant.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c5",
+      "claim_text": "Joseph H. Baum was responsible for Windows on the World and every other dining facility at the World Trade Center; his company, Inhilco, designed the food master plan, which by 1977 covered 18 restaurants and coffee shops in the complex under a single operator.",
+      "source_ids": [
+        "s4",
+        "s5"
+      ],
+      "confidence": "documented",
+      "note": "Robards: Baum 'decided that economies of scale ... called for the single operator concept.' The retrieved text does not state Inhilco's corporate parent (see cut list)."
+    },
+    {
+      "id": "c6",
+      "claim_text": "The Windows on the World fit-out cost about $7.5 million within roughly $26 million spent on the complex's dining facilities, and by December 1976 Baum had assembled a food-service staff of about 800.",
+      "source_ids": [
+        "s4"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c7",
+      "claim_text": "The original complex included the Hors d'Oeuvrerie, which served Danish open sandwiches and grill items at lunch and an international array of appetizers in the evening, and a lunch buffet in the main room.",
+      "source_ids": [
+        "s3"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c8",
+      "claim_text": "The original menu was devised with James Beard among others.",
+      "source_ids": [
+        "s3",
+        "s7"
+      ],
+      "confidence": "documented",
+      "note": "Sheraton lists 'rack of lamb James Beard' among entrees; Fabricant states the original menu was 'devised by James Beard among others.'"
+    },
+    {
+      "id": "c9",
+      "claim_text": "At its peak in the late 1980s the restaurant took in more than $24 million a year in gross revenues, and in its heyday it was described as the highest grossing restaurant in the country.",
+      "source_ids": [
+        "s6",
+        "s7"
+      ],
+      "confidence": "documented",
+      "note": "Miller (1994) gives the $24 million figure. The compiled Fabricant text reads 'the highest grossing restaurant in the county', evidently a transcription of 'country'."
+    },
+    {
+      "id": "c10",
+      "claim_text": "The complex closed in February 1993 and on May 12, 1994 the Port Authority announced that the Joseph Baum and Michael Whiteman Company had won the competition to renovate and run the two-level restaurant complex; the operating entity was reported in 1996 as B.E. Windows.",
+      "source_ids": [
+        "s6",
+        "s8"
+      ],
+      "confidence": "documented",
+      "note": "Miller's article of May 13, 1994 says the award was announced 'yesterday'. The Deseret News piece names the chosen operator as 'B.E. Windows'."
+    },
+    {
+      "id": "c11",
+      "claim_text": "After a $25 million renovation the restaurant reopened on June 27, 1996 with 240 seats on tiers on the 107th floor facing north and east, jackets required, and a three-course dinner for two with wine priced at about $150.",
+      "source_ids": [
+        "s7",
+        "s8"
+      ],
+      "confidence": "documented",
+      "note": "Both retrieved sources give June 27. Some later accounts give June 26; not resolved here."
+    },
+    {
+      "id": "c12",
+      "claim_text": "The 1996 redesign by architect Hugh Hardy replaced Platner's interior.",
+      "source_ids": [
+        "s7"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c13",
+      "claim_text": "The Greatest Bar on Earth replaced the City Lights Bar and the Hors d'Oeuvrerie in 1996: a space for about 300 with chef stations for sushi, oysters and shabu-shabu, microbrews and wines by the glass, live music Thursday through Saturday, jeans allowed, and a view south over the harbor, aimed at a younger crowd who worked and lived in the neighborhood.",
+      "source_ids": [
+        "s7",
+        "s8"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c14",
+      "claim_text": "Cellar in the Sky, the wine-oriented dining room where a different wine accompanied each course of a fixed-price menu, was retained in the 1994 plan and reopened after Labor Day 1996.",
+      "source_ids": [
+        "s6",
+        "s8"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c15",
+      "claim_text": "In 2001 the Port Authority marketed Windows on the World's banquet operation as more than 18,000 square feet of private dining rooms able to seat a dinner for 600 or a reception for 1,000.",
+      "source_ids": [
+        "s9"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c16",
+      "claim_text": "Wine was a stated strength from 1976; Kevin Zraly's Windows on the World Wine School began that year and taught more than 14,000 students, and in 2001 the cellar held a little over 50,000 bottles.",
+      "source_ids": [
+        "s10",
+        "s11"
+      ],
+      "confidence": "reported",
+      "note": "Wine Spectator is the only retrieved source for the school and bottle figures. Zraly's Windows on the World Complete Wine Course (1985) independently documents that a wine course was published under the restaurant's name."
+    },
+    {
+      "id": "c17",
+      "claim_text": "In the late 1990s the business was owned by David Emil; Michael Lomonaco became executive chef in 1997 and Glenn Vogt joined as general manager in 1998; the operation employed about 450 people.",
+      "source_ids": [
+        "s10"
+      ],
+      "confidence": "reported",
+      "note": "Single retrospective source. Wine Spectator states 'a little over 50,000 bottles' and the employee count in its own reporting; a contemporaneous appointment notice was not found."
+    },
+    {
+      "id": "c18",
+      "claim_text": "The main dining room was on the 107th floor, while the CoStar list assigns the Windows on the World entry to floor 106 and the bar and club entries to floor 107.",
+      "source_ids": [
+        "s1",
+        "s3",
+        "s7",
+        "s8"
+      ],
+      "confidence": "uncertain",
+      "note": "Every 1976 and 1996 press source places the dining room on 107 and the complex on 106 and 107. The CoStar row may be recording the banquet floor under the restaurant's name. Not resolvable from retrieved sources; record as a paradata decision if rendered."
+    }
+  ],
+  "draft_body": "Windows on the World sat at the top of the North Tower, on floors 106 and 107 [c1]. It was planned before the tower was finished: the Port Authority's 1970 food plan for the complex, drawn up with Joseph Baum, called for a dues-paying luncheon club at the summit alongside some twenty restaurants and sixty snack operations below [c2]. The restaurant opened in 1976 on the 107th floor, in a Warren Platner dining room terraced so that every table had a view [c3]. By day it was a private club with 2,280 members paying up to $420 a year, and the public could lunch there for a cover charge; at dinner it was fully public [c4]. Baum ran it, and every other place to eat in the complex, through his company Inhilco under a single-operator plan that by 1977 covered eighteen restaurants and coffee shops [c5]. The fit-out cost about $7.5 million within roughly $26 million spent on dining across the complex, and by the end of 1976 Baum employed about 800 people [c6]. The Hors d'Oeuvrerie served open sandwiches at lunch and appetizers at night, and the main room offered a lunch buffet [c7]. The menu was devised with James Beard among others [c8]. At its late-1980s peak the restaurant grossed more than $24 million a year and was described as the highest grossing restaurant in the country [c9]. It closed in February 1993, and in May 1994 the Port Authority chose the Joseph Baum and Michael Whiteman Company, operating as B.E. Windows, to renovate and run the complex [c10]. After a $25 million renovation it reopened on June 27, 1996 with 240 seats on tiers facing north and east, jackets required, and dinner for two priced around $150 [c11]. Hugh Hardy replaced Platner's interior [c12]. The Greatest Bar on Earth took the place of the old City Lights Bar and Hors d'Oeuvrerie: a 300-person room with sushi and oyster stations, microbrews, live music three nights a week, jeans allowed, pitched at a younger crowd from the neighborhood [c13]. Cellar in the Sky, with a wine matched to each course, reopened after Labor Day [c14]. By 2001 the banquet side was more than 18,000 square feet of private rooms able to seat 600 for dinner or 1,000 for a reception [c15]. Wine was a stated strength from the start; Kevin Zraly's wine school began in 1976 and taught more than 14,000 students, and the cellar held a little over 50,000 bottles [c16]. In the late 1990s David Emil owned the business, Michael Lomonaco became executive chef in 1997, Glenn Vogt joined as general manager in 1998, and the operation employed about 450 people [c17]. One detail in the record does not line up: the press consistently puts the dining room on 107, while the CoStar list files Windows on the World under 106 and the bar and club under 107 [c18].",
+  "cut": [
+    {
+      "claim_text": "In 2000 Windows on the World grossed about $37 million (some accounts say $37.5 million) and was the highest-grossing restaurant in the United States, per Restaurants & Institutions.",
+      "why": "No primary or contemporaneous source retrieved. The figure circulates in retrospective web sources that cite Howard G. Goldberg, The Wine News, Oct-Nov 2001, which was not located; the Restaurants & Institutions 2001 Top 100 Independents list was not found online. Restore if either is obtained."
+    },
+    {
+      "claim_text": "Inhilco was a subsidiary of Hilton International.",
+      "why": "Not stated in any retrieved contemporaneous text; appears only in uncited web summaries."
+    },
+    {
+      "claim_text": "Windows on the World opened on April 19, 1976.",
+      "why": "The cited NYT item of April 16, 1976 ('Trade Center to Let Public In for Lunch At Roof Restaurant') was not retrieved. Retrieved sources support only '1976' and 'before July 1976'."
+    },
+    {
+      "claim_text": "Cellar in the Sky was later replaced by a 60-seat restaurant called Wild Blue.",
+      "why": "The only retrieved source naming Wild Blue is a September 2001 elegy, excluded by the content rule. William Grimes's 1999 NYT review of Wild Blue was not retrievable."
+    },
+    {
+      "claim_text": "The restaurant held Wine Spectator's Grand Award from 1981.",
+      "why": "Stated only in the retrospective Wine Spectator piece about itself; no independent contemporaneous confirmation retrieved. Could be restored with the 1981 award listing."
+    }
+  ],
+  "research_notes": "Looked at: nytimes.com (blocked to the fetcher; every NYT item is read via The Food Timeline's compiled excerpts with page numbers and must be verified against TimesMachine before approval), nrn.com (elegy piece, retrospective, not used), Deseret News wire copy of the NYT reopening story, Wayback captures of panynj.gov/wtc (2001), Wine Spectator (Sept 2001), Fortune (2017, 2019), Restaurant Business Top 100 pages (no pre-2015 data), Internet Archive catalog for Zraly's book. Wikipedia used only to identify the NYT dates. Conflicts: floor assignment (106 vs 107) between CoStar and the press, recorded as c18. Reopening date June 26 vs 27 (retrieved sources say 27). The 2000 revenue figure could not be sourced and is cut, so the draft leans on the documented late-1980s peak instead. Wine Spectator is the only source for late-1990s management and cellar size, hence 'reported'."
+}

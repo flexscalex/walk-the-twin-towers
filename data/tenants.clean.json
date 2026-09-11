@@ -1,0 +1,5883 @@
+{
+  "meta": {
+    "generated_at": "2026-09-11T02:50:05.382Z",
+    "generator": "scripts/parse-cnn.ts",
+    "tenant_count": 329
+  },
+  "sources": [
+    {
+      "id": "cnn-2001-09-13",
+      "citation": "CNN.com, \"List of World Trade Center tenants\" (tenant list provided by CoStar Group, Inc.), as archived by the Internet Archive on 2001-09-13",
+      "url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants1.html",
+      "archived_url": {
+        "data/cnn_t1.html": "https://web.archive.org/web/20010913191234/http://www2.cnn.com/SPECIALS/2001/trade.center/tenants1.html",
+        "data/cnn_t2.html": "https://web.archive.org/web/20010913194306/http://www2.cnn.com/SPECIALS/2001/trade.center/tenants2.html",
+        "data/cnn_t4.html": "https://web.archive.org/web/20010913194307/http://www2.cnn.com/SPECIALS/2001/trade.center/tenants4.html",
+        "data/cnn_t5.html": "https://web.archive.org/web/20010913194315/http://www2.cnn.com/SPECIALS/2001/trade.center/tenants5.html",
+        "data/cnn_t6.html": "https://web.archive.org/web/20010913194319/http://www2.cnn.com/SPECIALS/2001/trade.center/tenants6.html",
+        "data/cnn_t7.html": "https://web.archive.org/web/20010913194320/http://www2.cnn.com/SPECIALS/2001/trade.center/tenants7.html"
+      },
+      "retrieved_at": "2026-09-10",
+      "local_files": [
+        "data/cnn_t1.html",
+        "data/cnn_t2.html",
+        "data/cnn_t4.html",
+        "data/cnn_t5.html",
+        "data/cnn_t6.html",
+        "data/cnn_t7.html"
+      ]
+    }
+  ],
+  "buildings": [
+    {
+      "id": "wtc1",
+      "name": "1 World Trade Center",
+      "cnn_label": "1 World Trade Center - North Tower",
+      "source_file": "data/cnn_t1.html",
+      "source_url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants1.html",
+      "column_order": [
+        "tenant",
+        "sq_ft",
+        "industry",
+        "floor"
+      ],
+      "tenant_count": 203,
+      "sq_ft_total": 2459030,
+      "padding_rows_dropped": 4
+    },
+    {
+      "id": "wtc2",
+      "name": "2 World Trade Center",
+      "cnn_label": "2 World Trade Center - South Tower",
+      "source_file": "data/cnn_t2.html",
+      "source_url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants2.html",
+      "column_order": [
+        "tenant",
+        "sq_ft",
+        "industry",
+        "floor"
+      ],
+      "tenant_count": 77,
+      "sq_ft_total": 3568326,
+      "padding_rows_dropped": 0
+    },
+    {
+      "id": "wtc4",
+      "name": "4 World Trade Center",
+      "cnn_label": "4 World Trade Center - Commodities Exchange Center",
+      "source_file": "data/cnn_t4.html",
+      "source_url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants4.html",
+      "column_order": [
+        "tenant",
+        "sq_ft",
+        "floor",
+        "industry"
+      ],
+      "tenant_count": 6,
+      "sq_ft_total": 427007,
+      "padding_rows_dropped": 2
+    },
+    {
+      "id": "wtc5",
+      "name": "5 World Trade Center",
+      "cnn_label": "5 World Trade Center - Northeast Plaza",
+      "source_file": "data/cnn_t5.html",
+      "source_url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants5.html",
+      "column_order": [
+        "tenant",
+        "sq_ft",
+        "floor",
+        "industry"
+      ],
+      "tenant_count": 25,
+      "sq_ft_total": 557850,
+      "padding_rows_dropped": 2
+    },
+    {
+      "id": "wtc6",
+      "name": "6 World Trade Center",
+      "cnn_label": "6 World Trade Center - U.S. Customs House",
+      "source_file": "data/cnn_t6.html",
+      "source_url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants6.html",
+      "column_order": [
+        "tenant",
+        "sq_ft",
+        "floor",
+        "industry"
+      ],
+      "tenant_count": 6,
+      "sq_ft_total": 15900,
+      "padding_rows_dropped": 3
+    },
+    {
+      "id": "wtc7",
+      "name": "7 World Trade Center",
+      "cnn_label": "7 World Trade Center",
+      "source_file": "data/cnn_t7.html",
+      "source_url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants7.html",
+      "column_order": [
+        "tenant",
+        "sq_ft",
+        "floor",
+        "industry"
+      ],
+      "tenant_count": 12,
+      "sq_ft_total": 1953700,
+      "padding_rows_dropped": 2
+    }
+  ],
+  "floor_codes": {
+    "CNCR": "Concourse",
+    "LBBY": "Lobby",
+    "BSMT": "Basement",
+    "GRND": "Ground",
+    "LL": "Lower level",
+    "PLAZ": "Plaza"
+  },
+  "tenants": [
+    {
+      "id": "wtc1-001",
+      "building_id": "wtc1",
+      "name": "Alan Anthony",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "",
+      "floors": [],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 1
+    },
+    {
+      "id": "wtc1-002",
+      "building_id": "wtc1",
+      "name": "Royal Thai Embassy Office",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "",
+      "floors": [],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 2
+    },
+    {
+      "id": "wtc1-003",
+      "building_id": "wtc1",
+      "name": "NY Coffee Station",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "",
+      "floors": [],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 3
+    },
+    {
+      "id": "wtc1-004",
+      "building_id": "wtc1",
+      "name": "Tes USA, Inc.",
+      "sq_ft": 400,
+      "sq_ft_raw": "400",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "",
+      "floors": [],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 4
+    },
+    {
+      "id": "wtc1-005",
+      "building_id": "wtc1",
+      "name": "Strawberry",
+      "sq_ft": 7106,
+      "sq_ft_raw": "7,106",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "CNCR",
+      "floors": [
+        "CNCR"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 5
+    },
+    {
+      "id": "wtc1-006",
+      "building_id": "wtc1",
+      "name": "Ann Taylor Loft",
+      "sq_ft": 7200,
+      "sq_ft_raw": "7,200",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "CNCR",
+      "floors": [
+        "CNCR"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 6
+    },
+    {
+      "id": "wtc1-007",
+      "building_id": "wtc1",
+      "name": "Delta Airlines",
+      "sq_ft": 400,
+      "sq_ft_raw": "400",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "LBBY",
+      "floors": [
+        "LBBY"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 7
+    },
+    {
+      "id": "wtc1-008",
+      "building_id": "wtc1",
+      "name": "Olympia Airport Express",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "LBBY",
+      "floors": [
+        "LBBY"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 8
+    },
+    {
+      "id": "wtc1-009",
+      "building_id": "wtc1",
+      "name": "Avis",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "LBBY",
+      "floors": [
+        "LBBY"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 9
+    },
+    {
+      "id": "wtc1-010",
+      "building_id": "wtc1",
+      "name": "Port Authority of New York & New Jersey",
+      "sq_ft": 22411,
+      "sq_ft_raw": "22,411",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "3,14,19,24,28,31",
+      "floors": [
+        "3",
+        "14",
+        "19",
+        "24",
+        "28",
+        "31"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 10
+    },
+    {
+      "id": "wtc1-011",
+      "building_id": "wtc1",
+      "name": "Geiger & Geiger",
+      "sq_ft": 1588,
+      "sq_ft_raw": "1,588",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "4,25,78",
+      "floors": [
+        "4",
+        "25",
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 11
+    },
+    {
+      "id": "wtc1-012",
+      "building_id": "wtc1",
+      "name": "Gayer, Shyu & Wiesel",
+      "sq_ft": 800,
+      "sq_ft_raw": "800",
+      "industry": "Accountants",
+      "industry_raw": "Accountants",
+      "floor_raw": "5",
+      "floors": [
+        "5"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 12
+    },
+    {
+      "id": "wtc1-013",
+      "building_id": "wtc1",
+      "name": "Thai Farmers Bank",
+      "sq_ft": 4512,
+      "sq_ft_raw": "4,512",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "7",
+      "floors": [
+        "7"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 13
+    },
+    {
+      "id": "wtc1-014",
+      "building_id": "wtc1",
+      "name": "Amerson Group Co., Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "8",
+      "floors": [
+        "8"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 14
+    },
+    {
+      "id": "wtc1-015",
+      "building_id": "wtc1",
+      "name": "Bank of America",
+      "sq_ft": 132586,
+      "sq_ft_raw": "132,586",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "9-11,81",
+      "floors": [
+        "9",
+        "10",
+        "11",
+        "81"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 15
+    },
+    {
+      "id": "wtc1-016",
+      "building_id": "wtc1",
+      "name": "Porcella Vicini & Co.",
+      "sq_ft": 2200,
+      "sq_ft_raw": "2,200",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "11",
+      "floors": [
+        "11"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 16
+    },
+    {
+      "id": "wtc1-017",
+      "building_id": "wtc1",
+      "name": "Primarch Decision Economics",
+      "sq_ft": 4954,
+      "sq_ft_raw": "4,954",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "11",
+      "floors": [
+        "11"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 17
+    },
+    {
+      "id": "wtc1-018",
+      "building_id": "wtc1",
+      "name": "Instinet, Inc.",
+      "sq_ft": 65844,
+      "sq_ft_raw": "65,844",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "13,14",
+      "floors": [
+        "13",
+        "14"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 18
+    },
+    {
+      "id": "wtc1-019",
+      "building_id": "wtc1",
+      "name": "Dun & Bradstreet, Inc.",
+      "sq_ft": 22750,
+      "sq_ft_raw": "22,750",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "14",
+      "floors": [
+        "14"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 19
+    },
+    {
+      "id": "wtc1-020",
+      "building_id": "wtc1",
+      "name": "Landmark Education Corporation",
+      "sq_ft": 44407,
+      "sq_ft_raw": "44,407",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "15",
+      "floors": [
+        "15"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 20
+    },
+    {
+      "id": "wtc1-021",
+      "building_id": "wtc1",
+      "name": "Zim-American Israeli Shipping Co.",
+      "sq_ft": 10000,
+      "sq_ft_raw": "10,000",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "17",
+      "floors": [
+        "17"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 21
+    },
+    {
+      "id": "wtc1-022",
+      "building_id": "wtc1",
+      "name": "Empire Health Choice",
+      "sq_ft": 461000,
+      "sq_ft_raw": "461,000",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "17,19,20,23,24,27-31",
+      "floors": [
+        "17",
+        "19",
+        "20",
+        "23",
+        "24",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 22
+    },
+    {
+      "id": "wtc1-023",
+      "building_id": "wtc1",
+      "name": "Tower Computer Service",
+      "sq_ft": 585,
+      "sq_ft_raw": "585",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "21,29",
+      "floors": [
+        "21",
+        "29"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 23
+    },
+    {
+      "id": "wtc1-024",
+      "building_id": "wtc1",
+      "name": "United Seamen's Service AMMLA",
+      "sq_ft": 2400,
+      "sq_ft_raw": "2,400",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 24
+    },
+    {
+      "id": "wtc1-025",
+      "building_id": "wtc1",
+      "name": "United Hercules Inc.",
+      "sq_ft": 10000,
+      "sq_ft_raw": "10,000",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 25
+    },
+    {
+      "id": "wtc1-026",
+      "building_id": "wtc1",
+      "name": "Avesta Computer Services, Ltd.",
+      "sq_ft": 1464,
+      "sq_ft_raw": "1,464",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 26
+    },
+    {
+      "id": "wtc1-027",
+      "building_id": "wtc1",
+      "name": "Continental Logistics, Inc.",
+      "sq_ft": 734,
+      "sq_ft_raw": "734",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 27
+    },
+    {
+      "id": "wtc1-028",
+      "building_id": "wtc1",
+      "name": "Dongwon Securities Co. Ltd.",
+      "sq_ft": 1171,
+      "sq_ft_raw": "1,171",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 28
+    },
+    {
+      "id": "wtc1-029",
+      "building_id": "wtc1",
+      "name": "Dr. Tadasu Tokumaru, M.D.",
+      "sq_ft": 520,
+      "sq_ft_raw": "520",
+      "industry": "Medical",
+      "industry_raw": "Medical",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 29
+    },
+    {
+      "id": "wtc1-030",
+      "building_id": "wtc1",
+      "name": "Friends Villas Fischer Trust",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 30
+    },
+    {
+      "id": "wtc1-031",
+      "building_id": "wtc1",
+      "name": "Friends Ivory & Sime, Inc.",
+      "sq_ft": 13262,
+      "sq_ft_raw": "13,262",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 31
+    },
+    {
+      "id": "wtc1-032",
+      "building_id": "wtc1",
+      "name": "Infotech",
+      "sq_ft": 1400,
+      "sq_ft_raw": "1,400",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 32
+    },
+    {
+      "id": "wtc1-033",
+      "building_id": "wtc1",
+      "name": "Law Offices of Roman V. Popik",
+      "sq_ft": 586,
+      "sq_ft_raw": "586",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 33
+    },
+    {
+      "id": "wtc1-034",
+      "building_id": "wtc1",
+      "name": "Lief International USA",
+      "sq_ft": 3100,
+      "sq_ft_raw": "3,100",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 34
+    },
+    {
+      "id": "wtc1-035",
+      "building_id": "wtc1",
+      "name": "Unicom Capital Advisors LLP",
+      "sq_ft": 5483,
+      "sq_ft_raw": "5,483",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "22,84",
+      "floors": [
+        "22",
+        "84"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 35
+    },
+    {
+      "id": "wtc1-036",
+      "building_id": "wtc1",
+      "name": "Chicago Options Exchange Corp.",
+      "sq_ft": 3608,
+      "sq_ft_raw": "3,608",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 36
+    },
+    {
+      "id": "wtc1-037",
+      "building_id": "wtc1",
+      "name": "Cheng Xiang Trading USA Inc.",
+      "sq_ft": 1900,
+      "sq_ft_raw": "1,900",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 37
+    },
+    {
+      "id": "wtc1-038",
+      "building_id": "wtc1",
+      "name": "G.C. Services",
+      "sq_ft": 2561,
+      "sq_ft_raw": "2,561",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 38
+    },
+    {
+      "id": "wtc1-039",
+      "building_id": "wtc1",
+      "name": "Gold Sky Inc.",
+      "sq_ft": 421,
+      "sq_ft_raw": "421",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 39
+    },
+    {
+      "id": "wtc1-040",
+      "building_id": "wtc1",
+      "name": "Kaiser Overseas Inc.",
+      "sq_ft": 265,
+      "sq_ft_raw": "265",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 40
+    },
+    {
+      "id": "wtc1-041",
+      "building_id": "wtc1",
+      "name": "Karoon Capital Management",
+      "sq_ft": 991,
+      "sq_ft_raw": "991",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 41
+    },
+    {
+      "id": "wtc1-042",
+      "building_id": "wtc1",
+      "name": "MLU Investment",
+      "sq_ft": 1175,
+      "sq_ft_raw": "1,175",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 42
+    },
+    {
+      "id": "wtc1-043",
+      "building_id": "wtc1",
+      "name": "P. Wolfe Consultants",
+      "sq_ft": 2165,
+      "sq_ft_raw": "2,165",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 43
+    },
+    {
+      "id": "wtc1-044",
+      "building_id": "wtc1",
+      "name": "The SCPIE Companies",
+      "sq_ft": 2582,
+      "sq_ft_raw": "2,582",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 44
+    },
+    {
+      "id": "wtc1-045",
+      "building_id": "wtc1",
+      "name": "Tai Fook Securities",
+      "sq_ft": 1500,
+      "sq_ft_raw": "1,500",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 45
+    },
+    {
+      "id": "wtc1-046",
+      "building_id": "wtc1",
+      "name": "R.H. Wrightson & Associates, Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "25",
+      "floors": [
+        "25"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 46
+    },
+    {
+      "id": "wtc1-047",
+      "building_id": "wtc1",
+      "name": "Garban-Intercapital",
+      "sq_ft": 60548,
+      "sq_ft_raw": "60,548",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "25,26",
+      "floors": [
+        "25",
+        "26"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 47
+    },
+    {
+      "id": "wtc1-048",
+      "building_id": "wtc1",
+      "name": "China Patent & Trademark USA",
+      "sq_ft": 400,
+      "sq_ft_raw": "400",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "29",
+      "floors": [
+        "29"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 48
+    },
+    {
+      "id": "wtc1-049",
+      "building_id": "wtc1",
+      "name": "World Travel",
+      "sq_ft": 25000,
+      "sq_ft_raw": "25,000",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "29",
+      "floors": [
+        "29"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 49
+    },
+    {
+      "id": "wtc1-050",
+      "building_id": "wtc1",
+      "name": "Banco LatinoAmericano de",
+      "sq_ft": 3000,
+      "sq_ft_raw": "3,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "32",
+      "floors": [
+        "32"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 50
+    },
+    {
+      "id": "wtc1-051",
+      "building_id": "wtc1",
+      "name": "Chang HWA Commercial Bank",
+      "sq_ft": 12182,
+      "sq_ft_raw": "12,182",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "32",
+      "floors": [
+        "32"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 51
+    },
+    {
+      "id": "wtc1-052",
+      "building_id": "wtc1",
+      "name": "Rohde & Liesenfeld, Inc.",
+      "sq_ft": 5000,
+      "sq_ft_raw": "5,000",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "32",
+      "floors": [
+        "32"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 52
+    },
+    {
+      "id": "wtc1-053",
+      "building_id": "wtc1",
+      "name": "Berel & Mullen",
+      "sq_ft": 2786,
+      "sq_ft_raw": "2,786",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 53
+    },
+    {
+      "id": "wtc1-054",
+      "building_id": "wtc1",
+      "name": "China Daily Distribution Corp.",
+      "sq_ft": 800,
+      "sq_ft_raw": "800",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 54
+    },
+    {
+      "id": "wtc1-055",
+      "building_id": "wtc1",
+      "name": "Data Transmission Network Corp.",
+      "sq_ft": 342,
+      "sq_ft_raw": "342",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 55
+    },
+    {
+      "id": "wtc1-056",
+      "building_id": "wtc1",
+      "name": "Golden King (USA) Limited",
+      "sq_ft": 190,
+      "sq_ft_raw": "190",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 56
+    },
+    {
+      "id": "wtc1-057",
+      "building_id": "wtc1",
+      "name": "Hu Tong International (USA) Co., Ltd.",
+      "sq_ft": 583,
+      "sq_ft_raw": "583",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 57
+    },
+    {
+      "id": "wtc1-058",
+      "building_id": "wtc1",
+      "name": "Koudis International Inc.",
+      "sq_ft": 600,
+      "sq_ft_raw": "600",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 58
+    },
+    {
+      "id": "wtc1-059",
+      "building_id": "wtc1",
+      "name": "MANAA Trading Group, Inc.",
+      "sq_ft": 1013,
+      "sq_ft_raw": "1,013",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 59
+    },
+    {
+      "id": "wtc1-060",
+      "building_id": "wtc1",
+      "name": "MIS Service Co.",
+      "sq_ft": 2000,
+      "sq_ft_raw": "2,000",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 60
+    },
+    {
+      "id": "wtc1-061",
+      "building_id": "wtc1",
+      "name": "Rachel & Associates, Inc.",
+      "sq_ft": 814,
+      "sq_ft_raw": "814",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 61
+    },
+    {
+      "id": "wtc1-062",
+      "building_id": "wtc1",
+      "name": "Serko & Simon",
+      "sq_ft": 8605,
+      "sq_ft_raw": "8,605",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "33",
+      "floors": [
+        "33"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 62
+    },
+    {
+      "id": "wtc1-063",
+      "building_id": "wtc1",
+      "name": "Anne Pope, Law Offices of",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "35",
+      "floors": [
+        "35"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 63
+    },
+    {
+      "id": "wtc1-064",
+      "building_id": "wtc1",
+      "name": "Kemper Insurance Companies",
+      "sq_ft": 92232,
+      "sq_ft_raw": "92,232",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "35,36",
+      "floors": [
+        "35",
+        "36"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 64
+    },
+    {
+      "id": "wtc1-065",
+      "building_id": "wtc1",
+      "name": "Commodity Futures Trading Commission",
+      "sq_ft": 35000,
+      "sq_ft_raw": "35,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "37",
+      "floors": [
+        "37"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 65
+    },
+    {
+      "id": "wtc1-066",
+      "building_id": "wtc1",
+      "name": "Government of Thailand",
+      "sq_ft": 5109,
+      "sq_ft_raw": "5,109",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "37",
+      "floors": [
+        "37"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 66
+    },
+    {
+      "id": "wtc1-067",
+      "building_id": "wtc1",
+      "name": "Lehman Brothers",
+      "sq_ft": 45100,
+      "sq_ft_raw": "45,100",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "38-40",
+      "floors": [
+        "38",
+        "39",
+        "40"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 67
+    },
+    {
+      "id": "wtc1-068",
+      "building_id": "wtc1",
+      "name": "Regional Alliance Small",
+      "sq_ft": 1692,
+      "sq_ft_raw": "1,692",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "38",
+      "floors": [
+        "38"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 68
+    },
+    {
+      "id": "wtc1-069",
+      "building_id": "wtc1",
+      "name": "Turner Construction Company",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": "Agri/Mining/Utilities",
+      "industry_raw": "Agri/Mining/Utilities",
+      "floor_raw": "38",
+      "floors": [
+        "38"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 69
+    },
+    {
+      "id": "wtc1-070",
+      "building_id": "wtc1",
+      "name": "The Cultural Institutions Retirement Systems",
+      "sq_ft": 5416,
+      "sq_ft_raw": "5,416",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "39",
+      "floors": [
+        "39"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 70
+    },
+    {
+      "id": "wtc1-071",
+      "building_id": "wtc1",
+      "name": "Overseas Union Bank, Ltd.",
+      "sq_ft": 3750,
+      "sq_ft_raw": "3,750",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "39",
+      "floors": [
+        "39"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 71
+    },
+    {
+      "id": "wtc1-072",
+      "building_id": "wtc1",
+      "name": "Xcel Federal Credit Union",
+      "sq_ft": 4200,
+      "sq_ft_raw": "4,200",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "39",
+      "floors": [
+        "39"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 72
+    },
+    {
+      "id": "wtc1-073",
+      "building_id": "wtc1",
+      "name": "Mechanical Floor",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "41-43",
+      "floors": [
+        "41",
+        "42",
+        "43"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 73
+    },
+    {
+      "id": "wtc1-074",
+      "building_id": "wtc1",
+      "name": "N.Y. Society of Security",
+      "sq_ft": 3000,
+      "sq_ft_raw": "3,000",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "44",
+      "floors": [
+        "44"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 74
+    },
+    {
+      "id": "wtc1-075",
+      "building_id": "wtc1",
+      "name": "American Lota International",
+      "sq_ft": 626,
+      "sq_ft_raw": "626",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 75
+    },
+    {
+      "id": "wtc1-076",
+      "building_id": "wtc1",
+      "name": "China Construction America, Inc.",
+      "sq_ft": 2000,
+      "sq_ft_raw": "2,000",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 76
+    },
+    {
+      "id": "wtc1-077",
+      "building_id": "wtc1",
+      "name": "The Company Store",
+      "sq_ft": 800,
+      "sq_ft_raw": "800",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 77
+    },
+    {
+      "id": "wtc1-078",
+      "building_id": "wtc1",
+      "name": "Dunavant Commodity Corp",
+      "sq_ft": 1437,
+      "sq_ft_raw": "1,437",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 78
+    },
+    {
+      "id": "wtc1-079",
+      "building_id": "wtc1",
+      "name": "Employee Merit",
+      "sq_ft": 763,
+      "sq_ft_raw": "763",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 79
+    },
+    {
+      "id": "wtc1-080",
+      "building_id": "wtc1",
+      "name": "Fertitta Enterprises",
+      "sq_ft": 600,
+      "sq_ft_raw": "600",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 80
+    },
+    {
+      "id": "wtc1-081",
+      "building_id": "wtc1",
+      "name": "M.A. Katz, CPA",
+      "sq_ft": 400,
+      "sq_ft_raw": "400",
+      "industry": "Accountants",
+      "industry_raw": "Accountants",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 81
+    },
+    {
+      "id": "wtc1-082",
+      "building_id": "wtc1",
+      "name": "SRA",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 82
+    },
+    {
+      "id": "wtc1-083",
+      "building_id": "wtc1",
+      "name": "Pure Energy Corp.",
+      "sq_ft": 5935,
+      "sq_ft_raw": "5,935",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "45,53",
+      "floors": [
+        "45",
+        "53"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 83
+    },
+    {
+      "id": "wtc1-084",
+      "building_id": "wtc1",
+      "name": "Sassoons Inc.",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 84
+    },
+    {
+      "id": "wtc1-085",
+      "building_id": "wtc1",
+      "name": "Security Traders Association, Inc.",
+      "sq_ft": 1520,
+      "sq_ft_raw": "1,520",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 85
+    },
+    {
+      "id": "wtc1-086",
+      "building_id": "wtc1",
+      "name": "Streamline Capital, LLC",
+      "sq_ft": 2024,
+      "sq_ft_raw": "2,024",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "45",
+      "floors": [
+        "45"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 86
+    },
+    {
+      "id": "wtc1-087",
+      "building_id": "wtc1",
+      "name": "ASTDC, Inc.",
+      "sq_ft": 3760,
+      "sq_ft_raw": "3,760",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 87
+    },
+    {
+      "id": "wtc1-088",
+      "building_id": "wtc1",
+      "name": "Auto Imperial Co.",
+      "sq_ft": 374,
+      "sq_ft_raw": "374",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 88
+    },
+    {
+      "id": "wtc1-089",
+      "building_id": "wtc1",
+      "name": "Blue Sky Technologies, Inc.",
+      "sq_ft": 350,
+      "sq_ft_raw": "350",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 89
+    },
+    {
+      "id": "wtc1-090",
+      "building_id": "wtc1",
+      "name": "Can-Achieve",
+      "sq_ft": 392,
+      "sq_ft_raw": "392",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 90
+    },
+    {
+      "id": "wtc1-091",
+      "building_id": "wtc1",
+      "name": "Consolidated Steelex Corp.",
+      "sq_ft": 2277,
+      "sq_ft_raw": "2,277",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 91
+    },
+    {
+      "id": "wtc1-092",
+      "building_id": "wtc1",
+      "name": "Dahao USA Corp",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 92
+    },
+    {
+      "id": "wtc1-093",
+      "building_id": "wtc1",
+      "name": "J & X Tans International",
+      "sq_ft": 338,
+      "sq_ft_raw": "338",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 93
+    },
+    {
+      "id": "wtc1-094",
+      "building_id": "wtc1",
+      "name": "Kanebo Information Systems Corp.",
+      "sq_ft": 800,
+      "sq_ft_raw": "800",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 94
+    },
+    {
+      "id": "wtc1-095",
+      "building_id": "wtc1",
+      "name": "Meganet Management Consultants, Inc.",
+      "sq_ft": 600,
+      "sq_ft_raw": "600",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 95
+    },
+    {
+      "id": "wtc1-096",
+      "building_id": "wtc1",
+      "name": "Prospect International, Inc.",
+      "sq_ft": 966,
+      "sq_ft_raw": "966",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 96
+    },
+    {
+      "id": "wtc1-097",
+      "building_id": "wtc1",
+      "name": "Sinopec USA, Inc.",
+      "sq_ft": 4584,
+      "sq_ft_raw": "4,584",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 97
+    },
+    {
+      "id": "wtc1-098",
+      "building_id": "wtc1",
+      "name": "Suggested Open Systems, Inc.",
+      "sq_ft": 600,
+      "sq_ft_raw": "600",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 98
+    },
+    {
+      "id": "wtc1-099",
+      "building_id": "wtc1",
+      "name": "Suntendy America, Inc.",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 99
+    },
+    {
+      "id": "wtc1-100",
+      "building_id": "wtc1",
+      "name": "T&T Enterprises International, Inc.",
+      "sq_ft": 1006,
+      "sq_ft_raw": "1,006",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 100
+    },
+    {
+      "id": "wtc1-101",
+      "building_id": "wtc1",
+      "name": "Yong Ren America, Inc.",
+      "sq_ft": 394,
+      "sq_ft_raw": "394",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "46",
+      "floors": [
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 101
+    },
+    {
+      "id": "wtc1-102",
+      "building_id": "wtc1",
+      "name": "G. Z. Stephens, Inc.",
+      "sq_ft": 1200,
+      "sq_ft_raw": "1,200",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "47",
+      "floors": [
+        "47"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 102
+    },
+    {
+      "id": "wtc1-103",
+      "building_id": "wtc1",
+      "name": "NFA/GGG, Inc.",
+      "sq_ft": 2053,
+      "sq_ft_raw": "2,053",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "47",
+      "floors": [
+        "47"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 103
+    },
+    {
+      "id": "wtc1-104",
+      "building_id": "wtc1",
+      "name": "American TCC Int'l Group, Inc.",
+      "sq_ft": 5736,
+      "sq_ft_raw": "5,736",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "47,90",
+      "floors": [
+        "47",
+        "90"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 104
+    },
+    {
+      "id": "wtc1-105",
+      "building_id": "wtc1",
+      "name": "Pacific American Co.",
+      "sq_ft": 4753,
+      "sq_ft_raw": "4,753",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "47",
+      "floors": [
+        "47"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 105
+    },
+    {
+      "id": "wtc1-106",
+      "building_id": "wtc1",
+      "name": "Quint Amasis, L.L.C.",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "47",
+      "floors": [
+        "47"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 106
+    },
+    {
+      "id": "wtc1-107",
+      "building_id": "wtc1",
+      "name": "W.J. Export-Import, Inc.",
+      "sq_ft": 800,
+      "sq_ft_raw": "800",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "47",
+      "floors": [
+        "47"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 107
+    },
+    {
+      "id": "wtc1-108",
+      "building_id": "wtc1",
+      "name": "Dai-Ichi Kangyo Trust Co.",
+      "sq_ft": 100000,
+      "sq_ft_raw": "100,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "48-50",
+      "floors": [
+        "48",
+        "49",
+        "50"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 108
+    },
+    {
+      "id": "wtc1-109",
+      "building_id": "wtc1",
+      "name": "AT&T Corporation",
+      "sq_ft": 11612,
+      "sq_ft_raw": "11,612",
+      "industry": "Communications",
+      "industry_raw": "Communications",
+      "floor_raw": "51",
+      "floors": [
+        "51"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 109
+    },
+    {
+      "id": "wtc1-110",
+      "building_id": "wtc1",
+      "name": "C & P Press",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "51",
+      "floors": [
+        "51"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 110
+    },
+    {
+      "id": "wtc1-111",
+      "building_id": "wtc1",
+      "name": "The Williams Capital Group",
+      "sq_ft": 578,
+      "sq_ft_raw": "578",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "52",
+      "floors": [
+        "52"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 111
+    },
+    {
+      "id": "wtc1-112",
+      "building_id": "wtc1",
+      "name": "Bramax Manufacturing (USA) Corp.",
+      "sq_ft": 800,
+      "sq_ft_raw": "800",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "52",
+      "floors": [
+        "52"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 112
+    },
+    {
+      "id": "wtc1-113",
+      "building_id": "wtc1",
+      "name": "Gayer Shyu & Wiesel",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "52",
+      "floors": [
+        "52"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 113
+    },
+    {
+      "id": "wtc1-114",
+      "building_id": "wtc1",
+      "name": "Hill Betts & Nash, LLP",
+      "sq_ft": 21609,
+      "sq_ft_raw": "21,609",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "52",
+      "floors": [
+        "52"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 114
+    },
+    {
+      "id": "wtc1-115",
+      "building_id": "wtc1",
+      "name": "Temenos USA, Inc.",
+      "sq_ft": 6000,
+      "sq_ft_raw": "6,000",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "52,84",
+      "floors": [
+        "52",
+        "84"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 115
+    },
+    {
+      "id": "wtc1-116",
+      "building_id": "wtc1",
+      "name": "Howly (US) Corporation",
+      "sq_ft": 1150,
+      "sq_ft_raw": "1,150",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "52",
+      "floors": [
+        "52"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 116
+    },
+    {
+      "id": "wtc1-117",
+      "building_id": "wtc1",
+      "name": "Leeds & Morrelli",
+      "sq_ft": 1617,
+      "sq_ft_raw": "1,617",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "52",
+      "floors": [
+        "52"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 117
+    },
+    {
+      "id": "wtc1-118",
+      "building_id": "wtc1",
+      "name": "Okasan International (American) Inc.",
+      "sq_ft": 2250,
+      "sq_ft_raw": "2,250",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "52",
+      "floors": [
+        "52"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 118
+    },
+    {
+      "id": "wtc1-119",
+      "building_id": "wtc1",
+      "name": "RGL Gallagher PC",
+      "sq_ft": 984,
+      "sq_ft_raw": "984",
+      "industry": "Accountants",
+      "industry_raw": "Accountants",
+      "floor_raw": "52",
+      "floors": [
+        "52"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 119
+    },
+    {
+      "id": "wtc1-120",
+      "building_id": "wtc1",
+      "name": "Richard A. Zimmerman, Esq.",
+      "sq_ft": 1150,
+      "sq_ft_raw": "1,150",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "52",
+      "floors": [
+        "52"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 120
+    },
+    {
+      "id": "wtc1-121",
+      "building_id": "wtc1",
+      "name": "A I G Aviation Brokerage, Inc.",
+      "sq_ft": 2500,
+      "sq_ft_raw": "2,500",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "53",
+      "floors": [
+        "53"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 121
+    },
+    {
+      "id": "wtc1-122",
+      "building_id": "wtc1",
+      "name": "Bank of Taiwan",
+      "sq_ft": 7500,
+      "sq_ft_raw": "7,500",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "53",
+      "floors": [
+        "53"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 122
+    },
+    {
+      "id": "wtc1-123",
+      "building_id": "wtc1",
+      "name": "China Resource Products USA Ltd.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "53",
+      "floors": [
+        "53"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 123
+    },
+    {
+      "id": "wtc1-124",
+      "building_id": "wtc1",
+      "name": "Keenan Powers & Andrews",
+      "sq_ft": 4500,
+      "sq_ft_raw": "4,500",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "53",
+      "floors": [
+        "53"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 124
+    },
+    {
+      "id": "wtc1-125",
+      "building_id": "wtc1",
+      "name": "LoCurto & Funk, Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "53",
+      "floors": [
+        "53"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 125
+    },
+    {
+      "id": "wtc1-126",
+      "building_id": "wtc1",
+      "name": "Natural Nydegger Transport Corp.",
+      "sq_ft": 3500,
+      "sq_ft_raw": "3,500",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "53",
+      "floors": [
+        "53"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 126
+    },
+    {
+      "id": "wtc1-127",
+      "building_id": "wtc1",
+      "name": "Pacrim Trading & Shipping, Inc.",
+      "sq_ft": 1200,
+      "sq_ft_raw": "1,200",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "53",
+      "floors": [
+        "53"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 127
+    },
+    {
+      "id": "wtc1-128",
+      "building_id": "wtc1",
+      "name": "Brown & Wood, L.L.P.",
+      "sq_ft": 223100,
+      "sq_ft_raw": "223,100",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "54,56-59",
+      "floors": [
+        "54",
+        "56",
+        "57",
+        "58",
+        "59"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 128
+    },
+    {
+      "id": "wtc1-129",
+      "building_id": "wtc1",
+      "name": "Pace University",
+      "sq_ft": 45943,
+      "sq_ft_raw": "45,943",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "55",
+      "floors": [
+        "55"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 129
+    },
+    {
+      "id": "wtc1-130",
+      "building_id": "wtc1",
+      "name": "World Trade Institute",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "55",
+      "floors": [
+        "55"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 130
+    },
+    {
+      "id": "wtc1-131",
+      "building_id": "wtc1",
+      "name": "Asahi Bank, Ltd.",
+      "sq_ft": 40000,
+      "sq_ft_raw": "40,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "60",
+      "floors": [
+        "60"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 131
+    },
+    {
+      "id": "wtc1-132",
+      "building_id": "wtc1",
+      "name": "Airport Access Program",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "63",
+      "floors": [
+        "63"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 132
+    },
+    {
+      "id": "wtc1-133",
+      "building_id": "wtc1",
+      "name": "Hal Roth Agency, Inc.",
+      "sq_ft": 2250,
+      "sq_ft_raw": "2,250",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "77",
+      "floors": [
+        "77"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 133
+    },
+    {
+      "id": "wtc1-134",
+      "building_id": "wtc1",
+      "name": "Jun He Law Office, LLC",
+      "sq_ft": 894,
+      "sq_ft_raw": "894",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "77",
+      "floors": [
+        "77"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 134
+    },
+    {
+      "id": "wtc1-135",
+      "building_id": "wtc1",
+      "name": "Martin Progressive LLC",
+      "sq_ft": 13789,
+      "sq_ft_raw": "13,789",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "77",
+      "floors": [
+        "77"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 135
+    },
+    {
+      "id": "wtc1-136",
+      "building_id": "wtc1",
+      "name": "New-ey International Corp.",
+      "sq_ft": 894,
+      "sq_ft_raw": "894",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "77",
+      "floors": [
+        "77"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 136
+    },
+    {
+      "id": "wtc1-137",
+      "building_id": "wtc1",
+      "name": "Partner Reinsurance Corp.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "77",
+      "floors": [
+        "77"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 137
+    },
+    {
+      "id": "wtc1-138",
+      "building_id": "wtc1",
+      "name": "World Trade Centers Association",
+      "sq_ft": 5400,
+      "sq_ft_raw": "5,400",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "77",
+      "floors": [
+        "77"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 138
+    },
+    {
+      "id": "wtc1-139",
+      "building_id": "wtc1",
+      "name": "Avenir, Inc.",
+      "sq_ft": 2162,
+      "sq_ft_raw": "2,162",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 139
+    },
+    {
+      "id": "wtc1-140",
+      "building_id": "wtc1",
+      "name": "Baltic Oil Corporation",
+      "sq_ft": 981,
+      "sq_ft_raw": "981",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 140
+    },
+    {
+      "id": "wtc1-141",
+      "building_id": "wtc1",
+      "name": "Cedar Capital Management Associates",
+      "sq_ft": 909,
+      "sq_ft_raw": "909",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 141
+    },
+    {
+      "id": "wtc1-142",
+      "building_id": "wtc1",
+      "name": "Cheng Cheng Enterprises Holding Inc.",
+      "sq_ft": 4073,
+      "sq_ft_raw": "4,073",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 142
+    },
+    {
+      "id": "wtc1-143",
+      "building_id": "wtc1",
+      "name": "Hyundai Securities Co., Ltd.",
+      "sq_ft": 1600,
+      "sq_ft_raw": "1,600",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 143
+    },
+    {
+      "id": "wtc1-144",
+      "building_id": "wtc1",
+      "name": "International Trade Center, Inc.",
+      "sq_ft": 3298,
+      "sq_ft_raw": "3,298",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 144
+    },
+    {
+      "id": "wtc1-145",
+      "building_id": "wtc1",
+      "name": "Korea Local Authorities",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 145
+    },
+    {
+      "id": "wtc1-146",
+      "building_id": "wtc1",
+      "name": "Meridian Ventures Holding, Inc.",
+      "sq_ft": 3315,
+      "sq_ft_raw": "3,315",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 146
+    },
+    {
+      "id": "wtc1-147",
+      "building_id": "wtc1",
+      "name": "Phink Path",
+      "sq_ft": 1214,
+      "sq_ft_raw": "1,214",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 147
+    },
+    {
+      "id": "wtc1-148",
+      "building_id": "wtc1",
+      "name": "Traders Access Center",
+      "sq_ft": 1027,
+      "sq_ft_raw": "1,027",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 148
+    },
+    {
+      "id": "wtc1-149",
+      "building_id": "wtc1",
+      "name": "Daynard & Van Thunen Co.",
+      "sq_ft": 4750,
+      "sq_ft_raw": "4,750",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "79",
+      "floors": [
+        "79"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 149
+    },
+    {
+      "id": "wtc1-150",
+      "building_id": "wtc1",
+      "name": "First Liberty Investment Group",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "79",
+      "floors": [
+        "79"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 150
+    },
+    {
+      "id": "wtc1-151",
+      "building_id": "wtc1",
+      "name": "International Office Centers",
+      "sq_ft": 26367,
+      "sq_ft_raw": "26,367",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "79",
+      "floors": [
+        "79"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 151
+    },
+    {
+      "id": "wtc1-152",
+      "building_id": "wtc1",
+      "name": "Nikko Securities",
+      "sq_ft": 9340,
+      "sq_ft_raw": "9,340",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "79",
+      "floors": [
+        "79"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 152
+    },
+    {
+      "id": "wtc1-153",
+      "building_id": "wtc1",
+      "name": "Okato Shoji Company, Ltd.",
+      "sq_ft": 2729,
+      "sq_ft_raw": "2,729",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "79",
+      "floors": [
+        "79"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 153
+    },
+    {
+      "id": "wtc1-154",
+      "building_id": "wtc1",
+      "name": "Securant Technologies",
+      "sq_ft": 2729,
+      "sq_ft_raw": "2,729",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "79",
+      "floors": [
+        "79"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 154
+    },
+    {
+      "id": "wtc1-155",
+      "building_id": "wtc1",
+      "name": "Agricor Commodities Corp.",
+      "sq_ft": 3200,
+      "sq_ft_raw": "3,200",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "80",
+      "floors": [
+        "80"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 155
+    },
+    {
+      "id": "wtc1-156",
+      "building_id": "wtc1",
+      "name": "The Beast.Comm",
+      "sq_ft": 21000,
+      "sq_ft_raw": "21,000",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "80",
+      "floors": [
+        "80"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 156
+    },
+    {
+      "id": "wtc1-157",
+      "building_id": "wtc1",
+      "name": "Intrust Investment Realty, Inc.",
+      "sq_ft": 3320,
+      "sq_ft_raw": "3,320",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "80",
+      "floors": [
+        "80"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 157
+    },
+    {
+      "id": "wtc1-158",
+      "building_id": "wtc1",
+      "name": "Noga Commodities Overseas, Inc.",
+      "sq_ft": 6518,
+      "sq_ft_raw": "6,518",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "80",
+      "floors": [
+        "80"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 158
+    },
+    {
+      "id": "wtc1-159",
+      "building_id": "wtc1",
+      "name": "RLI Insurance Company",
+      "sq_ft": 3900,
+      "sq_ft_raw": "3,900",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "80",
+      "floors": [
+        "80"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 159
+    },
+    {
+      "id": "wtc1-160",
+      "building_id": "wtc1",
+      "name": "Shizuoka Bank Ltd.",
+      "sq_ft": 2200,
+      "sq_ft_raw": "2,200",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "80",
+      "floors": [
+        "80"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 160
+    },
+    {
+      "id": "wtc1-161",
+      "building_id": "wtc1",
+      "name": "New Continental Enterprises",
+      "sq_ft": 2055,
+      "sq_ft_raw": "2,055",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "81",
+      "floors": [
+        "81"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 161
+    },
+    {
+      "id": "wtc1-162",
+      "building_id": "wtc1",
+      "name": "Network Plus",
+      "sq_ft": 8500,
+      "sq_ft_raw": "8,500",
+      "industry": "Communications",
+      "industry_raw": "Communications",
+      "floor_raw": "81",
+      "floors": [
+        "81"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 162
+    },
+    {
+      "id": "wtc1-163",
+      "building_id": "wtc1",
+      "name": "NY Metro Transportation Council",
+      "sq_ft": 7000,
+      "sq_ft_raw": "7,000",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "82",
+      "floors": [
+        "82"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 163
+    },
+    {
+      "id": "wtc1-164",
+      "building_id": "wtc1",
+      "name": "General Telecommunications",
+      "sq_ft": 8994,
+      "sq_ft_raw": "8,994",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "83",
+      "floors": [
+        "83"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 164
+    },
+    {
+      "id": "wtc1-165",
+      "building_id": "wtc1",
+      "name": "Global Crossings Holdings Ltd.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "83",
+      "floors": [
+        "83"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 165
+    },
+    {
+      "id": "wtc1-166",
+      "building_id": "wtc1",
+      "name": "Lava Trading, LLC",
+      "sq_ft": 7589,
+      "sq_ft_raw": "7,589",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "83",
+      "floors": [
+        "83"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 166
+    },
+    {
+      "id": "wtc1-167",
+      "building_id": "wtc1",
+      "name": "Taipei Bank",
+      "sq_ft": 12111,
+      "sq_ft_raw": "12,111",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "83",
+      "floors": [
+        "83"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 167
+    },
+    {
+      "id": "wtc1-168",
+      "building_id": "wtc1",
+      "name": "eMeritus Communications",
+      "sq_ft": 7203,
+      "sq_ft_raw": "7,203",
+      "industry": "Communications",
+      "industry_raw": "Communications",
+      "floor_raw": "83",
+      "floors": [
+        "83"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 168
+    },
+    {
+      "id": "wtc1-169",
+      "building_id": "wtc1",
+      "name": "Bright China Capital, Ltd.",
+      "sq_ft": 2016,
+      "sq_ft_raw": "2,016",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "84",
+      "floors": [
+        "84"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 169
+    },
+    {
+      "id": "wtc1-170",
+      "building_id": "wtc1",
+      "name": "David Peterson",
+      "sq_ft": 1863,
+      "sq_ft_raw": "1,863",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "84",
+      "floors": [
+        "84"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 170
+    },
+    {
+      "id": "wtc1-171",
+      "building_id": "wtc1",
+      "name": "LG Securities America, Inc.",
+      "sq_ft": 1800,
+      "sq_ft_raw": "1,800",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "84",
+      "floors": [
+        "84"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 171
+    },
+    {
+      "id": "wtc1-172",
+      "building_id": "wtc1",
+      "name": "San-In Godo Bank Ltd.",
+      "sq_ft": 2000,
+      "sq_ft_raw": "2,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "84",
+      "floors": [
+        "84"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 172
+    },
+    {
+      "id": "wtc1-173",
+      "building_id": "wtc1",
+      "name": "Daehan International",
+      "sq_ft": 1200,
+      "sq_ft_raw": "1,200",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "84,89",
+      "floors": [
+        "84",
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 173
+    },
+    {
+      "id": "wtc1-174",
+      "building_id": "wtc1",
+      "name": "SMW Trading Corp.",
+      "sq_ft": 3000,
+      "sq_ft_raw": "3,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "85",
+      "floors": [
+        "85"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 174
+    },
+    {
+      "id": "wtc1-175",
+      "building_id": "wtc1",
+      "name": "Thermo Electron",
+      "sq_ft": 2289,
+      "sq_ft_raw": "2,289",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "85",
+      "floors": [
+        "85"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 175
+    },
+    {
+      "id": "wtc1-176",
+      "building_id": "wtc1",
+      "name": "Julien J. Studley, Inc.",
+      "sq_ft": 6372,
+      "sq_ft_raw": "6,372",
+      "industry": "Real Estate",
+      "industry_raw": "Real Estate",
+      "floor_raw": "86",
+      "floors": [
+        "86"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 176
+    },
+    {
+      "id": "wtc1-177",
+      "building_id": "wtc1",
+      "name": "May Davis Group",
+      "sq_ft": 12824,
+      "sq_ft_raw": "12,824",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "87",
+      "floors": [
+        "87"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 177
+    },
+    {
+      "id": "wtc1-178",
+      "building_id": "wtc1",
+      "name": "Barcley Dwyer",
+      "sq_ft": 12211,
+      "sq_ft_raw": "12,211",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "89",
+      "floors": [
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 178
+    },
+    {
+      "id": "wtc1-179",
+      "building_id": "wtc1",
+      "name": "Broad USA, Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "89",
+      "floors": [
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 179
+    },
+    {
+      "id": "wtc1-180",
+      "building_id": "wtc1",
+      "name": "CIIC Group (USA), Ltd.",
+      "sq_ft": 2500,
+      "sq_ft_raw": "2,500",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "89",
+      "floors": [
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 180
+    },
+    {
+      "id": "wtc1-181",
+      "building_id": "wtc1",
+      "name": "Drinker Biddle & Reath",
+      "sq_ft": 10000,
+      "sq_ft_raw": "10,000",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "89",
+      "floors": [
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 181
+    },
+    {
+      "id": "wtc1-182",
+      "building_id": "wtc1",
+      "name": "Metropolitan Life Insurance Co.",
+      "sq_ft": 7119,
+      "sq_ft_raw": "7,119",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "89",
+      "floors": [
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 182
+    },
+    {
+      "id": "wtc1-183",
+      "building_id": "wtc1",
+      "name": "Mutual International Forwarding",
+      "sq_ft": 1200,
+      "sq_ft_raw": "1,200",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "89",
+      "floors": [
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 183
+    },
+    {
+      "id": "wtc1-184",
+      "building_id": "wtc1",
+      "name": "Strategic Communications, Inc.",
+      "sq_ft": 2400,
+      "sq_ft_raw": "2,400",
+      "industry": "Communications",
+      "industry_raw": "Communications",
+      "floor_raw": "89",
+      "floors": [
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 184
+    },
+    {
+      "id": "wtc1-185",
+      "building_id": "wtc1",
+      "name": "Wai Gao Qiao USA, Inc.",
+      "sq_ft": 1528,
+      "sq_ft_raw": "1,528",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "89",
+      "floors": [
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 185
+    },
+    {
+      "id": "wtc1-186",
+      "building_id": "wtc1",
+      "name": "Wall Street Planning Association",
+      "sq_ft": 2154,
+      "sq_ft_raw": "2,154",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "89",
+      "floors": [
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 186
+    },
+    {
+      "id": "wtc1-187",
+      "building_id": "wtc1",
+      "name": "The Chugoku Bank, Ltd.",
+      "sq_ft": 1500,
+      "sq_ft_raw": "1,500",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "90",
+      "floors": [
+        "90"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 187
+    },
+    {
+      "id": "wtc1-188",
+      "building_id": "wtc1",
+      "name": "American Bureau of Shipping",
+      "sq_ft": 8400,
+      "sq_ft_raw": "8,400",
+      "industry": "Engineers",
+      "industry_raw": "Engineers",
+      "floor_raw": "91",
+      "floors": [
+        "91"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 188
+    },
+    {
+      "id": "wtc1-189",
+      "building_id": "wtc1",
+      "name": "Fred Alger Management",
+      "sq_ft": 36078,
+      "sq_ft_raw": "36,078",
+      "industry": "Investments",
+      "industry_raw": "Investments",
+      "floor_raw": "93",
+      "floors": [
+        "93"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 189
+    },
+    {
+      "id": "wtc1-190",
+      "building_id": "wtc1",
+      "name": "Marsh USA",
+      "sq_ft": 361000,
+      "sq_ft_raw": "361,000",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "93-100",
+      "floors": [
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 190
+    },
+    {
+      "id": "wtc1-191",
+      "building_id": "wtc1",
+      "name": "Kidder Peabody & Co.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "101",
+      "floors": [
+        "101"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 191
+    },
+    {
+      "id": "wtc1-192",
+      "building_id": "wtc1",
+      "name": "Cantor Fitzgerald Securities",
+      "sq_ft": 22000,
+      "sq_ft_raw": "22,000",
+      "industry": "Investments",
+      "industry_raw": "Investments",
+      "floor_raw": "101-105",
+      "floors": [
+        "101",
+        "102",
+        "103",
+        "104",
+        "105"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 192
+    },
+    {
+      "id": "wtc1-193",
+      "building_id": "wtc1",
+      "name": "The Nishi-Nippon Bank, Ltd.",
+      "sq_ft": 10325,
+      "sq_ft_raw": "10,325",
+      "industry": "Banks/Financial Institutions",
+      "industry_raw": "Banks/Financial Institutions",
+      "floor_raw": "102",
+      "floors": [
+        "102"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 193
+    },
+    {
+      "id": "wtc1-194",
+      "building_id": "wtc1",
+      "name": "Channel 4 (NBC)",
+      "sq_ft": 400,
+      "sq_ft_raw": "400",
+      "industry": "Cable/Television",
+      "industry_raw": "Cable/Television",
+      "floor_raw": "104",
+      "floors": [
+        "104"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 194
+    },
+    {
+      "id": "wtc1-195",
+      "building_id": "wtc1",
+      "name": "Windows on the World",
+      "sq_ft": 40000,
+      "sq_ft_raw": "40,000",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "106",
+      "floors": [
+        "106"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 195
+    },
+    {
+      "id": "wtc1-196",
+      "building_id": "wtc1",
+      "name": "Greatest Bar on Earth",
+      "sq_ft": 13333,
+      "sq_ft_raw": "13,333",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "107",
+      "floors": [
+        "107"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 196
+    },
+    {
+      "id": "wtc1-197",
+      "building_id": "wtc1",
+      "name": "World Trade Club",
+      "sq_ft": 13333,
+      "sq_ft_raw": "13,333",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "107",
+      "floors": [
+        "107"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 197
+    },
+    {
+      "id": "wtc1-198",
+      "building_id": "wtc1",
+      "name": "Channel 5 (WNYW)",
+      "sq_ft": 200,
+      "sq_ft_raw": "200",
+      "industry": "Cable/Television",
+      "industry_raw": "Cable/Television",
+      "floor_raw": "110",
+      "floors": [
+        "110"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 198
+    },
+    {
+      "id": "wtc1-199",
+      "building_id": "wtc1",
+      "name": "Channel 31 (WBIS)",
+      "sq_ft": 1400,
+      "sq_ft_raw": "1,400",
+      "industry": "Cable/Television",
+      "industry_raw": "Cable/Television",
+      "floor_raw": "110",
+      "floors": [
+        "110"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 199
+    },
+    {
+      "id": "wtc1-200",
+      "building_id": "wtc1",
+      "name": "Channel 47 (WNJU)",
+      "sq_ft": 800,
+      "sq_ft_raw": "800",
+      "industry": "Cable/Television",
+      "industry_raw": "Cable/Television",
+      "floor_raw": "110",
+      "floors": [
+        "110"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 200
+    },
+    {
+      "id": "wtc1-201",
+      "building_id": "wtc1",
+      "name": "Channel 2 (WCBS)",
+      "sq_ft": 400,
+      "sq_ft_raw": "400",
+      "industry": "Cable/Television",
+      "industry_raw": "Cable/Television",
+      "floor_raw": "110",
+      "floors": [
+        "110"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 201
+    },
+    {
+      "id": "wtc1-202",
+      "building_id": "wtc1",
+      "name": "Channel 11 (WPIX)",
+      "sq_ft": 400,
+      "sq_ft_raw": "400",
+      "industry": "Cable/Television",
+      "industry_raw": "Cable/Television",
+      "floor_raw": "110",
+      "floors": [
+        "110"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 202
+    },
+    {
+      "id": "wtc1-203",
+      "building_id": "wtc1",
+      "name": "CNN",
+      "sq_ft": 200,
+      "sq_ft_raw": "200",
+      "industry": "Cable/Television",
+      "industry_raw": "Cable/Television",
+      "floor_raw": "110",
+      "floors": [
+        "110"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 203
+    },
+    {
+      "id": "wtc2-001",
+      "building_id": "wtc2",
+      "name": "Continental Insurance Company",
+      "sq_ft": 40000,
+      "sq_ft_raw": "40,000",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "",
+      "floors": [],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 1
+    },
+    {
+      "id": "wtc2-002",
+      "building_id": "wtc2",
+      "name": "CINDE",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "",
+      "floors": [],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 2,
+      "raw_cells": [
+        "CINDE",
+        "N/A",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "wtc2-003",
+      "building_id": "wtc2",
+      "name": "Xerox Document Company",
+      "sq_ft": 5400,
+      "sq_ft_raw": "5,400",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "BSMT",
+      "floors": [
+        "BSMT"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 3
+    },
+    {
+      "id": "wtc2-004",
+      "building_id": "wtc2",
+      "name": "Johnston & Murphy",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "CNCR",
+      "floors": [
+        "CNCR"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 4
+    },
+    {
+      "id": "wtc2-005",
+      "building_id": "wtc2",
+      "name": "Nichols Foundation, Inc.",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "GRND",
+      "floors": [
+        "GRND"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 5
+    },
+    {
+      "id": "wtc2-006",
+      "building_id": "wtc2",
+      "name": "Verizon Communications",
+      "sq_ft": 155490,
+      "sq_ft_raw": "155,490",
+      "industry": "Communications",
+      "industry_raw": "Communications",
+      "floor_raw": "LL,9-12",
+      "floors": [
+        "LL",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 6
+    },
+    {
+      "id": "wtc2-007",
+      "building_id": "wtc2",
+      "name": "Colortek Kodak Imaging Center",
+      "sq_ft": 731,
+      "sq_ft_raw": "731",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "1",
+      "floors": [
+        "1"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 7
+    },
+    {
+      "id": "wtc2-008",
+      "building_id": "wtc2",
+      "name": "EuroBrokers, Inc.",
+      "sq_ft": 32104,
+      "sq_ft_raw": "32,104",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "12",
+      "floors": [
+        "12"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 8
+    },
+    {
+      "id": "wtc2-009",
+      "building_id": "wtc2",
+      "name": "Union Bank of California",
+      "sq_ft": 25146,
+      "sq_ft_raw": "25,146",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "14",
+      "floors": [
+        "14"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 9
+    },
+    {
+      "id": "wtc2-010",
+      "building_id": "wtc2",
+      "name": "Patinka International (USA) Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "14",
+      "floors": [
+        "14"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 10
+    },
+    {
+      "id": "wtc2-011",
+      "building_id": "wtc2",
+      "name": "Charna Chemicals, Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "14",
+      "floors": [
+        "14"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 11
+    },
+    {
+      "id": "wtc2-012",
+      "building_id": "wtc2",
+      "name": "Paging Network of New York",
+      "sq_ft": 19203,
+      "sq_ft_raw": "19,203",
+      "industry": "Communications",
+      "industry_raw": "Communications",
+      "floor_raw": "14",
+      "floors": [
+        "14"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 12
+    },
+    {
+      "id": "wtc2-013",
+      "building_id": "wtc2",
+      "name": "Mancini Duffy",
+      "sq_ft": 28091,
+      "sq_ft_raw": "28,091",
+      "industry": "Engineers/Architects",
+      "industry_raw": "Engineers/Architects",
+      "floor_raw": "15,22",
+      "floors": [
+        "15",
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 13
+    },
+    {
+      "id": "wtc2-014",
+      "building_id": "wtc2",
+      "name": "Candia Shipping",
+      "sq_ft": 1600,
+      "sq_ft_raw": "1,600",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "15",
+      "floors": [
+        "15"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 14
+    },
+    {
+      "id": "wtc2-015",
+      "building_id": "wtc2",
+      "name": "John W. Loofbourrow Associates, Inc.",
+      "sq_ft": 1807,
+      "sq_ft_raw": "1,807",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "15",
+      "floors": [
+        "15"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 15
+    },
+    {
+      "id": "wtc2-016",
+      "building_id": "wtc2",
+      "name": "John J. McMullen Associates, Inc.",
+      "sq_ft": 15000,
+      "sq_ft_raw": "15,000",
+      "industry": "Engineers/Architects",
+      "industry_raw": "Engineers/Architects",
+      "floor_raw": "15",
+      "floors": [
+        "15"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 16
+    },
+    {
+      "id": "wtc2-017",
+      "building_id": "wtc2",
+      "name": "Orient International",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "15",
+      "floors": [
+        "15"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 17
+    },
+    {
+      "id": "wtc2-018",
+      "building_id": "wtc2",
+      "name": "James T. Ratner, Law Office of",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "15",
+      "floors": [
+        "15"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 18
+    },
+    {
+      "id": "wtc2-019",
+      "building_id": "wtc2",
+      "name": "National Development & Research Institute",
+      "sq_ft": 44325,
+      "sq_ft_raw": "44,325",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "16",
+      "floors": [
+        "16"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 19
+    },
+    {
+      "id": "wtc2-020",
+      "building_id": "wtc2",
+      "name": "N.Y. Institute of Finance",
+      "sq_ft": 24539,
+      "sq_ft_raw": "24,539",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "17",
+      "floors": [
+        "17"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 20
+    },
+    {
+      "id": "wtc2-021",
+      "building_id": "wtc2",
+      "name": "Showtime Pictures",
+      "sq_ft": 5470,
+      "sq_ft_raw": "5,470",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "18,107",
+      "floors": [
+        "18",
+        "107"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 21
+    },
+    {
+      "id": "wtc2-022",
+      "building_id": "wtc2",
+      "name": "Professional Assistance & Consulting",
+      "sq_ft": 1163,
+      "sq_ft_raw": "1,163",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "18",
+      "floors": [
+        "18"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 22
+    },
+    {
+      "id": "wtc2-023",
+      "building_id": "wtc2",
+      "name": "Intera Group Inc.",
+      "sq_ft": 1180,
+      "sq_ft_raw": "1,180",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "18",
+      "floors": [
+        "18"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 23
+    },
+    {
+      "id": "wtc2-024",
+      "building_id": "wtc2",
+      "name": "Alliance Consulting",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "18",
+      "floors": [
+        "18"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 24
+    },
+    {
+      "id": "wtc2-025",
+      "building_id": "wtc2",
+      "name": "Pines Investment, Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "18",
+      "floors": [
+        "18"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 25
+    },
+    {
+      "id": "wtc2-026",
+      "building_id": "wtc2",
+      "name": "Caserta & Company",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "18",
+      "floors": [
+        "18"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 26
+    },
+    {
+      "id": "wtc2-027",
+      "building_id": "wtc2",
+      "name": "Law Offices of Abad, Castilla, and Mallonga",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "18",
+      "floors": [
+        "18"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 27
+    },
+    {
+      "id": "wtc2-028",
+      "building_id": "wtc2",
+      "name": "Weiland International",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "18",
+      "floors": [
+        "18"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 28
+    },
+    {
+      "id": "wtc2-029",
+      "building_id": "wtc2",
+      "name": "Chen, Lin, Li, & Jiang, LLP",
+      "sq_ft": 1994,
+      "sq_ft_raw": "1,994",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "18",
+      "floors": [
+        "18"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 29
+    },
+    {
+      "id": "wtc2-030",
+      "building_id": "wtc2",
+      "name": "Waterfront Commission of New York Harbor",
+      "sq_ft": 2000,
+      "sq_ft_raw": "2,000",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "19",
+      "floors": [
+        "19"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 30
+    },
+    {
+      "id": "wtc2-031",
+      "building_id": "wtc2",
+      "name": "N.Y. Shipping Association",
+      "sq_ft": 80000,
+      "sq_ft_raw": "80,000",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "19,20",
+      "floors": [
+        "19",
+        "20"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 31
+    },
+    {
+      "id": "wtc2-032",
+      "building_id": "wtc2",
+      "name": "Thacher, Proffitt & Wood",
+      "sq_ft": 120000,
+      "sq_ft_raw": "120,000",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "20,38-40",
+      "floors": [
+        "20",
+        "38",
+        "39",
+        "40"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 32
+    },
+    {
+      "id": "wtc2-033",
+      "building_id": "wtc2",
+      "name": "Career Engine",
+      "sq_ft": 7183,
+      "sq_ft_raw": "7,183",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 33
+    },
+    {
+      "id": "wtc2-034",
+      "building_id": "wtc2",
+      "name": "Adecco SA",
+      "sq_ft": 2000,
+      "sq_ft_raw": "2,000",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 34
+    },
+    {
+      "id": "wtc2-035",
+      "building_id": "wtc2",
+      "name": "Charoen Pokphand USA, Inc.",
+      "sq_ft": 2000,
+      "sq_ft_raw": "2,000",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 35
+    },
+    {
+      "id": "wtc2-036",
+      "building_id": "wtc2",
+      "name": "Sinochem American Holdings, Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 36
+    },
+    {
+      "id": "wtc2-037",
+      "building_id": "wtc2",
+      "name": "Washington Mutual, Inc.",
+      "sq_ft": 1117,
+      "sq_ft_raw": "1,117",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 37
+    },
+    {
+      "id": "wtc2-038",
+      "building_id": "wtc2",
+      "name": "Antal International, Inc.",
+      "sq_ft": 2086,
+      "sq_ft_raw": "2,086",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 38
+    },
+    {
+      "id": "wtc2-039",
+      "building_id": "wtc2",
+      "name": "SCOR U.S. Corporation",
+      "sq_ft": 59000,
+      "sq_ft_raw": "59,000",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "23,24",
+      "floors": [
+        "23",
+        "24"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 39
+    },
+    {
+      "id": "wtc2-040",
+      "building_id": "wtc2",
+      "name": "Unistrat Corporation of America",
+      "sq_ft": 10000,
+      "sq_ft_raw": "10,000",
+      "industry": "Business Services",
+      "industry_raw": "Business Services",
+      "floor_raw": "23",
+      "floors": [
+        "23"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 40
+    },
+    {
+      "id": "wtc2-041",
+      "building_id": "wtc2",
+      "name": "Allstate Insurance Company",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "24",
+      "floors": [
+        "24"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 41
+    },
+    {
+      "id": "wtc2-042",
+      "building_id": "wtc2",
+      "name": "TD Waterhouse Group, Inc.",
+      "sq_ft": 18591,
+      "sq_ft_raw": "18,591",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "24",
+      "floors": [
+        "24"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 42
+    },
+    {
+      "id": "wtc2-043",
+      "building_id": "wtc2",
+      "name": "China Chamber of Commerce, Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "24",
+      "floors": [
+        "24"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 43
+    },
+    {
+      "id": "wtc2-044",
+      "building_id": "wtc2",
+      "name": "Globe Tour & Travel",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "24",
+      "floors": [
+        "24"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 44
+    },
+    {
+      "id": "wtc2-045",
+      "building_id": "wtc2",
+      "name": "Sinolion (USA)",
+      "sq_ft": 694,
+      "sq_ft_raw": "694",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "24",
+      "floors": [
+        "24"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 45
+    },
+    {
+      "id": "wtc2-046",
+      "building_id": "wtc2",
+      "name": "December First Productions, LLC",
+      "sq_ft": 821,
+      "sq_ft_raw": "821",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "24",
+      "floors": [
+        "24"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 46
+    },
+    {
+      "id": "wtc2-047",
+      "building_id": "wtc2",
+      "name": "Sun Microsystems, Inc.",
+      "sq_ft": 89162,
+      "sq_ft_raw": "89,162",
+      "industry": "Computers/Data Processing",
+      "industry_raw": "Computers/Data Processing",
+      "floor_raw": "25,26",
+      "floors": [
+        "25",
+        "26"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 47
+    },
+    {
+      "id": "wtc2-048",
+      "building_id": "wtc2",
+      "name": "New York Stock Exchange, Inc.",
+      "sq_ft": 10853,
+      "sq_ft_raw": "10,853",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "28-30",
+      "floors": [
+        "28",
+        "29",
+        "30"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 48
+    },
+    {
+      "id": "wtc2-049",
+      "building_id": "wtc2",
+      "name": "Big A Travel Agency",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "28",
+      "floors": [
+        "28"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 49
+    },
+    {
+      "id": "wtc2-050",
+      "building_id": "wtc2",
+      "name": "Law Office of Joseph Bellard",
+      "sq_ft": 3400,
+      "sq_ft_raw": "3,400",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "28",
+      "floors": [
+        "28"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 50
+    },
+    {
+      "id": "wtc2-051",
+      "building_id": "wtc2",
+      "name": "Hua Nan Commercial Bank Ltd.",
+      "sq_ft": 12500,
+      "sq_ft_raw": "12,500",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "28",
+      "floors": [
+        "28"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 51
+    },
+    {
+      "id": "wtc2-052",
+      "building_id": "wtc2",
+      "name": "Weatherly Securities Corp.",
+      "sq_ft": 18801,
+      "sq_ft_raw": "18,801",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "29",
+      "floors": [
+        "29"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 52
+    },
+    {
+      "id": "wtc2-053",
+      "building_id": "wtc2",
+      "name": "Hartford Steam Boiler",
+      "sq_ft": 1600,
+      "sq_ft_raw": "1,600",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "30",
+      "floors": [
+        "30"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 53
+    },
+    {
+      "id": "wtc2-054",
+      "building_id": "wtc2",
+      "name": "Oppenheimer Funds, Inc.",
+      "sq_ft": 231000,
+      "sq_ft_raw": "231,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "31,32",
+      "floors": [
+        "31",
+        "32"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 54
+    },
+    {
+      "id": "wtc2-055",
+      "building_id": "wtc2",
+      "name": "Commerzbank Capital Markets",
+      "sq_ft": 45540,
+      "sq_ft_raw": "45,540",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "32",
+      "floors": [
+        "32"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 55
+    },
+    {
+      "id": "wtc2-056",
+      "building_id": "wtc2",
+      "name": "ABN-AMRO, Inc.",
+      "sq_ft": 40000,
+      "sq_ft_raw": "40,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "35",
+      "floors": [
+        "35"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 56
+    },
+    {
+      "id": "wtc2-057",
+      "building_id": "wtc2",
+      "name": "Frenkel & Company, Inc.",
+      "sq_ft": 59670,
+      "sq_ft_raw": "59,670",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "35,36",
+      "floors": [
+        "35",
+        "36"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 57
+    },
+    {
+      "id": "wtc2-058",
+      "building_id": "wtc2",
+      "name": "Sitailong International USA, Inc.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "40",
+      "floors": [
+        "40"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 58
+    },
+    {
+      "id": "wtc2-059",
+      "building_id": "wtc2",
+      "name": "Morgan Stanley",
+      "sq_ft": 840000,
+      "sq_ft_raw": "840,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "43-46,56,59-74",
+      "floors": [
+        "43",
+        "44",
+        "45",
+        "46",
+        "56",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 59
+    },
+    {
+      "id": "wtc2-060",
+      "building_id": "wtc2",
+      "name": "Guy Carpenter",
+      "sq_ft": 320000,
+      "sq_ft_raw": "320,000",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "47-54",
+      "floors": [
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 60
+    },
+    {
+      "id": "wtc2-061",
+      "building_id": "wtc2",
+      "name": "Seabury & Smith",
+      "sq_ft": 40000,
+      "sq_ft_raw": "40,000",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "49",
+      "floors": [
+        "49"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 61
+    },
+    {
+      "id": "wtc2-062",
+      "building_id": "wtc2",
+      "name": "Garban Intercapital",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "55",
+      "floors": [
+        "55"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 62
+    },
+    {
+      "id": "wtc2-063",
+      "building_id": "wtc2",
+      "name": "Dow Jones & Company, Inc.",
+      "sq_ft": 72133,
+      "sq_ft_raw": "72,133",
+      "industry": "Communications",
+      "industry_raw": "Communications",
+      "floor_raw": "57,58",
+      "floors": [
+        "57",
+        "58"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 63
+    },
+    {
+      "id": "wtc2-064",
+      "building_id": "wtc2",
+      "name": "First Commercial Bank",
+      "sq_ft": 4500,
+      "sq_ft_raw": "4,500",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "78",
+      "floors": [
+        "78"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 64
+    },
+    {
+      "id": "wtc2-065",
+      "building_id": "wtc2",
+      "name": "Fuji Bank",
+      "sq_ft": 182956,
+      "sq_ft_raw": "182,956",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "79-82",
+      "floors": [
+        "79",
+        "80",
+        "81",
+        "82"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 65
+    },
+    {
+      "id": "wtc2-066",
+      "building_id": "wtc2",
+      "name": "bepaid.com",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "84",
+      "floors": [
+        "84"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 66
+    },
+    {
+      "id": "wtc2-067",
+      "building_id": "wtc2",
+      "name": "Harris Beach & Wilcox, LLP",
+      "sq_ft": 48800,
+      "sq_ft_raw": "48,800",
+      "industry": "Law Firms",
+      "industry_raw": "Law Firms",
+      "floor_raw": "85",
+      "floors": [
+        "85"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 67
+    },
+    {
+      "id": "wtc2-068",
+      "building_id": "wtc2",
+      "name": "Keefe, Bruyette & Woods",
+      "sq_ft": 97600,
+      "sq_ft_raw": "97,600",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "85,88,89",
+      "floors": [
+        "85",
+        "88",
+        "89"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 68
+    },
+    {
+      "id": "wtc2-069",
+      "building_id": "wtc2",
+      "name": "NY State Department of Taxation & Finance",
+      "sq_ft": 73982,
+      "sq_ft_raw": "73,982",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "86,87",
+      "floors": [
+        "86",
+        "87"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 69
+    },
+    {
+      "id": "wtc2-070",
+      "building_id": "wtc2",
+      "name": "Corporation Service Company",
+      "sq_ft": 22916,
+      "sq_ft_raw": "22,916",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "87",
+      "floors": [
+        "87"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 70
+    },
+    {
+      "id": "wtc2-071",
+      "building_id": "wtc2",
+      "name": "Fiduciary Trust Company International",
+      "sq_ft": 245156,
+      "sq_ft_raw": "245,156",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "90,94-97",
+      "floors": [
+        "90",
+        "94",
+        "95",
+        "96",
+        "97"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 71
+    },
+    {
+      "id": "wtc2-072",
+      "building_id": "wtc2",
+      "name": "Gibbs & Hill",
+      "sq_ft": null,
+      "sq_ft_raw": "",
+      "industry": "Engineers",
+      "industry_raw": "Engineers",
+      "floor_raw": "91",
+      "floors": [
+        "91"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 72
+    },
+    {
+      "id": "wtc2-073",
+      "building_id": "wtc2",
+      "name": "Raytheon Company",
+      "sq_ft": 48800,
+      "sq_ft_raw": "48,800",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "91",
+      "floors": [
+        "91"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 73
+    },
+    {
+      "id": "wtc2-074",
+      "building_id": "wtc2",
+      "name": "AON Corporation",
+      "sq_ft": 219133,
+      "sq_ft_raw": "219,133",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "92,99,100",
+      "floors": [
+        "92",
+        "99",
+        "100"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 74
+    },
+    {
+      "id": "wtc2-075",
+      "building_id": "wtc2",
+      "name": "Regus Business Centres",
+      "sq_ft": 49028,
+      "sq_ft_raw": "49,028",
+      "industry": "Employment Agencies",
+      "industry_raw": "Employment Agencies",
+      "floor_raw": "93",
+      "floors": [
+        "93"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 75
+    },
+    {
+      "id": "wtc2-076",
+      "building_id": "wtc2",
+      "name": "Sandler O'Neil & Partners",
+      "sq_ft": 30000,
+      "sq_ft_raw": "30,000",
+      "industry": "Investments",
+      "industry_raw": "Investments",
+      "floor_raw": "104",
+      "floors": [
+        "104"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 76
+    },
+    {
+      "id": "wtc2-077",
+      "building_id": "wtc2",
+      "name": "Atlantic Bank of New York",
+      "sq_ft": 50061,
+      "sq_ft_raw": "50,061",
+      "industry": "Banks/Financial Institutions",
+      "industry_raw": "Banks/Financial Institutions",
+      "floor_raw": "106",
+      "floors": [
+        "106"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 77
+    },
+    {
+      "id": "wtc4-001",
+      "building_id": "wtc4",
+      "name": "Deutsche Bank",
+      "sq_ft": 273991,
+      "sq_ft_raw": "273,991",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "4,5,6",
+      "floors": [
+        "4",
+        "5",
+        "6"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 1
+    },
+    {
+      "id": "wtc4-002",
+      "building_id": "wtc4",
+      "name": "New York Board of Trade",
+      "sq_ft": 125000,
+      "sq_ft_raw": "125,000",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "7,8,9",
+      "floors": [
+        "7",
+        "8",
+        "9"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 2
+    },
+    {
+      "id": "wtc4-003",
+      "building_id": "wtc4",
+      "name": "Overseas-Chinese Banking Corp.",
+      "sq_ft": 6516,
+      "sq_ft_raw": "6,516",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "7",
+      "floors": [
+        "7"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 3
+    },
+    {
+      "id": "wtc4-004",
+      "building_id": "wtc4",
+      "name": "Green Coffee Association",
+      "sq_ft": 7500,
+      "sq_ft_raw": "7,500",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "5",
+      "floors": [
+        "5"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 4
+    },
+    {
+      "id": "wtc4-005",
+      "building_id": "wtc4",
+      "name": "Gelderman, Inc.",
+      "sq_ft": 4000,
+      "sq_ft_raw": "4,000",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "7",
+      "floors": [
+        "7"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 5
+    },
+    {
+      "id": "wtc4-006",
+      "building_id": "wtc4",
+      "name": "Tony May's Gemelli Restaurant & Bar",
+      "sq_ft": 10000,
+      "sq_ft_raw": "10,000",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "GRND",
+      "floors": [
+        "GRND"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 6
+    },
+    {
+      "id": "wtc5-001",
+      "building_id": "wtc5",
+      "name": "JP Morgan Chase & Co.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "1",
+      "floors": [
+        "1"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 1
+    },
+    {
+      "id": "wtc5-002",
+      "building_id": "wtc5",
+      "name": "FedEx Corporation",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "1",
+      "floors": [
+        "1"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 2
+    },
+    {
+      "id": "wtc5-003",
+      "building_id": "wtc5",
+      "name": "The Charles Schwab Corporation",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "CNCR",
+      "floors": [
+        "CNCR"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 3
+    },
+    {
+      "id": "wtc5-004",
+      "building_id": "wtc5",
+      "name": "Morgan Stanley",
+      "sq_ft": 325200,
+      "sq_ft_raw": "325,200",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "4,5,6",
+      "floors": [
+        "4",
+        "5",
+        "6"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 4
+    },
+    {
+      "id": "wtc5-005",
+      "building_id": "wtc5",
+      "name": "Credit Suisse First Boston",
+      "sq_ft": 179244,
+      "sq_ft_raw": "179,244",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "7,8,9",
+      "floors": [
+        "7",
+        "8",
+        "9"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 5
+    },
+    {
+      "id": "wtc5-006",
+      "building_id": "wtc5",
+      "name": "US Airways",
+      "sq_ft": 400,
+      "sq_ft_raw": "400",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "",
+      "floors": [],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 6
+    },
+    {
+      "id": "wtc5-007",
+      "building_id": "wtc5",
+      "name": "Sam Goody",
+      "sq_ft": 4000,
+      "sq_ft_raw": "4,000",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "CNCR",
+      "floors": [
+        "CNCR"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 7
+    },
+    {
+      "id": "wtc5-008",
+      "building_id": "wtc5",
+      "name": "American Airlines",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "CNCR,PLAZ",
+      "floors": [
+        "CNCR",
+        "PLAZ"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 8
+    },
+    {
+      "id": "wtc5-009",
+      "building_id": "wtc5",
+      "name": "Lower Manhattan Cultural Council",
+      "sq_ft": 4467,
+      "sq_ft_raw": "4,467",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "9",
+      "floors": [
+        "9"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 9
+    },
+    {
+      "id": "wtc5-010",
+      "building_id": "wtc5",
+      "name": "Howard Publications, Inc.",
+      "sq_ft": 1180,
+      "sq_ft_raw": "1,180",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "9",
+      "floors": [
+        "9"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 10
+    },
+    {
+      "id": "wtc5-011",
+      "building_id": "wtc5",
+      "name": "Council of State Governments",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "9",
+      "floors": [
+        "9"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 11
+    },
+    {
+      "id": "wtc5-012",
+      "building_id": "wtc5",
+      "name": "Children's Discovery Center",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "PLAZ",
+      "floors": [
+        "PLAZ"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 12
+    },
+    {
+      "id": "wtc5-013",
+      "building_id": "wtc5",
+      "name": "Affiliated Physicians of St. Vincent",
+      "sq_ft": 6250,
+      "sq_ft_raw": "6,250",
+      "industry": "Medical",
+      "industry_raw": "Medical",
+      "floor_raw": "3",
+      "floors": [
+        "3"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 13
+    },
+    {
+      "id": "wtc5-014",
+      "building_id": "wtc5",
+      "name": "NYS Court of Claims",
+      "sq_ft": 24909,
+      "sq_ft_raw": "24,909",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "8",
+      "floors": [
+        "8"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 14
+    },
+    {
+      "id": "wtc5-015",
+      "building_id": "wtc5",
+      "name": "World Trade Center Dental Group",
+      "sq_ft": 4500,
+      "sq_ft_raw": "4,500",
+      "industry": "Medical",
+      "industry_raw": "Medical",
+      "floor_raw": "3",
+      "floors": [
+        "3"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 15
+    },
+    {
+      "id": "wtc5-016",
+      "building_id": "wtc5",
+      "name": "DHL Courier Services",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "1",
+      "floors": [
+        "1"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 16
+    },
+    {
+      "id": "wtc5-017",
+      "building_id": "wtc5",
+      "name": "Perfumeria Milano",
+      "sq_ft": 1200,
+      "sq_ft_raw": "1,200",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "CNCR",
+      "floors": [
+        "CNCR"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 17
+    },
+    {
+      "id": "wtc5-018",
+      "building_id": "wtc5",
+      "name": "American Shipper Magazine",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Manufacturing",
+      "industry_raw": "Manufacturing",
+      "floor_raw": "9",
+      "floors": [
+        "9"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 18
+    },
+    {
+      "id": "wtc5-019",
+      "building_id": "wtc5",
+      "name": "Express Mail",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "",
+      "floors": [],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 19
+    },
+    {
+      "id": "wtc5-020",
+      "building_id": "wtc5",
+      "name": "Our Planet Mgmt. Institute, Ltd.",
+      "sq_ft": 5500,
+      "sq_ft_raw": "5,500",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "9",
+      "floors": [
+        "9"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 20
+    },
+    {
+      "id": "wtc5-021",
+      "building_id": "wtc5",
+      "name": "Hunan Resources & Tech. Institute",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "9",
+      "floors": [
+        "9"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 21
+    },
+    {
+      "id": "wtc5-022",
+      "building_id": "wtc5",
+      "name": "Hon. Christopher J. Mega",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "8",
+      "floors": [
+        "8"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 22
+    },
+    {
+      "id": "wtc5-023",
+      "building_id": "wtc5",
+      "name": "Daniel Pehr, Inc.",
+      "sq_ft": 1000,
+      "sq_ft_raw": "1,000",
+      "industry": "Personal Services",
+      "industry_raw": "Personal Services",
+      "floor_raw": "LBBY",
+      "floors": [
+        "LBBY"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 23
+    },
+    {
+      "id": "wtc5-024",
+      "building_id": "wtc5",
+      "name": "Borders Books & Music",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Retailers/Wholesalers",
+      "industry_raw": "Retailers/Wholesalers",
+      "floor_raw": "PLAZ",
+      "floors": [
+        "PLAZ"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 24
+    },
+    {
+      "id": "wtc5-025",
+      "building_id": "wtc5",
+      "name": "Continental Forwarding",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Transportation",
+      "industry_raw": "Transportation",
+      "floor_raw": "8",
+      "floors": [
+        "8"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 25
+    },
+    {
+      "id": "wtc6-001",
+      "building_id": "wtc6",
+      "name": "U.S. Department of Commerce",
+      "sq_ft": 4500,
+      "sq_ft_raw": "4,500",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "6",
+      "floors": [
+        "6"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 1
+    },
+    {
+      "id": "wtc6-002",
+      "building_id": "wtc6",
+      "name": "BATF (Alcohol Tobacco & Firearms)",
+      "sq_ft": 1200,
+      "sq_ft_raw": "1,200",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "2,6",
+      "floors": [
+        "2",
+        "6"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 2
+    },
+    {
+      "id": "wtc6-003",
+      "building_id": "wtc6",
+      "name": "U.S. Department of Agriculture - AAPHIS",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "2",
+      "floors": [
+        "2"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 3
+    },
+    {
+      "id": "wtc6-004",
+      "building_id": "wtc6",
+      "name": "U.S. Department of Labor",
+      "sq_ft": 10200,
+      "sq_ft_raw": "10,200",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "6",
+      "floors": [
+        "6"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 4
+    },
+    {
+      "id": "wtc6-005",
+      "building_id": "wtc6",
+      "name": "Export-Import Bank of the U.S.",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "6",
+      "floors": [
+        "6"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 5
+    },
+    {
+      "id": "wtc6-006",
+      "building_id": "wtc6",
+      "name": "Eastco Building Services",
+      "sq_ft": null,
+      "sq_ft_raw": "N/A",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "",
+      "floors": [],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 6
+    },
+    {
+      "id": "wtc7-001",
+      "building_id": "wtc7",
+      "name": "Salomon Smith Barney",
+      "sq_ft": 1202900,
+      "sq_ft_raw": "1,202,900",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "GRND,1-6,13,18-46",
+      "floors": [
+        "GRND",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "13",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 1
+    },
+    {
+      "id": "wtc7-002",
+      "building_id": "wtc7",
+      "name": "Internal Revenue Service Regional Council",
+      "sq_ft": 90430,
+      "sq_ft_raw": "90,430",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "24,25",
+      "floors": [
+        "24",
+        "25"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 2
+    },
+    {
+      "id": "wtc7-003",
+      "building_id": "wtc7",
+      "name": "U.S. Secret Service",
+      "sq_ft": 85343,
+      "sq_ft_raw": "85,343",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "9,10",
+      "floors": [
+        "9",
+        "10"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 3
+    },
+    {
+      "id": "wtc7-004",
+      "building_id": "wtc7",
+      "name": "American Express Bank International",
+      "sq_ft": 106117,
+      "sq_ft_raw": "106,117",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "7,8,13",
+      "floors": [
+        "7",
+        "8",
+        "13"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 4
+    },
+    {
+      "id": "wtc7-005",
+      "building_id": "wtc7",
+      "name": "Standard Chartered Bank",
+      "sq_ft": 111398,
+      "sq_ft_raw": "111,398",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "10,13,26,27",
+      "floors": [
+        "10",
+        "13",
+        "26",
+        "27"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 5
+    },
+    {
+      "id": "wtc7-006",
+      "building_id": "wtc7",
+      "name": "Provident Financial Management",
+      "sq_ft": 9000,
+      "sq_ft_raw": "9,000",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "7,13",
+      "floors": [
+        "7",
+        "13"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 6
+    },
+    {
+      "id": "wtc7-007",
+      "building_id": "wtc7",
+      "name": "ITT Hartford Insurance Group",
+      "sq_ft": 122590,
+      "sq_ft_raw": "122,590",
+      "industry": null,
+      "industry_raw": "",
+      "floor_raw": "19-21",
+      "floors": [
+        "19",
+        "20",
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 7
+    },
+    {
+      "id": "wtc7-008",
+      "building_id": "wtc7",
+      "name": "First State Management Group, Inc",
+      "sq_ft": 4000,
+      "sq_ft_raw": "4,000",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "21",
+      "floors": [
+        "21"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 8
+    },
+    {
+      "id": "wtc7-009",
+      "building_id": "wtc7",
+      "name": "Federal Home Loan Bank",
+      "sq_ft": 47490,
+      "sq_ft_raw": "47,490",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "22",
+      "floors": [
+        "22"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 9
+    },
+    {
+      "id": "wtc7-010",
+      "building_id": "wtc7",
+      "name": "NAIC Securities",
+      "sq_ft": 22500,
+      "sq_ft_raw": "22,500",
+      "industry": "Insurance",
+      "industry_raw": "Insurance",
+      "floor_raw": "19",
+      "floors": [
+        "19"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 10
+    },
+    {
+      "id": "wtc7-011",
+      "building_id": "wtc7",
+      "name": "Securities & Exchange Commission",
+      "sq_ft": 106117,
+      "sq_ft_raw": "106,117",
+      "industry": "Financial Institutions",
+      "industry_raw": "Financial Institutions",
+      "floor_raw": "11,12,13",
+      "floors": [
+        "11",
+        "12",
+        "13"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 11
+    },
+    {
+      "id": "wtc7-012",
+      "building_id": "wtc7",
+      "name": "Mayor's Office of Emergency Mgmt",
+      "sq_ft": 45815,
+      "sq_ft_raw": "45,815",
+      "industry": "Government",
+      "industry_raw": "Government",
+      "floor_raw": "23",
+      "floors": [
+        "23"
+      ],
+      "floor_unresolved": null,
+      "evidence": "documented",
+      "source_id": "cnn-2001-09-13",
+      "source_row": 12
+    }
+  ]
+}

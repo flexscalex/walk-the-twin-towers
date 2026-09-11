@@ -1,0 +1,58 @@
+[
+  {
+    "id": "P-070",
+    "subject": "Journey mode: the Plaza lobby route (/walk/[building]/lobby)",
+    "decision": "The lobby is floor 2, listed as 'Plaza - Lobby' in NCSTAR 1-2A Table G-1 (towers.floor_2_usage), at the floor 2 line of NCSTAR 1-1 Figure 2-3 (towers.floor_2_elevation, 332 ft, both towers). It is drawn with the same cited plate and core as a numbered floor. The perimeter column lines and glass run from the floor 2 line up to the tree splice at elevation 363 ft (towers.tree_column_splice_elevation), 31 ft, and the core block is cut at the same elevation. No ceiling is drawn and the HUD says 'Lobby height not cited; ceiling omitted.' No doors, glazing height, mezzanine or finishes are drawn. The illustration layer is not offered in the lobby.",
+    "reasoning": "No lobby, mezzanine or atrium height is stated in NCSTAR 1-1 or 1-2A (searched 'lobby', 'mezzanine', 'atrium', 'stair', 'zone' in both text layers on 2026-09-11; recorded as unresolved towers.lobby_ceiling_height). What is stated: floors 3-6 are 'Core Only (Storage)' (towers.floors_3_to_6_usage), the atrium area ran from below floor 7 to the foundation (towers.atrium_area_extent), core columns were braced at the lobby atrium levels (towers.core_bracing_lobby_atrium), and the inspection program names plaster ceilings in the main lobby and marble wall panel supports (towers.main_lobby_inspection_items), all undimensioned. The 31 ft wall is the difference of two cited elevations and is labelled on screen as a column elevation, not a ceiling; the splice was chosen because it is the highest elevation below floor 7 that both reports letter and it is where the 10 ft column rhythm ends. Rejected: deriving floor 7 from the Figure 2-8 tree offsets to close the lobby with a ceiling (a derivation the unresolved entry towers.floor_7_elevation flags as a paradata decision, and one that would present a computed height as a cited lobby height); using the WTC 2 assumed 12 ft schedule (P-046, evidence reported) for a floor 7 ceiling; the Port Authority inspection plan's phrase 'floor 1 (Plaza Level)' (pdf p188), which contradicts Table G-1 and Figure 2-3 and is not adopted (see unresolved towers.plaza_elevation); showing the office illustration layer in a lobby it does not describe.",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-071",
+    "subject": "Lobby perimeter: base column positions drawn as lines, no section",
+    "decision": "Per face, 19 base columns at 10 ft on centre (towers.base_face_bays 18 bays, towers.base_column_spacing_oc, towers.base_face_column_run 180 ft), the first 163 in. from the column reference line corner: the 83 in. chamfer (towers.corner_chamfer) plus the 80 in. end bay (towers.base_face_end_bay). The builder checks 83 + 80 + 2160 + 80 + 83 = 2,486 in. (towers.column_reference_line_spacing) and fails otherwise. Each column is drawn as a vertical line with no width, and one glass plane per face runs between the chamfers, both from the floor 2 line to the tree splice.",
+    "reasoning": "The positions are fully dimensioned on NCSTAR 1-1 Figure 2-3 and the sum reproduces the figure's own overall dimension, so they are cited. The section is not (unresolved towers.base_column_section; the tower model omits the base columns for that reason, P-039). A line is the honest rendering of a position without a size. Rejected: a box at the 14 in. tube-column width (that is the section above floor 9, and the base columns were three tube columns combined); a box at any plausible width; omitting the columns entirely in walk mode, which would lose the one cited rhythm of the lobby perimeter. Glass is drawn as one plane per face because no lobby glazing bay or door is cited; it is the same glass material as the floors above and is listed under 'not drawn' as such.",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-072",
+    "subject": "Elevator zone floor ranges (interpretive)",
+    "decision": "The three elevator zones are taken as the floors between the sky lobbies: zone 1 from the Concourse (floor 1) and Plaza lobby (floor 2) to floor 43, zone 2 from sky lobby 44 to floor 77, zone 3 from sky lobby 78 to floor 110. The local cars of a zone are offered to every floor in its range that has a cited elevation; the express cars connect the lobby to 44 (8 cars) and to 78 (10 cars). The panel labels the ranges as interpretive and names this row.",
+    "reasoning": "NCSTAR 1-1 states three zones, sky lobbies at 44 and 78, 8 and 10 express cars from the concourse, and 24 locals per zone 'which served groups of floors in those zones', and refers the groups to NCSTAR 1-7 (towers.elevator_zones, towers.local_elevators_per_zone), which is not among the sources used. Figure 2-5 (towers.fig2_5_base_level) letters no floor numbers. The boundary at the sky lobby is the only division the cited text supports: the sky lobby is where people 'transferred from express elevators to local elevators'. Rejected: sub-zone bank ranges read off Figure 2-5 by counting drawn shaft terminations (the figure is schematic and unlettered); ranges from secondary sources or model knowledge; starting zone 1 at floor 2 rather than the Concourse (the express cars are cited 'from the concourse', so the Concourse is in the lowest zone); and letting an express car go from 44 to 78 directly (each express run is cited from the concourse to one sky lobby).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-073",
+    "subject": "Elevator panel: reachability rules and the ride",
+    "decision": "The prompt 'Elevators' appears when the visitor is within 3 m of a core face (a presentation reach, not a dimension). From the Plaza lobby the panel offers the express cars to 44 and 78, the cited dedicated express cars (1 WTC: floors 106 and 107; 2 WTC: floor 107), and the locals of zone 1. From a sky lobby: the locals of its zone and the express car back to the lobby. From any other floor: the locals of its zone only, with a note on how to leave the zone; from 106, 107 (1 WTC) or 107 (2 WTC) also the dedicated car down. Floors without a cited elevation in the manifest are listed but not selectable ('no cited elevation'). Selecting a floor shows a counter that ticks past each floor with its cited use and tenant row count, then navigates to that floor's route. The seven freight cars are named in the footer and are not selectable.",
+    "reasoning": "Every button is a car the sources describe (towers.express_elevators_concourse_to_44, towers.express_elevators_concourse_to_78, towers.local_elevators_per_zone, towers.dedicated_express_elevators_top_floors, wtc2.observation_deck_dedicated_express, towers.freight_elevators). The express cars are cited from the concourse; the lobby stands in for the concourse as the boarding point because Figure 2-5 letters 'Plaza Level' at the foot of the shafts and stairs A and C are cited as discharging at the Plaza level. No cab, door, shaft position or speed is cited, so the ride is a counter and no geometry is drawn (unresolved towers.elevator_shaft_positions_in_core). Rejected: a modelled cab and doors; a drawn elevator bank in the core; a 'go anywhere' floor picker as the primary control (kept only as a small Jump fallback for accessibility); the wtc1 floor 1 Concourse as a lobby route (the concourse is walkable as floor 1 but is not the lobby).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-074",
+    "subject": "Lobby plaques: which CoStar rows appear in the lobby",
+    "decision": "Only rows whose floor code is LBBY are shown in the lobby, one plaque each, with 'Lobby' as the location and the citation. 1 WTC has three (Delta Airlines, Olympia Airport Express, Avis); 2 WTC has none, and a single plaque says so. Rows coded CNCR (Concourse), GRND (Ground), BSMT and LL are counted on that plaque as being on other coded levels and are not placed in the lobby. Plaques stand either side of the way from the start to the core, alternating east and west and stepping toward the core, in source order, so they are in view on arrival; that placement is a layout choice.",
+    "reasoning": "The source's own code for the lobby is LBBY (tenants.clean.json floor_codes). Equating GRND with the Plaza lobby would be an inference the source does not make, and CNCR is the Concourse, cited as floor 1 (towers.floor_1_usage). The source gives no position for any row, so any placement is presentation; a lane either side of the way in keeps them in view on arrival, out of the start pocket and off the core. Rejected: plaques round the perimeter (out of sight on arrival, and behind the core from the start); showing GRND in the lobby; sizing lobby zones by square footage (the lobby is not divided into tenant volumes, since the one listed figure, 400 sq ft, is a fraction of the plate and the others are N/A); placing plaques by any story about where an airline counter stood.",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-075",
+    "subject": "Stairwells and sky-lobby prose: counts verified, positions not drawn",
+    "decision": "The panel line reads that three stairwells per tower are documented, two 44 in. (A and C) and one 56 in. (B), in the core except at the mechanical floors, with positions referred to NCSTAR 1-7 and therefore not drawn. Sky lobbies 44 and 78 are titled as sky lobbies in the HUD and page heading, the panel explains express versus local from the cited sentences, and floors 43, 45, 77 and 79 carry a one-line escalator note. All prose is a close paraphrase of the quotes recorded on the parameters it names.",
+    "reasoning": "The count is stated three times in NCSTAR 1-1 (pdf p50, p70, p235) and recorded as towers.stairways_per_tower with widths and location; pdf p70 explicitly sends stair locations to NCSTAR 1-7 Table 2-1 (unresolved towers.stair_positions). Rule 5 and the London Charter forbid exhibit prose from model knowledge, so every sentence on the panel names its parameter and the quote is shown under 'cited parameters'. Rejected: drawing three stair boxes at 'edges of the core' (pdf p216 says that much but not which edges); the widely repeated claim about the sky lobbies raising usable floor area from 62 to 75 percent (BUILD-PLAN section 5 lists it as a candidate to verify; it is not in NCSTAR 1-1 or 1-2A and is not shown).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-076",
+    "subject": "Lobby start position: 'front doors' at the south face",
+    "decision": "The visitor spawns 2 m inside the south glass, on the centre line, facing the core, with the HUD line 'You are in the Plaza lobby of {building}'. No door is drawn.",
+    "reasoning": "Which face of each tower held the plaza entrance depends on the towers' positions on the site, which are unresolved (complex.tower_positions_and_spacing: Figure 2-1 has no dimensions). No entrance position or door width is cited. The south face is the existing walk-mode start (plan.ts startPose) and keeps the two modes consistent; the omission list says the plaza side is not fixed. Rejected: placing the start on the face that faced the plaza from memory of the site plan; drawing revolving or swing doors of any size.",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  }
+]

@@ -1,0 +1,275 @@
+{
+  "slug": "cantor-fitzgerald-espeed",
+  "title": "Cantor Fitzgerald and eSpeed",
+  "building_id": "wtc1",
+  "floors": [
+    "101",
+    "102",
+    "103",
+    "104",
+    "105"
+  ],
+  "tenant_ids": [
+    "wtc1-192"
+  ],
+  "status": "draft",
+  "sources": [
+    {
+      "id": "s1",
+      "citation": "CNN.com, \"List of World Trade Center tenants\" (tenant list provided by CoStar Group, Inc.), as archived by the Internet Archive on 2001-09-13; re-parsed in data/tenants.clean.json",
+      "url": "http://www.cnn.com/SPECIALS/2001/trade.center/tenants1.html",
+      "archived_url": "https://web.archive.org/web/20010913191234/http://www2.cnn.com/SPECIALS/2001/trade.center/tenants1.html",
+      "local_file": "data/cnn_t1.html",
+      "retrieved_at": "2026-09-10",
+      "kind": "contemporaneous"
+    },
+    {
+      "id": "s2",
+      "citation": "eSpeed, Inc., Form S-1 Registration Statement, filed with the U.S. Securities and Exchange Commission September 21, 1999 (accession 0000889812-99-002746)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1094831/000088981299002746/0000889812-99-002746.txt",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/espeed_s1.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary"
+    },
+    {
+      "id": "s3",
+      "citation": "eSpeed, Inc., Prospectus (Form 424B4) dated December 10, 1999 (accession 0000889812-99-003651)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1094831/000088981299003651/0000889812-99-003651.txt",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/espeed_424b4.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary"
+    },
+    {
+      "id": "s4",
+      "citation": "eSpeed, Inc., Form 10-K for the fiscal year ended December 31, 1999, filed March 29, 2000 (accession 0000889812-00-001393)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1094831/000088981200001393/0000889812-00-001393.txt",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/espeed_10k_1999.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary"
+    },
+    {
+      "id": "s5",
+      "citation": "eSpeed, Inc., Form 10-K for the fiscal year ended December 31, 2000, filed March 6, 2001 (accession 0001125282-01-000852)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1094831/000112528201000852/0001125282-01-000852.txt",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/espeed_10k_2000.txt",
+      "retrieved_at": "2026-09-11",
+      "kind": "primary"
+    },
+    {
+      "id": "s6",
+      "citation": "Forbes, \"Getting between the wall and the wallpaper,\" October 20, 1997",
+      "url": "https://www.forbes.com/forbes/1997/1020/6009066a.html",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/forbes_1997_cantor.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous",
+      "note": "Investigative piece critical of the firm; only structural and size facts are taken from it."
+    },
+    {
+      "id": "s7",
+      "citation": "Computergram (Tech Monitor), \"eSpeed Stock Doubles in Value After $198m IPO,\" December 12, 1999",
+      "url": "https://www.techmonitor.ai/technology/espeed_stock_doubles_in_value_after_198m_ipo",
+      "archived_url": null,
+      "local_file": "data/exhibits/sources/techmonitor_espeed_ipo.html",
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous"
+    },
+    {
+      "id": "s8",
+      "citation": "\"B. Gerald Cantor, 79, a financier who amassed...\" (obituary), The Baltimore Sun, July 9, 1996",
+      "url": "https://www.baltimoresun.com/1996/07/09/b-gerald-cantor79-a-financier-who-amassed/",
+      "archived_url": null,
+      "local_file": null,
+      "retrieved_at": "2026-09-11",
+      "kind": "contemporaneous"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "claim_text": "The CoStar list compiled for CNN records Cantor Fitzgerald Securities in 1 World Trade Center on floors 101 through 105, industry Investments, with a single square-footage figure of 22,000.",
+      "source_ids": [
+        "s1"
+      ],
+      "confidence": "documented",
+      "note": "Row wtc1-192. The list gives one figure per row; whether 22,000 is per floor or the row total is not stated in the source. Cantor's own filings put eSpeed's share alone at 50,000 to 60,000 square feet (c14), so 22,000 cannot be the whole tenancy."
+    },
+    {
+      "id": "c2",
+      "claim_text": "Cantor Fitzgerald described itself in 1999 as a leading global broker-dealer of fixed income securities over the past 25 years, and as having developed the world's first screen-based brokerage market in U.S. government securities in 1972.",
+      "source_ids": [
+        "s2",
+        "s4"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c3",
+      "claim_text": "Cantor was among the largest institutional brokers of government securities in the United States; its founder B. Gerald Cantor died in July 1996, and in the 1980s the firm was the first on Wall Street to offer global, 24-hour electronic access to the U.S. Treasury market.",
+      "source_ids": [
+        "s8"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c4",
+      "claim_text": "Cantor's business was wholesale brokerage: arranging trades between primary dealers in a market where about $100 billion of U.S. government debt traded through brokers on an average day, for a normal commission of about $30 per $1 million; it was regarded as the dominant broker of 30-year Treasury bonds.",
+      "source_ids": [
+        "s6"
+      ],
+      "confidence": "documented",
+      "note": "Forbes: 'reigns supreme in brokering long bonds; 30-year maturities.'"
+    },
+    {
+      "id": "c5",
+      "claim_text": "In 1997 Cantor employed more than 2,300 people, more than half of them at its New York headquarters and about 675 in London; its partnership capital was $185 million and its revenues had roughly tripled since 1991 to nearly $600 million in 1996.",
+      "source_ids": [
+        "s6"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c6",
+      "claim_text": "Howard W. Lutnick joined Cantor in 1983, had been its President and Chief Executive Officer since 1991, and in 1997 worked from the 105th floor of One World Trade Center; his company, CF Group Management, was Cantor's managing general partner.",
+      "source_ids": [
+        "s2",
+        "s6"
+      ],
+      "confidence": "documented",
+      "note": "Forbes dates his becoming managing general partner to January 2, 1996 and says he 'took over Cantor's daily management in 1991'; the S-1 bio says President and CEO since 1991."
+    },
+    {
+      "id": "c7",
+      "claim_text": "Cantor executed in excess of $35 trillion in transaction volume annually as of September 1999, restated as in excess of $45 trillion in March 2000.",
+      "source_ids": [
+        "s2",
+        "s4"
+      ],
+      "confidence": "documented",
+      "note": "Two figures six months apart; both are the company's own statements."
+    },
+    {
+      "id": "c8",
+      "claim_text": "eSpeed commenced operations on March 10, 1999 as a division of Cantor, built on more than $200 million Cantor had invested in information technology since 1996.",
+      "source_ids": [
+        "s2",
+        "s4"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c9",
+      "claim_text": "eSpeed operated what it called the largest global electronic marketplace for U.S. Treasury securities; in September 1999 its marketplaces processed over $150 billion of transactions per day, of which about $6 billion were wholly electronic orders, and more than 500 institutions participated, including the 25 largest bond trading firms in the world.",
+      "source_ids": [
+        "s2"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c10",
+      "claim_text": "eSpeed's system ran fully electronic orders and Cantor's broker/terminal-operator orders through a single marketplace, which the company contrasted with exchanges that had created separate side-by-side pools of liquidity for voice and electronic access.",
+      "source_ids": [
+        "s2"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c11",
+      "claim_text": "eSpeed's initial public offering was priced at $22.00 per share under a prospectus dated December 10, 1999, covering 9,000,000 Class A shares, 6,000,000 sold by eSpeed and 3,000,000 by Cantor Fitzgerald Securities, managed by Warburg Dillon Read, Hambrecht and Quist, Thomas Weisel Partners and Cantor Fitzgerald and Co.",
+      "source_ids": [
+        "s3"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c12",
+      "claim_text": "Trading in eSpeed Class A stock began on the Nasdaq National Market under the symbol ESPD on December 10, 1999 and the offering closed December 15; including the overallotment, eSpeed sold 7,000,000 shares and Cantor 3,350,000, and net proceeds to eSpeed were about $139.6 million.",
+      "source_ids": [
+        "s4"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c13",
+      "claim_text": "The stock closed its first day at $43.9375, a 99.7 percent gain over the offering price.",
+      "source_ids": [
+        "s7"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c14",
+      "claim_text": "After the offering Cantor held all of eSpeed's Class B stock, about 98 percent of the combined voting power.",
+      "source_ids": [
+        "s3"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c15",
+      "claim_text": "Under a perpetual Joint Services Agreement, eSpeed kept the whole commission on fully electronic financial-product transactions and paid Cantor a service fee of 35 percent where Cantor managed the marketplace or 20 percent where it did not; on telephonic-access electronic trades in exchange-traded products eSpeed received 45 percent and Cantor 55 percent.",
+      "source_ids": [
+        "s2"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c16",
+      "claim_text": "eSpeed's principal offices at One World Trade Center were about 50,000 square feet occupied under an Administrative Services Agreement with Cantor for about $1.2 million a year in 1999, growing to about 60,000 square feet for about $2.0 million a year by the end of 2000.",
+      "source_ids": [
+        "s2",
+        "s4",
+        "s5"
+      ],
+      "confidence": "documented",
+      "note": "The S-1 (Sept 1999) says Cantor's lease expired in 2006; the 10-K filed March 2000 and the 10-K filed March 2001 say 2012, implying a lease extension in between. The extension itself was not found."
+    },
+    {
+      "id": "c17",
+      "claim_text": "eSpeed's SEC filings give its address as One World Trade Center, 105th floor (S-1 header and prospectus) and 103rd floor (10-K for 1999).",
+      "source_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "confidence": "documented"
+    },
+    {
+      "id": "c18",
+      "claim_text": "eSpeed had 370 employees at December 31, 1999 and 493 at December 31, 2000; revenues were $38.2 million for 1999 and $118.9 million for 2000, and in 2000 it processed over 3 million electronic transactions totaling more than $32 trillion for over 650 clients.",
+      "source_ids": [
+        "s4",
+        "s5"
+      ],
+      "confidence": "documented"
+    }
+  ],
+  "draft_body": "Cantor Fitzgerald occupied floors 101 through 105 of the North Tower, listed as an investments firm [c1]. Its business was wholesale brokerage of U.S. government debt: arranging trades between primary dealers in a market where about $100 billion changed hands through brokers on an average day, for a commission of roughly $30 per million, and it was regarded as the dominant broker of the 30-year bond [c4]. The firm described itself as a leading fixed income broker-dealer for 25 years and the developer, in 1972, of the first screen-based market in Treasuries [c2]. Its founder, B. Gerald Cantor, died in July 1996; by then the firm was among the largest institutional brokers of government securities in the country [c3]. In 1997 it employed more than 2,300 people, over half of them in New York, on revenues that had roughly tripled since 1991 to nearly $600 million [c5]. Howard Lutnick, who joined in 1983, had run it as president and chief executive since 1991 and worked from the 105th floor [c6]. Cantor put its annual transaction volume at more than $35 trillion in 1999 and more than $45 trillion in 2000 [c7]. eSpeed was the electronic side of that business: it began operating on March 10, 1999 as a Cantor division, built on more than $200 million Cantor had spent on technology since 1996 [c8]. By September 1999 its marketplaces handled over $150 billion a day, about $6 billion of it wholly electronic, for more than 500 institutions including the 25 largest bond firms [c9]. Unlike exchanges that ran voice and electronic trading as separate pools, eSpeed passed fully electronic orders and Cantor's broker-entered orders through one system [c10]. eSpeed went public on December 10, 1999 at $22.00 a share, offering 9,000,000 Class A shares, 6,000,000 from the company and 3,000,000 from Cantor Fitzgerald Securities [c11]. The stock opened on Nasdaq as ESPD that day and closed at $43.94, up 99.7 percent [c13]. With the overallotment, eSpeed sold 7,000,000 shares and Cantor 3,350,000, and the company netted about $139.6 million [c12]. Cantor kept all of the Class B stock and about 98 percent of the vote [c14]. The two companies split the fees: on fully electronic trades eSpeed kept the commission and paid Cantor a 35 percent service fee where Cantor ran the marketplace [c15]. eSpeed did not lease space of its own; it occupied about 50,000 square feet of Cantor's floors in 1999 under an administrative services agreement, paying Cantor about $1.2 million a year, and about 60,000 square feet for about $2.0 million a year by the end of 2000 [c16]. Its filings give its address as the 105th and, later, the 103rd floor [c17]. It had 370 employees at the end of 1999 and 493 a year later, and revenues grew from $38.2 million in 1999 to $118.9 million in 2000, when it processed over 3 million electronic transactions worth more than $32 trillion for over 650 clients [c18].",
+  "cut": [
+    {
+      "claim_text": "Cantor Fitzgerald was founded in 1945.",
+      "why": "Not stated in any retrieved primary or contemporaneous text (the eSpeed filings say 'over the past 25 years'; the 1996 obituary gives no founding year). Appears only in encyclopedic summaries."
+    },
+    {
+      "claim_text": "Cantor handled about one quarter of the daily interdealer market in U.S. Treasuries.",
+      "why": "Only retrospective sources, and all in the context of the attacks. No 1990s market-share figure retrieved. Forbes 1997 supports only 'dominant in long bonds'."
+    },
+    {
+      "claim_text": "eSpeed was launched in 1996.",
+      "why": "Retrospective sources only. Cantor's filings say it 'has developed systems to promote fully electronic marketplaces' since the early 1990s and invested in the eSpeed system since 1996; eSpeed as a business commenced March 1999."
+    },
+    {
+      "claim_text": "Cantor's New York office had about 960 employees in 2001.",
+      "why": "Every source giving a 2001 New York headcount does so in the context of the attacks; excluded by the content rule."
+    },
+    {
+      "claim_text": "Cantor's floors were 22,000 square feet each, about 110,000 square feet in all.",
+      "why": "The CoStar row gives a single 22,000 figure with no per-floor statement; the per-floor reading is an inference and is not supported by any retrieved lease document."
+    }
+  ],
+  "research_notes": "Looked at: EDGAR full-text filings for eSpeed (CIK 1094831): S-1 of Sept 21 1999, S-1/A amendments, 424B4 of Dec 10 1999, 10-K for 1999 and 10-K for 2000, all saved locally and grepped. Cantor Fitzgerald L.P. is a private partnership with no filings of its own, so its 1990s size comes from Forbes (Oct 1997) and the 1996 Baltimore Sun obituary. Institutional Investor (2009) and Bloomberg (1998) were either blocked or attack-framed and are not used. nytimes.com is blocked to the fetcher. Conflicts: Lutnick's start as chief executive (S-1: President and CEO since 1991; Forbes: managing general partner from January 1996 after taking over daily management in 1991). Cantor lease expiry (2006 in the S-1, 2012 in both 10-Ks). Share counts differ between the prospectus (9,000,000) and the 10-K (10,350,000 including overallotment); both recorded. The 101-105 floor range rests on the CoStar row alone; the filings confirm only 103 and 105."
+}

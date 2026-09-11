@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Palette: cool white paper, navy ink, steel rules, one signal red used sparingly.
+   A 1970s Port Authority brochure, not a memorial and not a flag. */
+@theme {
+  --color-paper: #ffffff;
+  --color-paper-2: #eef3fa;
+  --color-ink: #0a2342;
+  --color-ink-2: #2f4467;
+  --color-ink-3: #66779a;
+  --color-rule: #c5d1e2;
+  --color-brass: #1f4e9c;
+  --color-brass-2: #163a75;
+  --color-clay: #c8102e;
+  --color-signal: #c8102e;
+  --color-navy: #0a2342;
+  --color-navy-2: #123058;
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer base {
+  a {
+    color: inherit;
+  }
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Expanders on long reference pages */
+details > summary { cursor: pointer; list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before { content: "+"; display: inline-block; width: 1.1em; color: var(--color-signal); font-weight: 700; }
+details[open] > summary::before { content: "\2013"; }

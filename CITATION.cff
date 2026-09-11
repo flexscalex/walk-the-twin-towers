@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it and link the repository."
+title: "Walk the Twin Towers: an evidence-based reconstruction of World Trade Center commercial tenancy as of September 2001"
+authors:
+  - family-names: Cousins
+    given-names: Chris
+    affiliation: FlexScaleX LLC
+date-released: 2026-09-11
+version: 0.2.0-preview
+url: https://walk-the-twin-towers.vercel.app
+repository-code: https://github.com/flexscalex/walk-the-twin-towers
+license: MIT
+notes: "Code MIT; data compilation, paradata and text CC BY 4.0. Underlying tenant list: CNN.com, provided by CoStar Group, Inc., archived by the Internet Archive 2001-09-13."

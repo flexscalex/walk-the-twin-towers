@@ -1,0 +1,66 @@
+[
+  {
+    "id": "P-060",
+    "subject": "Spandrel plates: vertical placement and extent",
+    "decision": "One spandrel box per face per cited floor line from floor 9 to floor 107, 52 in. deep (towers.spandrel_depth_typical), centred vertically on the floor line, running the cited 193 ft 4 in. between the first and last column centres plus one column width (towers.perimeter_face_column_run_above_floor_9 + towers.perimeter_column_outer_web_width) so it ends flush with the outer faces of the end columns, and as deep as the columns (towers.perimeter_column_depth), centred on the column reference line like the columns.",
+    "reasoning": "NCSTAR 1-1 states the spandrels connected adjacent columns 'at each floor level' and gives their depth, but not where the floor line sits within the typical 52 in. plate. Centring is the placement that biases neither up nor down. Rejected: reusing the Figure 2-8 tree-panel offsets (1 ft 2 in. and 1 ft 4 1/2 in. above the bottom of the 7 ft 6 in. and 6 ft 6 in. tree spandrels), because those are different, deeper members; aligning the top of the plate with the floor line, an equally uncited guess. The plate thickness is not modelled; the box is as deep as the column so the cladding line reads as one surface (the cladding projection is unresolved). Spandrels below floor 9 (tree panel) and above floor 107 (hat-truss zone) are not drawn for the same reasons the columns there are omitted (P-038, P-039).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-061",
+    "subject": "Window glass: a derived clear gap, not a cited window width",
+    "decision": "One glass quad per bay per story between floor 9 and floor 107: width equal to the column pitch minus the column outer-web width (40 in. - 14 in. = 26 in.), height equal to the story height minus the spandrel depth, standing on the column reference line between the spandrel above and the spandrel below. towers.window_width stays unresolved; the manifest records the 26 in. as derived.",
+    "reasoning": "geometry-params.json deliberately does not subtract the two cited numbers (see the unresolved entry). The generator does the subtraction here, in the open, because a facade with no infill reads as a frame, not a building, and the two operands are each cited. The result is the clear gap between the steel column faces, not the visible window: the aluminum column covers were wider than the steel (their width is unresolved, towers.spandrel_cover_and_cladding_dimensions), so the real window was narrower than 26 in. The glass sits on the reference line, inside the column depth, because no setback is cited. Rejected: a continuous pane per face behind the columns (hides the derived dimension the manifest must state); omitting glass entirely (Chris reviewed the frame-only model and found it read as a video game).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-062",
+    "subject": "Exterior materials in the glTF: cited material, chosen colour",
+    "decision": "Three named glTF materials: column_cladding and spandrel_cladding (aluminum, towers.exterior_cladding_material) and glass (towers.window_infill). The colours are rendering choices: a light warm aluminum for the columns, a slightly darker tone for the spandrels, a mid-dark blue-grey tinted transparent glass. No texture, no photograph-derived colour.",
+    "reasoning": "NCSTAR 1-1 pdf p70 names the materials and nothing more. Aluminum sheet in daylight is light and slightly warm; the spandrel covers are drawn darker so the floor lines read at a distance. Two tones on one cited material is a legibility choice, stated here so nobody mistakes it for a documented finish. The glass is kept mid-dark rather than near-black because the visible window was narrower than the 26 in. gap drawn here (P-061): a lighter tint keeps the facade's overall value closer to the light, striated surface the wide aluminum covers produced, without inventing a cover width. Rejected: sampling colours from period photographs (would need a licensed, cited photograph and a colour-management claim the record cannot support); leaving the earlier neutral grey (reads as untextured geometry).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-063",
+    "subject": "Light and sky in the tower view are a rendering choice",
+    "decision": "A gradient sky dome (warm blue overhead to a pale horizon), a ground plane in the site's paper tone receding into a matching fog, a hemisphere light keyed to the dome, and one directional sun from the south-east at a mid-morning angle. No shadow maps, no post-processing. ACES filmic tone mapping, sRGB output.",
+    "reasoning": "Chris reviewed the earlier flat-lit view and found it read as an old video game; the brief (BUILD-PLAN section 9) is a working weekday. Nothing here is cited: no photograph, weather record or sun table stands behind the colours or the sun angle, so the scene file says so in a comment and this row says so publicly. Bounds kept from BUILD-PLAN 3.3: real-time shadows and post-processing are off because they cost the mobile frame budget. Rejected: an evening or overcast palette (rule 2: never a memorial); an HDRI environment map (an uncited photograph of some other sky, and a texture download the budget does not need).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-064",
+    "subject": "City context: which buildings, from which dataset, and what is missing",
+    "decision": "Context massing is built from NYC Open Data 'Building Footprints' (dataset 5zhs-2jue, SODA API) inside a bounding box around the site, filtered to construction_year <= 2001, extruded to the published height_roof. It renders as unlabeled light gray massing behind a 'City context' toggle, default on, and never takes a click.",
+    "reasoning": "The footprint file is the only public, citable, machine-readable record of the neighbourhood's massing, and its construction year lets it be filtered to what already stood in 2001. Its limits are structural and are stated wherever the context appears: it lists only buildings that exist today, so anything demolished since 2001 (including all seven World Trade Center buildings, 130 Liberty Street, and others) is simply absent; height_roof is today's roof, not 2001's; construction_year comes from the assessment roll and can be wrong. The result is a lower bound on the 2001 skyline, labeled as such in GAPS.md and on the method page. Rejected: filling the missing neighbours from memory or from photographs (rule 1 and rule 3); the 'Building Footprints Historic' dataset (it records removed footprints but without the height and year fields needed here, and mixing two datasets would need its own review); OpenStreetMap (no construction years).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-065",
+    "subject": "Site origin: the block centroid from street centerlines",
+    "decision": "The shared origin of the towers and the context is the area centroid of the quadrilateral whose corners are the junctions of the NYC Street Centerline (CSCL, dataset inkn-q76z) segments for Church, Vesey, Liberty and West streets, the streets that bounded the original superblock. West Street is divided in CSCL; the eastern carriageway, the one adjoining the block, is used. Street half-widths are not subtracted.",
+    "reasoning": "The brief asked for the centroid of the block derived from the surrounding footprints. The footprints alone cannot define the block edge (they stop at the building line, and the street widths between them are not in that file), while the centerline file names the four streets and gives their junctions directly, so the block was taken from the centerlines and the footprints were used as the cross-check: none of the 208 filtered footprints has a vertex inside the quadrilateral. Subtracting half street widths would move the centroid by under 7 ft (West Street's eastern carriageway is 26 ft wide, Church Street 50 to 58 ft), which is far below the uncertainty of the tower positions inside the block, which NIST does not state (complex.tower_positions_and_spacing). The quadrilateral measures 22.5 acres between centerlines against the cited 16-acre site (complex.site_area); the difference is the street half-widths plus whatever today's West Street alignment differs from 2001's, and a centroid is insensitive to symmetric width differences. Rejected: the mean of the four corners (not the area centroid, differs by a few metres on a non-parallelogram); hand-placing the origin on a map (uncitable).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-066",
+    "subject": "Where the two towers sit on the block (layout choice, not a reconstruction)",
+    "decision": "The pair is centred on the site origin. 1 WTC sits north and west of 2 WTC, the two centres 420 ft apart along a 45 degree diagonal (each tower offset 148.5 ft east-west and 148.5 ft north-south from the origin). The viewer positions the files; nothing is baked into the .glb.",
+    "reasoning": "NIST states no tower position and no spacing (complex.tower_positions_and_spacing is unresolved). What the record does support: WTC 1 is the North Tower and WTC 2 the South Tower (NCSTAR 1-1 pdf p69), and Figure 2-1's site plan, which has no scale, shows WTC 1 north and west of WTC 2. The 420 ft spacing is the layout distance the viewer already used; the diagonal follows the figure's qualitative arrangement. Both are layout choices and the Towers page says so under the legend. Rejected: keeping the towers side by side at the same latitude (contradicts the North/South naming); scaling Figure 2-1 by eye to get a distance (an uncited measurement from an unscaled drawing).",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  },
+  {
+    "id": "P-067",
+    "subject": "Ground plane at the Concourse line; published ground elevations not applied",
+    "decision": "The ground plane and every context building stand at y = 0, which is the towers' floor 1 (Concourse) line. The footprint dataset's ground_elevation is kept in the data file but not applied.",
+    "reasoning": "NCSTAR 1-1 counts the towers as '110 stories above grade' and as a '110-story structure above the Concourse level' in adjoining sentences, and NCSTAR 1-2A gives the roof height 'above ground' with the same number, so the reports themselves put grade at the Concourse line. The drawings' 310 ft datum is a project datum with no stated tie to sea level, so the NAVD88 ground elevations in the footprint file cannot be placed against it without inventing the tie; the terrain in the study area varies by only a few feet in any case. Rejected: the floor 2 (Plaza - Lobby) line as ground (towers.plaza_elevation is unresolved and the reports' own wording favours the Concourse); applying ground_elevation with a guessed datum offset.",
+    "decided_by": "Claude (Fable 5.1); human review: pending",
+    "decided_at": "2026-09-11"
+  }
+]

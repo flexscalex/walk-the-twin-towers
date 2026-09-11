@@ -1,0 +1,2720 @@
+{
+  "meta": {
+    "generated_at": "2026-09-10T00:00:00Z",
+    "rule": "a parameter without source_id and locator fails the build",
+    "generator": "manual extraction from the cited NIST reports by Claude (Fable 5.1), 2026-09-10; human review: pending",
+    "conventions": {
+      "units": "value is in `unit`. Where the report states feet-and-inches the value is the exact integer/decimal inch count and `value_raw` holds the report's own notation. Whole-foot statements stay in ft. Strings and lists carry unit null.",
+      "quotes": "locator.quote is transcribed from the report's OCR text layer with obvious OCR errors corrected (e.g. 'comers' -> 'corners', 'fonn' -> 'form'). Figure callouts are quoted exactly as lettered on the figure.",
+      "pdf_page": "1-based page index of the downloaded PDF. printed_page is the number printed on that page.",
+      "applies_to": "wtc1 | wtc2 | towers (stated for both) | complex",
+      "conflicts": "Where two passages or two reports give different numbers, both are recorded as separate params and cross-referenced in notes. Nothing is averaged or chosen here; choosing is a paradata decision."
+    }
+  },
+  "sources": [
+    {
+      "id": "ncstar1-1",
+      "citation": "NIST NCSTAR 1-1 (2005), Federal Building and Fire Safety Investigation of the World Trade Center Disaster: Design, Construction, and Maintenance of Structural and Life Safety Systems",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-1.pdf",
+      "retrieved_at": "2026-09-10"
+    },
+    {
+      "id": "ncstar1-2a",
+      "citation": "NIST NCSTAR 1-2A (2005), Federal Building and Fire Safety Investigation of the World Trade Center Disaster: Reference Structural Models and Baseline Performance Analysis of the World Trade Center Towers (Faschan, Garlock; Leslie E. Robertson Associates)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-2a.pdf",
+      "retrieved_at": "2026-09-10"
+    }
+  ],
+  "params": [
+    {
+      "id": "towers.stories_above_grade",
+      "applies_to": "towers",
+      "value": 110,
+      "unit": "stories",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 71,
+        "printed_page": "9",
+        "section": "2.2.2 Structural Description",
+        "quote": "both WTC 1 and WTC 2 were 116 stories above the foundation (110 stories above grade and 6 stories below grade)."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.stories_below_grade",
+      "applies_to": "towers",
+      "value": 6,
+      "unit": "stories",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 71,
+        "printed_page": "9",
+        "section": "2.2.2 Structural Description",
+        "quote": "both WTC 1 and WTC 2 were 116 stories above the foundation (110 stories above grade and 6 stories below grade)."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.stories_above_foundation",
+      "applies_to": "towers",
+      "value": 116,
+      "unit": "stories",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 71,
+        "printed_page": "9",
+        "section": "2.2.2 Structural Description",
+        "quote": "both WTC 1 and WTC 2 were 116 stories above the foundation (110 stories above grade and 6 stories below grade)."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.stories_above_concourse",
+      "applies_to": "towers",
+      "value": 110,
+      "unit": "stories",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 69,
+        "printed_page": "7",
+        "section": "2.2.1 Building Description",
+        "quote": "WTC 1 and WTC 2 (also known as North Tower and South Tower) each consisted of a 110-story structure above the Concourse level (109-story above the Plaza level) and 6-story structure below the Concourse level."
+      },
+      "notes": "The report's own footnote: dimensions are based on the design drawings obtained from the Port Authority."
+    },
+    {
+      "id": "towers.stories_above_plaza",
+      "applies_to": "towers",
+      "value": 109,
+      "unit": "stories",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 69,
+        "printed_page": "7",
+        "section": "2.2.1 Building Description",
+        "quote": "WTC 1 and WTC 2 (also known as North Tower and South Tower) each consisted of a 110-story structure above the Concourse level (109-story above the Plaza level) and 6-story structure below the Concourse level."
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc1.roof_height_above_concourse",
+      "applies_to": "wtc1",
+      "value": 1368,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 69,
+        "printed_page": "7",
+        "section": "2.2.1 Building Description",
+        "quote": "The height of WTC 1 at the roof level was 1,368 ft above the Concourse level, 6 ft taller than WTC 2, and WTC 1 supported a 360 ft tall antenna for television and radio transmission."
+      },
+      "notes": "Same statement in the Executive Summary, pdf p38. Figure 2-2 (pdf p80) dimensions the same 1,368 ft from the Concourse line; see wtc1.total_height_fig2_2."
+    },
+    {
+      "id": "wtc1.roof_height_minus_wtc2",
+      "applies_to": "wtc1",
+      "value": 6,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 69,
+        "printed_page": "7",
+        "section": "2.2.1 Building Description",
+        "quote": "The height of WTC 1 at the roof level was 1,368 ft above the Concourse level, 6 ft taller than WTC 2, and WTC 1 supported a 360 ft tall antenna for television and radio transmission."
+      },
+      "notes": "NCSTAR 1-1 never states the WTC 2 roof height directly; it states only this difference. NCSTAR 1-2A states 1,362 ft (see wtc2.roof_height_above_ground)."
+    },
+    {
+      "id": "wtc2.roof_height_above_ground",
+      "applies_to": "wtc2",
+      "value": 1362,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 34,
+        "printed_page": "2",
+        "section": "1.1.1 Global Structural System",
+        "quote": "The buildings, which were each approximately 207 ft by 207 ft square in plan and with story heights of typically 12 ft, rose to heights of 1,368 ft (WTC 1) and 1,362 ft (WTC 2) above ground."
+      },
+      "notes": "Datum is phrased 'above ground' here versus 'above the Concourse level' in NCSTAR 1-1; 1,368 ft for WTC 1 is the same number in both, so the two datums are treated as the same line by the reports but that equivalence is not stated in words."
+    },
+    {
+      "id": "wtc1.roof_height_above_ground",
+      "applies_to": "wtc1",
+      "value": 1368,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 34,
+        "printed_page": "2",
+        "section": "1.1.1 Global Structural System",
+        "quote": "The buildings, which were each approximately 207 ft by 207 ft square in plan and with story heights of typically 12 ft, rose to heights of 1,368 ft (WTC 1) and 1,362 ft (WTC 2) above ground."
+      },
+      "notes": "Corroborates wtc1.roof_height_above_concourse."
+    },
+    {
+      "id": "wtc1.antenna_height",
+      "applies_to": "wtc1",
+      "value": 360,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 69,
+        "printed_page": "7",
+        "section": "2.2.1 Building Description",
+        "quote": "The height of WTC 1 at the roof level was 1,368 ft above the Concourse level, 6 ft taller than WTC 2, and WTC 1 supported a 360 ft tall antenna for television and radio transmission."
+      },
+      "notes": "Antenna base elevation, taper, and plan position are not stated in NCSTAR 1-1 (see unresolved)."
+    },
+    {
+      "id": "wtc2.antenna_built",
+      "applies_to": "wtc2",
+      "value": false,
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Hat Trusses",
+        "quote": "The hat truss was designed primarily to provide a base for antennae atop both towers, although only the WTC 1 antenna was actually built."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.plan_side_approx",
+      "applies_to": "towers",
+      "value": 207,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Each tower had a square plan with the side dimension of approximately 207 ft."
+      },
+      "notes": "approximately. The exact figure the report gives is the column-reference-line spacing, 207 ft 2 in. (towers.column_reference_line_spacing)."
+    },
+    {
+      "id": "towers.column_reference_line_spacing",
+      "applies_to": "towers",
+      "value": 2486,
+      "value_raw": "207 ft 2 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "The four reference lines surrounding the base of the tower established the footprint of the building. The column reference lines were spaced at 207 ft 2 in."
+      },
+      "notes": "Restated in 2.2.2 (pdf p71): 'square in plan, 207 ft 2 in. by 207 ft 2 in. (based on column reference lines)'. Also the '207'-2\"' callout on Figure 2-3 (pdf p81) and Figure 2-15 (pdf p92). The report warns (pdf p71) that drawing dimensions are to column reference lines, which do not necessarily coincide with column centroids; pdf p70 says the geometric centers of the exterior columns were offset from the reference lines (Fig. 2-9 Section A-A)."
+    },
+    {
+      "id": "towers.corner_chamfer",
+      "applies_to": "towers",
+      "value": 83,
+      "value_raw": "6 ft 11 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "The corners of the tower were chamfered 6 ft 11 in."
+      },
+      "notes": "Also the '6'-11\"' callouts at each corner on Figure 2-3 (pdf p81) and Figure 2-15 (pdf p92). On Figure 2-3 the 6'-11\" is dimensioned from the column reference line to the first column line at each end of the face."
+    },
+    {
+      "id": "towers.core_plan_long_approx",
+      "applies_to": "towers",
+      "value": 135,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Each tower had a core service area of approximately 135 ft by 87 ft."
+      },
+      "notes": "approximately. Restated pdf p71 and in NCSTAR 1-2A pdf p34."
+    },
+    {
+      "id": "towers.core_plan_short_approx",
+      "applies_to": "towers",
+      "value": 87,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Each tower had a core service area of approximately 135 ft by 87 ft."
+      },
+      "notes": "approximately."
+    },
+    {
+      "id": "wtc1.core_long_axis_orientation",
+      "applies_to": "wtc1",
+      "value": "east-west",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "The long axis of the core in WTC 1 was oriented in the east-west direction, while the long axis of the core in WTC 2 was oriented in the north-south direction."
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc2.core_long_axis_orientation",
+      "applies_to": "wtc2",
+      "value": "north-south",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "The long axis of the core in WTC 1 was oriented in the east-west direction, while the long axis of the core in WTC 2 was oriented in the north-south direction."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.core_to_exterior_wall_distance_short_approx",
+      "applies_to": "towers",
+      "value": 36,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 34,
+        "printed_page": "2",
+        "section": "1.1.1 Global Structural System",
+        "quote": "The distances between the rectangular core and the square exterior wall were approximately 36 ft and 60 ft."
+      },
+      "notes": "approximately. NCSTAR 1-1 pdf p74 gives the truss spans as 'about 35 ft in the short-span zone and 60 ft in the long-span zone' and the hat-truss brace spans as 'the 35 ft gap' and 'the 60 ft gap'; the reports do not reconcile 35 vs 36."
+    },
+    {
+      "id": "towers.core_to_exterior_wall_distance_long_approx",
+      "applies_to": "towers",
+      "value": 60,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 34,
+        "printed_page": "2",
+        "section": "1.1.1 Global Structural System",
+        "quote": "The distances between the rectangular core and the square exterior wall were approximately 36 ft and 60 ft."
+      },
+      "notes": "approximately."
+    },
+    {
+      "id": "towers.column_free_area_outside_core_per_floor_approx",
+      "applies_to": "towers",
+      "value": 31000,
+      "unit": "ft2",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "placing all service systems within the core provided nearly a column-free floor space of approximately 31,000 ft2 per floor outside the core."
+      },
+      "notes": "approximately. Superscript 2 in the original."
+    },
+    {
+      "id": "towers.rentable_floor_area_total_approx",
+      "applies_to": "towers",
+      "value": 10000000,
+      "unit": "ft2",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 38,
+        "printed_page": "xxxvi",
+        "section": "Executive Summary E.2, WTC 1 and WTC 2",
+        "quote": "The two towers had about 10 million ft2 of rentable floor area."
+      },
+      "notes": "about. Total for both towers together; a per-floor rentable figure is not stated."
+    },
+    {
+      "id": "towers.net_floor_area_per_floor_egress_basis",
+      "applies_to": "towers",
+      "value": 39000,
+      "unit": "ft2",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 50,
+        "printed_page": "xlviii",
+        "section": "Executive Summary, Egress",
+        "quote": "These included two 44 in. (designated A and C) and one 56 in. wide (designated B) stairs which provided exactly the code required capacity for an occupant load of 390 per floor (39,000 ft2 net at 100 ft2 per person)."
+      },
+      "notes": "Stated as the egress-capacity basis, not as a measured floor area. Gross floor area per floor is not stated anywhere in NCSTAR 1-1 (see unresolved)."
+    },
+    {
+      "id": "towers.floor_106_net_area_approx_1968",
+      "applies_to": "towers",
+      "value": 36500,
+      "unit": "ft2",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 280,
+        "printed_page": "218",
+        "section": "Appendix B, reproduced letter dated January 25, 1968 re: The World Trade Center Building Department Review",
+        "quote": "The largest floor area is about 36,500 square feet net on the 106th floor."
+      },
+      "notes": "about. From a 1968 design-era letter reproduced in Appendix B, not NIST's own measurement. The letter's stair widths ('two 3' 8\" stairs' and 'one 4' 8\" stair') are as written there."
+    },
+    {
+      "id": "complex.site_area",
+      "applies_to": "complex",
+      "value": 16,
+      "unit": "acres",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 38,
+        "printed_page": "xxxvi",
+        "section": "Executive Summary E.2",
+        "quote": "The first six buildings on the sixteen-acre site were developed by the Port Authority."
+      },
+      "notes": null
+    },
+    {
+      "id": "complex.plaza_area",
+      "applies_to": "complex",
+      "value": 5,
+      "unit": "acres",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 38,
+        "printed_page": "xxxvi",
+        "section": "Executive Summary E.2",
+        "quote": "These six buildings were built around a 5 acre WTC Plaza."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.typical_story_height",
+      "applies_to": "towers",
+      "value": 12,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 71,
+        "printed_page": "9",
+        "section": "2.2.2 Structural Description",
+        "quote": "The buildings were square in plan, 207 ft 2 in. by 207 ft 2 in. (based on column reference lines), and with story heights of typically 12 ft."
+      },
+      "notes": "Also the '12'-0\"' floor-to-floor callout on Figure 2-9 (pdf p87). The non-typical stories are itemized on Figure 2-2 for WTC 1 (wtc1.story_* and wtc1.height_* below)."
+    },
+    {
+      "id": "wtc1.concourse_elevation",
+      "applies_to": "wtc1",
+      "value": 310,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "Elevation 310'"
+      },
+      "notes": "Lettered at the bottom of the height dimension string, on the line labeled 'Concourse'. Figure 2-3 (pdf p81) letters the same line 'Floor 1 / EL. 310''. Elevations in the drawings are a project datum, not sea level; the reports do not state the datum."
+    },
+    {
+      "id": "wtc1.height_concourse_to_fl9",
+      "applies_to": "wtc1",
+      "value": 104,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "104'"
+      },
+      "notes": "Dimension from the 'Elevation 310'' Concourse line to 'FL 9'. The figure shows the 'Plaza' line a short distance above the Concourse line without a numeric callout."
+    },
+    {
+      "id": "wtc1.height_fl9_to_fl40",
+      "applies_to": "wtc1",
+      "value": 372,
+      "value_raw": "31 @ 12' = 372'",
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "31 @ 12' = 372'"
+      },
+      "notes": "31 stories at 12 ft between FL 9 and FL 40."
+    },
+    {
+      "id": "wtc1.story_fl40_to_fl41",
+      "applies_to": "wtc1",
+      "value": 14,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "FL 40 / 14' / FL 41"
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc1.height_fl41_to_fl43",
+      "applies_to": "wtc1",
+      "value": 28,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "FL 41 / 28' / FL 43"
+      },
+      "notes": "Single 28 ft dimension spanning the mechanical floors 41-42 (see towers.mechanical_equipment_room_floors); the figure does not subdivide it at FL 42."
+    },
+    {
+      "id": "wtc1.story_fl43_to_fl44",
+      "applies_to": "wtc1",
+      "value": 14,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "FL 43 / 14' / FL 44"
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc1.story_fl44_to_fl45",
+      "applies_to": "wtc1",
+      "value": 14,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "FL 44 / 14' / FL 45"
+      },
+      "notes": "FL 44 is a sky lobby (towers.sky_lobby_floors)."
+    },
+    {
+      "id": "wtc1.height_fl45_to_fl67",
+      "applies_to": "wtc1",
+      "value": 264,
+      "value_raw": "22 @ 12' = 264'",
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "22 @ 12' = 264'"
+      },
+      "notes": "22 stories at 12 ft between FL 45 and FL 67."
+    },
+    {
+      "id": "wtc1.story_fl67_to_fl68",
+      "applies_to": "wtc1",
+      "value": 16,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "FL 67 / 16 / FL 68"
+      },
+      "notes": "NCSTAR 1-2A Table G-1 (pdf p224) categorizes Tower A floor 67 as construction 'Type 6' while Tower B floor 67 is 'Type 1'; the figure is of WTC 1 only."
+    },
+    {
+      "id": "wtc1.height_fl68_to_fl74",
+      "applies_to": "wtc1",
+      "value": 72,
+      "value_raw": "6 @ 12'",
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "6 @ 12'"
+      },
+      "notes": "6 stories at 12 ft between FL 68 and FL 74. The figure gives no '= 72'' total for this run; 72 is the product of the lettered '6 @ 12''."
+    },
+    {
+      "id": "wtc1.story_fl74_to_fl75",
+      "applies_to": "wtc1",
+      "value": 14,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "FL 74 / 14'"
+      },
+      "notes": "Read from a 400 dpi render of the FL 74 to FL 79 dimension string, which letters, bottom to top: 14', 14, 14, 12, 14'."
+    },
+    {
+      "id": "wtc1.story_fl75_to_fl76",
+      "applies_to": "wtc1",
+      "value": 14,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "14"
+      },
+      "notes": "Second interval above FL 74 (mechanical floors 75-76)."
+    },
+    {
+      "id": "wtc1.story_fl76_to_fl77",
+      "applies_to": "wtc1",
+      "value": 14,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "14"
+      },
+      "notes": "Third interval above FL 74."
+    },
+    {
+      "id": "wtc1.story_fl77_to_fl78",
+      "applies_to": "wtc1",
+      "value": 12,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "12"
+      },
+      "notes": "Fourth interval above FL 74."
+    },
+    {
+      "id": "wtc1.story_fl78_to_fl79",
+      "applies_to": "wtc1",
+      "value": 14,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "14' / FL 79"
+      },
+      "notes": "FL 78 is a sky lobby (towers.sky_lobby_floors)."
+    },
+    {
+      "id": "wtc1.height_fl79_to_fl106",
+      "applies_to": "wtc1",
+      "value": 324,
+      "value_raw": "27 @ 12' = 324'",
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "27 @ 12' = 324'"
+      },
+      "notes": "27 stories at 12 ft between FL 79 and FL 106."
+    },
+    {
+      "id": "wtc1.story_fl106_to_fl107",
+      "applies_to": "wtc1",
+      "value": 172,
+      "value_raw": "14'-4\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "FL 106 / 14'-4\" / FL 107"
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc1.height_fl107_to_fl110",
+      "applies_to": "wtc1",
+      "value": 512,
+      "value_raw": "42'-8\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "FL 107 / 42'-8\" / FL 110"
+      },
+      "notes": "Single dimension spanning floors 107-110 (the hat-truss region); the figure does not subdivide it at FL 108 or FL 109."
+    },
+    {
+      "id": "wtc1.height_fl110_to_roof",
+      "applies_to": "wtc1",
+      "value": 21,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "FL 110 / 21' / Roof"
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc1.total_height_fig2_2",
+      "applies_to": "wtc1",
+      "value": 1368,
+      "value_raw": "1,368'",
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "18",
+        "section": "Figure 2-2. West elevation of WTC 1.",
+        "quote": "1,368'"
+      },
+      "notes": "Overall dimension from the Concourse line to the Roof line. Arithmetic check only (not a new value): the lettered intervals 104 + 372 + 14 + 28 + 14 + 14 + 264 + 16 + 72 + 14 + 14 + 14 + 12 + 14 + 324 + 14.333 + 42.667 + 21 sum to 1,368."
+    },
+    {
+      "id": "towers.floor_1_elevation",
+      "applies_to": "towers",
+      "value": 310,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "Floor 1 / EL. 310'"
+      },
+      "notes": "NCSTAR 1-2A Table G-1 (pdf p224) lists floor 1 as 'Concourse' for both towers. Figure 2-3 is captioned generically; NCSTAR 1-2A reproduces the same drawing as 'Figure 1-2. Typical WTC exterior wall, foundation to floor 9.' (pdf p35), so it is applied to both towers."
+    },
+    {
+      "id": "towers.floor_2_elevation",
+      "applies_to": "towers",
+      "value": 332,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "Floor 2 / EL. 332'"
+      },
+      "notes": "CONFLICT: NCSTAR 1-2A pdf p67 places a spandrel-splice joint 'at elevation 329 ft 3 in. (floor 2)' (towers.floor_2_spandrel_splice_elevation_1_2a). The 1-2A number is a spandrel centerline used for model joints ('spandrel centerline elevations were used to define joint coordinates'), so the two may measure different lines; neither report says so. NCSTAR 1-2A Table G-1 lists floor 2 as 'Plaza - Lobby'."
+    },
+    {
+      "id": "towers.floor_2_spandrel_splice_elevation_1_2a",
+      "applies_to": "towers",
+      "value": 3951,
+      "value_raw": "329 ft 3 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 67,
+        "printed_page": "35",
+        "section": "3.2.4 Exterior Wall, Foundation to Floor 4 Modeling",
+        "quote": "Additionally, joints were defined at the spandrel splice midway between two columns at elevation 350 ft 3 in. (floor 3) and at elevation 329 ft 3 in. (floor 2) to allow for section type transitions."
+      },
+      "notes": "See CONFLICT note on towers.floor_2_elevation (332 ft on NCSTAR 1-1 Figure 2-3)."
+    },
+    {
+      "id": "towers.floor_3_spandrel_splice_elevation",
+      "applies_to": "towers",
+      "value": 4203,
+      "value_raw": "350 ft 3 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 67,
+        "printed_page": "35",
+        "section": "3.2.4 Exterior Wall, Foundation to Floor 4 Modeling",
+        "quote": "Additionally, joints were defined at the spandrel splice midway between two columns at elevation 350 ft 3 in. (floor 3) and at elevation 329 ft 3 in. (floor 2) to allow for section type transitions."
+      },
+      "notes": "NCSTAR 1-1 Figure 2-3 (pdf p81) letters the same line 'EL. 350'-3\"' without a floor label. NCSTAR 1-2A Table G-1 lists floors 3-6 as 'Core Only (Storage)'."
+    },
+    {
+      "id": "towers.tree_column_splice_elevation",
+      "applies_to": "towers",
+      "value": 363,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 72,
+        "printed_page": "10",
+        "section": "2.2.2 Structural Description, Exterior Walls",
+        "quote": "The exterior wall columns, built-up of steel plates, from the foundation level up to Elevation 363 ft (column splice point below floor 7, see Fig. 2-3) were spaced 10 ft on center, and they were connected by spandrels."
+      },
+      "notes": "Bottom of the 'tree' transition. Figure 2-8 (pdf p86) letters it 'El. 363.00''."
+    },
+    {
+      "id": "towers.tree_panel_top_elevation",
+      "applies_to": "towers",
+      "value": 5027.5,
+      "value_raw": "418 ft 11 1/2 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 68,
+        "printed_page": "36",
+        "section": "3.2.5 Exterior Wall Trees (Floor 4 to 9) Modeling",
+        "quote": "The panels of the exterior wall between elevation 363 ft and elevation 418 ft 11 1/2 in. were called exterior wall trees."
+      },
+      "notes": "Consistent with NCSTAR 1-1 Figure 2-8, whose overall tree-panel dimension is 55'-11 1/2\" above El. 363.00' (towers.tree_panel_height)."
+    },
+    {
+      "id": "towers.tree_panel_height",
+      "applies_to": "towers",
+      "value": 671.5,
+      "value_raw": "55'-11 1/2\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 86,
+        "printed_page": "24",
+        "section": "Figure 2-8. Typical WTC tower exterior wall tree panel.",
+        "quote": "55'-11 1/2\""
+      },
+      "notes": "Overall vertical dimension of the tree panel from 'El. 363.00''. The figure subdivides it, bottom to top, as 9'-4\" (Level F), 11'-4\" (Level E), 7'-6\" (Level D), 17'-5 1/2\" (Level C), 6'-6\" (Level B), 3'-10\" (stub above Level B); these sum to 55'-11 1/2\"."
+    },
+    {
+      "id": "towers.tree_level_f_height",
+      "applies_to": "towers",
+      "value": 112,
+      "value_raw": "9'-4\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 86,
+        "printed_page": "24",
+        "section": "Figure 2-8. Typical WTC tower exterior wall tree panel.",
+        "quote": "9'-4\" / Level F"
+      },
+      "notes": "Lowest segment, single column, from El. 363.00'."
+    },
+    {
+      "id": "towers.tree_level_e_height",
+      "applies_to": "towers",
+      "value": 136,
+      "value_raw": "11'-4\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 86,
+        "printed_page": "24",
+        "section": "Figure 2-8. Typical WTC tower exterior wall tree panel.",
+        "quote": "11'-4\" / Level E"
+      },
+      "notes": "The forked (one-to-three) segment of the tree."
+    },
+    {
+      "id": "towers.tree_level_d_height",
+      "applies_to": "towers",
+      "value": 90,
+      "value_raw": "7'-6\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 86,
+        "printed_page": "24",
+        "section": "Figure 2-8. Typical WTC tower exterior wall tree panel.",
+        "quote": "7'-6\" / Level D"
+      },
+      "notes": "Spandrel segment containing Floor 7; 'Floor 7' is lettered 1'-2\" above the bottom of Level D (towers.tree_floor_7_offset_above_level_d)."
+    },
+    {
+      "id": "towers.tree_level_c_height",
+      "applies_to": "towers",
+      "value": 209.5,
+      "value_raw": "17'-5 1/2\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 86,
+        "printed_page": "24",
+        "section": "Figure 2-8. Typical WTC tower exterior wall tree panel.",
+        "quote": "17'-5 1/2\" / Level C"
+      },
+      "notes": "Three separate columns, no spandrel, between Floor 7 and Floor 9."
+    },
+    {
+      "id": "towers.tree_level_b_height",
+      "applies_to": "towers",
+      "value": 78,
+      "value_raw": "6'-6\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 86,
+        "printed_page": "24",
+        "section": "Figure 2-8. Typical WTC tower exterior wall tree panel.",
+        "quote": "6'-6\" / Level B"
+      },
+      "notes": "Spandrel segment containing Floor 9; 'Floor 9' is lettered 1'-4 1/2\" above the bottom of Level B (towers.tree_floor_9_offset_above_level_b)."
+    },
+    {
+      "id": "towers.tree_stub_above_level_b",
+      "applies_to": "towers",
+      "value": 46,
+      "value_raw": "3'-10\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 86,
+        "printed_page": "24",
+        "section": "Figure 2-8. Typical WTC tower exterior wall tree panel.",
+        "quote": "3'-10\""
+      },
+      "notes": "Column stub above the Level B spandrel to the top of the tree panel."
+    },
+    {
+      "id": "towers.tree_floor_7_offset_above_level_d",
+      "applies_to": "towers",
+      "value": 14,
+      "value_raw": "1'-2\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 86,
+        "printed_page": "24",
+        "section": "Figure 2-8. Typical WTC tower exterior wall tree panel.",
+        "quote": "1'-2\" / Floor 7"
+      },
+      "notes": "Floor 7 and Floor 9 numeric elevations are not lettered on any figure; deriving them from these offsets is a paradata decision (see unresolved)."
+    },
+    {
+      "id": "towers.tree_floor_9_offset_above_level_b",
+      "applies_to": "towers",
+      "value": 16.5,
+      "value_raw": "1'-4 1/2\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 86,
+        "printed_page": "24",
+        "section": "Figure 2-8. Typical WTC tower exterior wall tree panel.",
+        "quote": "1'-4 1/2\" / Floor 9"
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.bracing_top_elevation",
+      "applies_to": "towers",
+      "value": 294,
+      "value_raw": "294 ft 0 in.",
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 190,
+        "printed_page": "128",
+        "section": "Chapter 8, Bracing Below Elevation 294 ft 0 in.",
+        "quote": "Below Elevation 294 ft 0 in. (Sublevel 1) in both WTC 1 and WTC 2, diagonal bracing was used in place of deep spandrels between the exterior columns to resist lateral loads from the tower above."
+      },
+      "notes": "Also lettered 'EL. 294'' on Figure 2-3 (pdf p81) at the top of the braced bays. NAMING CONFLICT: NCSTAR 1-1 calls EL. 294 'Sublevel 1'; NCSTAR 1-2A Table G-1 calls it 'B1 EL. 294'; the NCSTAR 1-2A Tower B drawing index calls el. 294 'service level' and el. 284 'sub-level 1' (wtc2.sublevel_1_elevation_drawing_index)."
+    },
+    {
+      "id": "towers.b1_elevation_table_g1",
+      "applies_to": "towers",
+      "value": 294,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 224,
+        "printed_page": "192",
+        "section": "Appendix G, Table G-1. Representative categorizations of floor construction types outside of core.",
+        "quote": "B1 / EL. 294 / Type 14"
+      },
+      "notes": "Same row for Tower A and Tower B. See naming conflict on towers.bracing_top_elevation."
+    },
+    {
+      "id": "towers.level_b5_elevation",
+      "applies_to": "towers",
+      "value": 253,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 67,
+        "printed_page": "35",
+        "section": "3.2.4 Exterior Wall, Foundation to Floor 4 Modeling",
+        "quote": "Joints at elevation 253 ft (level B-5) were defined only where the diagonals connect to the columns, since the tower floor did not frame into the exterior spandrels at that floor."
+      },
+      "notes": "Matches 'sub-level 4 el. 253' in the Tower B drawing index under a different label; the B-n and sub-level-n numberings differ by one."
+    },
+    {
+      "id": "towers.foundation_level_elevation",
+      "applies_to": "towers",
+      "value": 242,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "EL. 242'"
+      },
+      "notes": "Lowest elevation line on the figure. NCSTAR 1-2A drawing index: 'Plan sub-level 5 el. 242'."
+    },
+    {
+      "id": "towers.bracing_bay_bottom_height",
+      "applies_to": "towers",
+      "value": 11,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "11'"
+      },
+      "notes": "Lowest braced bay above EL. 242'. DISCREPANCY: 242 + 11 + (4 x 10) = 293, but the top line is lettered EL. 294'. The NCSTAR 1-2A drawing index gives 242 / 253 / 264 / 274 / 284 / 294 (two 11 ft and three 10 ft levels), which does reach 294; the figure's '4 @ 10'-0\"' callout is not reconciled with that by either report."
+    },
+    {
+      "id": "towers.bracing_bays_above_bottom",
+      "applies_to": "towers",
+      "value": 40,
+      "value_raw": "4 @ 10'-0\"",
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "4 @ 10'-0\""
+      },
+      "notes": "See discrepancy note on towers.bracing_bay_bottom_height."
+    },
+    {
+      "id": "wtc2.sublevel_5_elevation_drawing_index",
+      "applies_to": "wtc2",
+      "value": 242,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 189,
+        "printed_page": "157",
+        "section": "Appendix, WTC Tower B Structural Steel Drawing Index (18-May-73)",
+        "quote": "SB-2 / Plan sub-level 5 el.242 / 25-Sep-68"
+      },
+      "notes": "Drawing-index title line, Tower B. Corresponding Tower A index lines were not located in the OCR text; treat as wtc2 only. UPDATE 2026-09-11: the Tower A index lines were located on pdf p181 (printed p149) and recorded as wtc1.sublevel_*_elevation_drawing_index / wtc1.service_level_elevation_drawing_index."
+    },
+    {
+      "id": "wtc2.sublevel_4_elevation_drawing_index",
+      "applies_to": "wtc2",
+      "value": 253,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 189,
+        "printed_page": "157",
+        "section": "Appendix, WTC Tower B Structural Steel Drawing Index (18-May-73)",
+        "quote": "SB-3 / Framing plan sub-level 4 el.253 / 25-Sep-68"
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc2.sublevel_3_elevation_drawing_index",
+      "applies_to": "wtc2",
+      "value": 264,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 189,
+        "printed_page": "157",
+        "section": "Appendix, WTC Tower B Structural Steel Drawing Index (18-May-73)",
+        "quote": "SB-4 / Framing plan sub-level 3 el. 264 / 07-Oct-68"
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc2.sublevel_2_elevation_drawing_index",
+      "applies_to": "wtc2",
+      "value": 274,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 189,
+        "printed_page": "157",
+        "section": "Appendix, WTC Tower B Structural Steel Drawing Index (18-May-73)",
+        "quote": "SB-5 / Framing plan sub-level 2 el. 274 / 17-Jul-68"
+      },
+      "notes": "A WTC 1 modification record on pdf p199 also refers to 'WTC 1, elevation 274 ft' and 'elevation 284 ft', so the same elevations existed in Tower A."
+    },
+    {
+      "id": "wtc2.sublevel_1_elevation_drawing_index",
+      "applies_to": "wtc2",
+      "value": 284,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 189,
+        "printed_page": "157",
+        "section": "Appendix, WTC Tower B Structural Steel Drawing Index (18-May-73)",
+        "quote": "SB-6 / Framing plan sub-level 1 el. 284 / 07-Oct-68"
+      },
+      "notes": "See naming conflict on towers.bracing_top_elevation (NCSTAR 1-1 calls EL. 294 'Sublevel 1')."
+    },
+    {
+      "id": "wtc2.service_level_elevation_drawing_index",
+      "applies_to": "wtc2",
+      "value": 294,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 189,
+        "printed_page": "157",
+        "section": "Appendix, WTC Tower B Structural Steel Drawing Index (18-May-73)",
+        "quote": "SB-7 / Framing plan service level el. 294 / 28-May-69"
+      },
+      "notes": "Next index line is 'SB-8 / Framing plan floor 1' with no elevation; floor 1 = EL. 310' per NCSTAR 1-1 Figure 2-3."
+    },
+    {
+      "id": "wtc1.sublevel_5_elevation_drawing_index",
+      "applies_to": "wtc1",
+      "value": 242,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 181,
+        "printed_page": "149",
+        "section": "Appendix A, WTC Tower A Structural Steel Drawing Index (18-May-73)",
+        "quote": "SA-2 / Plan sub-level 5 / EL.242 / 09-Apr-69"
+      },
+      "notes": "Drawing-index title line, Tower A (pdf p181). Located 2026-09-11; the earlier note on wtc2.sublevel_5_elevation_drawing_index said these lines had not been found. Same elevation as the Tower B index line and as NCSTAR 1-1 Figure 2-3 (towers.foundation_level_elevation)."
+    },
+    {
+      "id": "wtc1.sublevel_3_elevation_drawing_index",
+      "applies_to": "wtc1",
+      "value": 264,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 181,
+        "printed_page": "149",
+        "section": "Appendix A, WTC Tower A Structural Steel Drawing Index (18-May-73)",
+        "quote": "SA-4 / Framing plan sub-level 3 / EL. 264 / 07-Oct-68"
+      },
+      "notes": "The Tower A index line for sub-level 4 (SA-3, 09-Apr-69) carries no elevation; 253 ft for that level is cited for both towers via towers.level_b5_elevation."
+    },
+    {
+      "id": "wtc1.sublevel_2_elevation_drawing_index",
+      "applies_to": "wtc1",
+      "value": 274,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 181,
+        "printed_page": "149",
+        "section": "Appendix A, WTC Tower A Structural Steel Drawing Index (18-May-73)",
+        "quote": "SA-5 / Framing plan sub-level 2 / EL.274 / 17-Jul-68"
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc1.sublevel_1_elevation_drawing_index",
+      "applies_to": "wtc1",
+      "value": 284,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 181,
+        "printed_page": "149",
+        "section": "Appendix A, WTC Tower A Structural Steel Drawing Index (18-May-73)",
+        "quote": "SA-6 / Framing plan sub-level 1 / EL. 284 / 07-Oct-68"
+      },
+      "notes": "See naming conflict on towers.bracing_top_elevation (NCSTAR 1-1 calls EL. 294 'Sublevel 1')."
+    },
+    {
+      "id": "wtc1.service_level_elevation_drawing_index",
+      "applies_to": "wtc1",
+      "value": 294,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 181,
+        "printed_page": "149",
+        "section": "Appendix A, WTC Tower A Structural Steel Drawing Index (18-May-73)",
+        "quote": "SA-7 / Framing plan service level / EL. 294 / 17-Jul-68"
+      },
+      "notes": "Next index line is 'SA-8 / Framing plan floor 1' with no elevation; floor 1 = EL. 310' per NCSTAR 1-1 Figure 2-3 (towers.floor_1_elevation)."
+    },
+    {
+      "id": "towers.perimeter_columns_per_face",
+      "applies_to": "towers",
+      "value": 59,
+      "unit": "columns",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Each building face consisted of 59 columns spaced at 3 ft 4 in. on center."
+      },
+      "notes": "Above the 7th floor. Restated pdf p72 ('Between floors 9 and 107 ... Each building face consisted of 59 columns'). Figure 2-3 letters the face as '58 @ 3'-4\" = 193'-4\"' (58 bays)."
+    },
+    {
+      "id": "towers.perimeter_column_spacing_oc",
+      "applies_to": "towers",
+      "value": 40,
+      "value_raw": "3 ft 4 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Each building face consisted of 59 columns spaced at 3 ft 4 in. on center."
+      },
+      "notes": "Also the '40 in.' callout between adjacent columns on Figure 2-7 Section at Spandrel (pdf p85) and the '3'-4\"' callouts on Figures 2-8 and 2-9. The window width (clear gap between column faces) is NOT stated; see unresolved."
+    },
+    {
+      "id": "towers.perimeter_column_section_approx",
+      "applies_to": "towers",
+      "value": 14,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Above the 7th floor level, the columns were welded steel plate box columns of an approximately 14 in. square section."
+      },
+      "notes": "approximately; square. Figure 2-7 gives the plate-to-plate dimensions (towers.perimeter_column_outer_web_width etc.)."
+    },
+    {
+      "id": "towers.perimeter_column_outer_web_width",
+      "applies_to": "towers",
+      "value": 14,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 85,
+        "printed_page": "23",
+        "section": "Figure 2-7. Cross section of perimeter columns, Section at Individual Column",
+        "quote": "14 in. / Outer Web"
+      },
+      "notes": "Horizontal dimension across the outer web (the face toward the outside of the building)."
+    },
+    {
+      "id": "towers.perimeter_column_depth",
+      "applies_to": "towers",
+      "value": 13.5,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 85,
+        "printed_page": "23",
+        "section": "Figure 2-7. Cross section of perimeter columns, Section at Individual Column",
+        "quote": "13.5 in."
+      },
+      "notes": "Vertical dimension on the right of the section, outer web to inner web. Figure 2-9 Section A-A (pdf p87) letters the same depth as 1'-1 1/2\", subdivided 7\" and 6 1/2\" about the exterior column reference line."
+    },
+    {
+      "id": "towers.perimeter_column_inner_web_width",
+      "applies_to": "towers",
+      "value": 15.75,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 85,
+        "printed_page": "23",
+        "section": "Figure 2-7. Cross section of perimeter columns, Section at Individual Column",
+        "quote": "15.75 in. / Inner Web"
+      },
+      "notes": "The inner web plate is wider than the 14 in. box because it projects past the flanges on the inside."
+    },
+    {
+      "id": "towers.perimeter_column_flange_dimension_11in",
+      "applies_to": "towers",
+      "value": 11,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 85,
+        "printed_page": "23",
+        "section": "Figure 2-7. Cross section of perimeter columns, Section at Individual Column",
+        "quote": "11 in."
+      },
+      "notes": "Vertical dimension lettered on the left of the section beside the 'Flange' label. The figure does not say in words which two points it spans; recorded as lettered."
+    },
+    {
+      "id": "towers.perimeter_column_pitch_fig2_7",
+      "applies_to": "towers",
+      "value": 40,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 85,
+        "printed_page": "23",
+        "section": "Figure 2-7. Cross section of perimeter columns, Section at Spandrel",
+        "quote": "40 in."
+      },
+      "notes": "Horizontal dimension from one column to the next on the Section at Spandrel. Equals the 3 ft 4 in. on-center spacing."
+    },
+    {
+      "id": "towers.perimeter_face_bays_above_floor_9",
+      "applies_to": "towers",
+      "value": 58,
+      "value_raw": "58 @ 3'-4\" = 193'-4\"",
+      "unit": "bays",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "58 @ 3'-4\" = 193'-4\""
+      },
+      "notes": "Dimensioned between the two corner columns at the Floor 9 line, with 6'-11\" to the column reference line at each end."
+    },
+    {
+      "id": "towers.perimeter_face_column_run_above_floor_9",
+      "applies_to": "towers",
+      "value": 2320,
+      "value_raw": "193'-4\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "58 @ 3'-4\" = 193'-4\""
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.spandrel_depth_typical",
+      "applies_to": "towers",
+      "value": 52,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Adjacent columns were interconnected at each floor level by deep spandrel plates, typically 52 in. deep."
+      },
+      "notes": "typically. Restated pdf p72 and in NCSTAR 1-2A pdf p35."
+    },
+    {
+      "id": "towers.perimeter_panel_width",
+      "applies_to": "towers",
+      "value": 10,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 72,
+        "printed_page": "10",
+        "section": "2.2.2 Structural Description, Exterior Walls",
+        "quote": "The columns were interconnected at each floor level by 52 in. deep spandrel plates to form a 10 ft wide and 36 ft tall panel (Fig. 2-9)."
+      },
+      "notes": "Three columns and three spandrels per panel (pdf p150: 'welded into 36 ft high by 10 ft wide panels, which consisted of three columns and three spandrels'). Figure 2-9 letters the panel 1'-8\" / 3'-4\" / 3'-4\" / 1'-8\" = 10'-0\"."
+    },
+    {
+      "id": "towers.perimeter_panel_height",
+      "applies_to": "towers",
+      "value": 36,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 72,
+        "printed_page": "10",
+        "section": "2.2.2 Structural Description, Exterior Walls",
+        "quote": "The columns were interconnected at each floor level by 52 in. deep spandrel plates to form a 10 ft wide and 36 ft tall panel (Fig. 2-9)."
+      },
+      "notes": "Three stories. 'Other than at the mechanical floors, panels were staggered so that only one third of the columns were spliced (i.e., connected) in any one story (Fig. 2-10). At the mechanical floors, the perimeter columns were spliced at the same level (i.e. floors 74 and 77).' (pdf p72)"
+    },
+    {
+      "id": "towers.perimeter_panel_edge_to_column",
+      "applies_to": "towers",
+      "value": 20,
+      "value_raw": "1'-8\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 87,
+        "printed_page": "25",
+        "section": "Figure 2-9. Typical WTC tower exterior wall panel.",
+        "quote": "1'-8\" / 3'-4\" / 3'-4\" / 1'-8\" / 10'-0\""
+      },
+      "notes": "Distance from the panel edge (splice line between panels) to the first column line."
+    },
+    {
+      "id": "towers.framed_tube_box_column_floor_range",
+      "applies_to": "towers",
+      "value": "9 to 107",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 72,
+        "printed_page": "10",
+        "section": "2.2.2 Structural Description, Exterior Walls",
+        "quote": "Between floors 9 and 107, the perimeter structure consisted of closely spaced, built-up box columns."
+      },
+      "notes": "Floors 107-110 are the hat-truss region (towers.hat_truss_floor_range)."
+    },
+    {
+      "id": "towers.base_column_spacing_oc",
+      "applies_to": "towers",
+      "value": 10,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 72,
+        "printed_page": "10",
+        "section": "2.2.2 Structural Description, Exterior Walls",
+        "quote": "The exterior wall columns, built-up of steel plates, from the foundation level up to Elevation 363 ft (column splice point below floor 7, see Fig. 2-3) were spaced 10 ft on center, and they were connected by spandrels."
+      },
+      "notes": "Executive Summary (pdf p38): 'Below floor 7, the columns were combined in groups of three to form single base columns which were spaced 10 ft on center and extended to the footings.'"
+    },
+    {
+      "id": "towers.transition_ten_ft_to_three_at_3ft4in",
+      "applies_to": "towers",
+      "value": "between Elevation 363 ft and floor 7",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 72,
+        "printed_page": "10",
+        "section": "2.2.2 Structural Description, Exterior Walls",
+        "quote": "Between Elevation 363 ft and floor 7, single exterior wall columns spaced 10 ft on center transitioned to three columns spaced 3 ft 4 in. on center (Fig. 2-8) to form \"tree\" assemblies."
+      },
+      "notes": "The height at which the transition occurs: bottom Elevation 363 ft (towers.tree_column_splice_elevation); the fork itself is the 11'-4\" Level E segment starting 9'-4\" above El. 363.00' on Figure 2-8; the trees end at elevation 418 ft 11 1/2 in. (towers.tree_panel_top_elevation)."
+    },
+    {
+      "id": "towers.base_face_bays",
+      "applies_to": "towers",
+      "value": 18,
+      "value_raw": "18 @ 10'-0\" = 180'-0\"",
+      "unit": "bays",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "18 @ 10'-0\" = 180'-0\""
+      },
+      "notes": "Dimensioned at the foundation line, with a 6'-8\" end bay and then 6'-11\" to the column reference line at each end. 6'-11\" + 6'-8\" + 180' + 6'-8\" + 6'-11\" = 207'-2\" (the figure's own overall dimension)."
+    },
+    {
+      "id": "towers.base_face_column_run",
+      "applies_to": "towers",
+      "value": 180,
+      "value_raw": "180'-0\"",
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "18 @ 10'-0\" = 180'-0\""
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.base_face_end_bay",
+      "applies_to": "towers",
+      "value": 80,
+      "value_raw": "6'-8\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3. Elevation of exterior wall from foundation to floor 9.",
+        "quote": "6'-8\""
+      },
+      "notes": "Bay between the outermost 10 ft-spaced base column and the corner column line, at each end of the face below Elevation 363 ft."
+    },
+    {
+      "id": "towers.core_column_designations",
+      "applies_to": "towers",
+      "value": "501-508, 601-608, 701-708, 801-807, 901-908, 1001-1008",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 89,
+        "printed_page": "27",
+        "section": "Figure 2-12. Core column layout in WTC towers.",
+        "quote": "Column # / Floor of Transition from box to Wide Flange columns / WF Column* / Box Column* / Typical Enclosed Area for Elevators and Other Services / *Shape of Column at the 84th Floor"
+      },
+      "notes": "Column numbers as lettered on the figure: six rows (500, 600, 700, 800, 900, 1000 series); the 800 row runs 801-807, every other row 1-8. The total is not stated in prose anywhere in NCSTAR 1-1 (see unresolved towers.core_column_count). The figure also letters, under each column number, the floor at which that column transitions from box to wide-flange section. No plan dimensions are lettered on this figure."
+    },
+    {
+      "id": "towers.core_box_column_max_size",
+      "applies_to": "towers",
+      "value": "12 in. by 52 in.",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 73,
+        "printed_page": "11",
+        "section": "2.2.2 Structural Description, Core Columns",
+        "quote": "The columns in the lower floors were primarily very large box columns, as large as 12 in. by 52 in., comprised of welded plates up to 7 in. thick."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.core_column_splice_interval",
+      "applies_to": "towers",
+      "value": 3,
+      "unit": "stories",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 73,
+        "printed_page": "11",
+        "section": "2.2.2 Structural Description, Core Columns",
+        "quote": "Core columns were typically spliced at three-story intervals."
+      },
+      "notes": "NCSTAR 1-2A pdf p35 adds 'at 3 ft above floor level'."
+    },
+    {
+      "id": "towers.mechanical_floors",
+      "applies_to": "towers",
+      "value": [
+        7,
+        41,
+        75,
+        108
+      ],
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 126,
+        "printed_page": "64",
+        "section": "Chapter 5, Live Loads, Design Criteria for WTC 1 and WTC 2",
+        "quote": "At mechanical floors 7, 41, 75, and 108, a 75 psf live load was used."
+      },
+      "notes": "NCSTAR 1-2A Figure 3-19 (pdf p86, Typical beam-framed floor arrangement) legend: 'Towers A & B MER Floors: 7,41,75,108' and 'Towers A & B Near MER Floors: 9,43,77,107,110,Roof'. The two-story mechanical equipment rooms are towers.mechanical_equipment_room_floors."
+    },
+    {
+      "id": "towers.mechanical_equipment_room_floors",
+      "applies_to": "towers",
+      "value": [
+        [
+          7,
+          8
+        ],
+        [
+          41,
+          42
+        ],
+        [
+          75,
+          76
+        ],
+        [
+          108,
+          109
+        ]
+      ],
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 182,
+        "printed_page": "120",
+        "section": "Chapter 8, Mechanical Equipment Rooms (Floors 7-8, 41-42, 75-76, 108-109)",
+        "quote": "Mechanical Equipment Rooms (Floors 7-8, 41-42, 75-76, 108-109)"
+      },
+      "notes": "Restated pdf p185: 'All four mechanical equipment room floor levels (floors 7-8, 41-42, 75-76, and 108-109) were inspected.' NCSTAR 1-2A Table G-1 (pdf p224) labels the pairs 'Lower Mech' / 'Upper Mech' (7/8, 41/42) and 'Lower Mech Fl' / 'Upper Mech Fl' (75/76, 108/109) for both towers, and pdf p42 says 'The floor slabs were omitted from much of the mechanical mezzanines outside the core to provide double height space for the mechanical equipment.'"
+    },
+    {
+      "id": "towers.escalator_floors",
+      "applies_to": "towers",
+      "value": [
+        43,
+        45,
+        77,
+        79
+      ],
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 224,
+        "printed_page": "192",
+        "section": "Appendix G, Table G-1. Representative categorizations of floor construction types outside of core.",
+        "quote": "43 / Lower Escalator / Type 12 ... 45 / Upper Escalator / Type 5 ... 77 / Lower Escalator / Type 12 ... 79 / Upper Escalator / Type 8"
+      },
+      "notes": "Same for Tower A and Tower B. pdf p42: 'The escalator floors occurred typically in the two levels directly above the mechanical rooms.' Floors 44 and 78 between them are the sky lobbies."
+    },
+    {
+      "id": "towers.atrium_levels",
+      "applies_to": "towers",
+      "value": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 75,
+        "printed_page": "43",
+        "section": "3.2.9 Flexible and Rigid Floor Diaphragm Modeling",
+        "quote": "The floors modeled using flexible diaphragms were floors 3, 4, 5, 6, 7, 9 (atrium levels); 41, 42, 43, 75, 76, 77 (mechanical levels); 107, 108, 109, 110, and roof (hat truss region) of both towers."
+      },
+      "notes": "NCSTAR 1-1 pdf p72 describes 'the atrium area (below floor 7 to the foundation)'. Table G-1 lists floors 3-6 as 'Core Only (Storage)' with no floor construction type outside the core."
+    },
+    {
+      "id": "towers.floor_1_usage",
+      "applies_to": "towers",
+      "value": "Concourse",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 224,
+        "printed_page": "192",
+        "section": "Appendix G, Table G-1. Representative categorizations of floor construction types outside of core.",
+        "quote": "1 / Concourse / Type 14"
+      },
+      "notes": "Same for Tower A and Tower B."
+    },
+    {
+      "id": "towers.floor_2_usage",
+      "applies_to": "towers",
+      "value": "Plaza - Lobby",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 224,
+        "printed_page": "192",
+        "section": "Appendix G, Table G-1. Representative categorizations of floor construction types outside of core.",
+        "quote": "2 / Plaza - Lobby / Type 15"
+      },
+      "notes": "Same for Tower A and Tower B. Combining this with towers.floor_2_elevation (332 ft, NCSTAR 1-1 Fig. 2-3) to obtain a plaza elevation is an inference neither report makes in words; see unresolved towers.plaza_elevation."
+    },
+    {
+      "id": "towers.floors_3_to_6_usage",
+      "applies_to": "towers",
+      "value": "Core Only (Storage)",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 224,
+        "printed_page": "192",
+        "section": "Appendix G, Table G-1. Representative categorizations of floor construction types outside of core.",
+        "quote": "3-6 / Core Only (Storage) / NA"
+      },
+      "notes": "Same for Tower A and Tower B. No floor outside the core at these levels (the lobby atrium)."
+    },
+    {
+      "id": "wtc1.floor_107_usage",
+      "applies_to": "wtc1",
+      "value": "Restaurant",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 224,
+        "printed_page": "192",
+        "section": "Appendix G, Table G-1, Tower A Floor Framing",
+        "quote": "107 / Restaurant / Type 12"
+      },
+      "notes": "NCSTAR 1-1 pdf p71: 'dedicated express elevators that served the restaurant, bars, and meeting rooms on floors 106 and 107 of WTC 1'. Table G-1 lists Tower A floor 106 as 'Tenant / Type 10'."
+    },
+    {
+      "id": "wtc1.restaurant_floors",
+      "applies_to": "wtc1",
+      "value": [
+        106,
+        107
+      ],
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 71,
+        "printed_page": "9",
+        "section": "2.2.1 Building Description",
+        "quote": "dedicated express elevators that served the restaurant, bars, and meeting rooms on floors 106 and 107 of WTC 1, as well as the observation deck in WTC 2."
+      },
+      "notes": null
+    },
+    {
+      "id": "wtc2.floor_107_usage",
+      "applies_to": "wtc2",
+      "value": "Observation",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 224,
+        "printed_page": "192",
+        "section": "Appendix G, Table G-1, Tower B Floor Framing",
+        "quote": "107 / Observation / Type 12"
+      },
+      "notes": "Table G-1 also lists Tower B 'PH Roof / Observation / Type 12'."
+    },
+    {
+      "id": "wtc1.floor_110_usage",
+      "applies_to": "wtc1",
+      "value": "TV/Storage",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 224,
+        "printed_page": "192",
+        "section": "Appendix G, Table G-1, Tower A Floor Framing",
+        "quote": "110 / TV/Storage / Type 12"
+      },
+      "notes": "Tower B floor 110 is 'Storage / Type 12'. Both towers list 'PH Roof' above 110 (Tower A 'Roof', Tower B 'Observation')."
+    },
+    {
+      "id": "towers.hat_truss_floor_range",
+      "applies_to": "towers",
+      "value": "107 to roof",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Hat Trusses",
+        "quote": "At the top of each tower (floor 107 to the roof), an assembly of hat trusses interconnected the core columns and the exterior wall panels (see Fig. 2-18)."
+      },
+      "notes": "Figure 2-18 section (pdf p95) draws floor lines 103rd through 110th with the truss diagonals between the 107th floor and the top. Also pdf p181: 'From floor 107 to floor 110, a steel space frame system, also known as \"hat trusses\" was interconnected with columns in the core and the exterior walls.'"
+    },
+    {
+      "id": "towers.hat_truss_brace_connection_floor",
+      "applies_to": "towers",
+      "value": 108,
+      "unit": "floor",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Hat Trusses",
+        "quote": "In addition, four diagonal braces (18 in. by 26 in. box beams spanning the 35 ft gap, and 18 in. by 30 in. box beams spanning the 60 ft gap) and four horizontal floor beams connected the hat truss to each perimeter wall at the floor 108 spandrel."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.hat_truss_brace_span_short",
+      "applies_to": "towers",
+      "value": 35,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Hat Trusses",
+        "quote": "four diagonal braces (18 in. by 26 in. box beams spanning the 35 ft gap, and 18 in. by 30 in. box beams spanning the 60 ft gap)"
+      },
+      "notes": "Core-to-wall gap on the short side. Compare towers.core_to_exterior_wall_distance_short_approx (36 ft, NCSTAR 1-2A)."
+    },
+    {
+      "id": "towers.hat_truss_brace_span_long",
+      "applies_to": "towers",
+      "value": 60,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Hat Trusses",
+        "quote": "four diagonal braces (18 in. by 26 in. box beams spanning the 35 ft gap, and 18 in. by 30 in. box beams spanning the 60 ft gap)"
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.sky_lobby_floors",
+      "applies_to": "towers",
+      "value": [
+        44,
+        78
+      ],
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "People transferred from express elevators to local elevators at the skylobbies which were located on the 44th and 78th floors in the both towers."
+      },
+      "notes": "Also NCSTAR 1-2A Table G-1: '44 / Sky Lobby / Type 4' and '78 / Sky Lobby / Type 7' for both towers."
+    },
+    {
+      "id": "towers.elevator_zones",
+      "applies_to": "towers",
+      "value": 3,
+      "unit": "zones",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "each tower was divided into three zones by the skylobbies, which served to distribute passengers among express and local elevators (for details, see NIST NCSTAR 1-7)."
+      },
+      "notes": "Figure 2-5 (pdf p83) is the riser diagram: express elevators from Plaza Level to each skylobby, local elevators stacked within each zone; no floor numbers are lettered on it."
+    },
+    {
+      "id": "towers.express_elevators_concourse_to_44",
+      "applies_to": "towers",
+      "value": 8,
+      "unit": "elevators",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 50,
+        "printed_page": "xlviii",
+        "section": "Executive Summary, Egress",
+        "quote": "There were 8 express elevators from the concourse to the 44th floor and 10 express elevators from the concourse to the 78th floor as well as 24 local elevators per zone, which served groups of floors in those zones."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.express_elevators_concourse_to_78",
+      "applies_to": "towers",
+      "value": 10,
+      "unit": "elevators",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 50,
+        "printed_page": "xlviii",
+        "section": "Executive Summary, Egress",
+        "quote": "There were 8 express elevators from the concourse to the 44th floor and 10 express elevators from the concourse to the 78th floor as well as 24 local elevators per zone, which served groups of floors in those zones."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.local_elevators_per_zone",
+      "applies_to": "towers",
+      "value": 24,
+      "unit": "elevators",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 50,
+        "printed_page": "xlviii",
+        "section": "Executive Summary, Egress",
+        "quote": "There were 8 express elevators from the concourse to the 44th floor and 10 express elevators from the concourse to the 78th floor as well as 24 local elevators per zone, which served groups of floors in those zones."
+      },
+      "notes": "The floor groups served by each local bank are not listed in NCSTAR 1-1 (referred to NCSTAR 1-7)."
+    },
+    {
+      "id": "towers.elevators_total",
+      "applies_to": "towers",
+      "value": 99,
+      "unit": "elevators",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Each tower had 99 elevators within the core of the building, including seven freight elevators, most serving a particular zone, and dedicated express elevators that served the restaurant, bars, and meeting rooms on floors 106 and 107 of WTC 1, as well as the observation deck in WTC 2."
+      },
+      "notes": "CONFLICT in wording: the Executive Summary (pdf p39) says 'Each tower had 99 passenger and 7 freight elevators', and pdf p50 says 'There were 99 passenger elevators in each tower', i.e. 99 plus 7; Chapter 2 says 99 'including seven freight'. Recorded as stated here; the Executive Summary count is towers.passenger_elevators_exec_summary."
+    },
+    {
+      "id": "towers.passenger_elevators_exec_summary",
+      "applies_to": "towers",
+      "value": 99,
+      "unit": "elevators",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 39,
+        "printed_page": "xxxvii",
+        "section": "Executive Summary E.2, WTC 1 and WTC 2",
+        "quote": "Each tower had 99 passenger and 7 freight elevators, all located within the core of the building."
+      },
+      "notes": "See CONFLICT note on towers.elevators_total."
+    },
+    {
+      "id": "towers.freight_elevators",
+      "applies_to": "towers",
+      "value": 7,
+      "unit": "elevators",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 50,
+        "printed_page": "xlviii",
+        "section": "Executive Summary, Egress",
+        "quote": "There were seven freight elevators, only one of which served all floors."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.truss_floor_slab_thickness",
+      "applies_to": "towers",
+      "value": 4,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Floor Framing System",
+        "quote": "The area outside the core (typically tenant floors) was framed with steel trusses, acting compositely with 4 in. thick lightweight concrete slabs cast on 1 1/2 in., 22 gauge fluted metal deck."
+      },
+      "notes": "Lightweight concrete, tenant floors outside the core. NCSTAR 1-2A pdf p80: 'The trusses acted compositely with a 4 in. concrete slab on 1 1/2 in. metal deck.'"
+    },
+    {
+      "id": "towers.truss_floor_metal_deck_depth",
+      "applies_to": "towers",
+      "value": 1.5,
+      "value_raw": "1 1/2 in., 22 gauge",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Floor Framing System",
+        "quote": "The area outside the core (typically tenant floors) was framed with steel trusses, acting compositely with 4 in. thick lightweight concrete slabs cast on 1 1/2 in., 22 gauge fluted metal deck."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.core_and_mechanical_slab_thickness_range",
+      "applies_to": "towers",
+      "value": "4.5 to 8",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Floor Framing System",
+        "quote": "The floor inside the core and the mechanical floors were framed with structural steel shapes with welded shear studs, acting compositely with normal-weight concrete slabs. The thickness of concrete slab in these floors varied from 4.5 in. to 8 in. depending upon the design load requirements."
+      },
+      "notes": "NCSTAR 1-2A itemizes: core slab on truss-framed floors 6 in. (pdf p88); mechanical floors 5 3/4 in. on 1 1/2 in. deck outside the core, 6 in. in the core, plus a 2 in. topping; floors above the mechanical mezzanine 7 3/4 in. on 1 1/2 in. deck outside the core, 8 in. in the core (pdf p42)."
+    },
+    {
+      "id": "towers.mechanical_floor_slab_outside_core",
+      "applies_to": "towers",
+      "value": 5.75,
+      "value_raw": "5 3/4 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 42,
+        "printed_page": "10",
+        "section": "1.1.2 Floor Structural System, Beam-Framed Floors",
+        "quote": "The mechanical floors were 5 3/4 in. concrete slabs on 1 1/2 in. metal deck outside the core."
+      },
+      "notes": "Verified against the page image (the OCR layer drops the fraction). Restated pdf p87: 'Outside the core on the mechanical floors, the beams acted compositely with a 5 3/4 in. concrete slab on 1 1/2 in. metal deck.'"
+    },
+    {
+      "id": "towers.mechanical_floor_topping_slab",
+      "applies_to": "towers",
+      "value": 2,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 42,
+        "printed_page": "10",
+        "section": "1.1.2 Floor Structural System, Beam-Framed Floors",
+        "quote": "A 2 in. concrete topping slab was placed on top of the structural slab."
+      },
+      "notes": "pdf p88: 'The mechanical floors had a 2 in. maximum depth topping slab both inside and outside the core.'"
+    },
+    {
+      "id": "towers.mechanical_floor_core_slab",
+      "applies_to": "towers",
+      "value": 6,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 42,
+        "printed_page": "10",
+        "section": "1.1.2 Floor Structural System, Beam-Framed Floors",
+        "quote": "The core area was framed similarly to the core of the truss-framed floors, but the steel beams were typically larger, and the concrete slab was 6 in. deep."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.floor_above_mechanical_mezzanine_slab_outside_core",
+      "applies_to": "towers",
+      "value": 7.75,
+      "value_raw": "7 3/4 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 42,
+        "printed_page": "10",
+        "section": "1.1.2 Floor Structural System, Beam-Framed Floors",
+        "quote": "The beam-framed floors above the mechanical mezzanine had a 7 3/4 in. normal weight concrete slab on 1 1/2 in. metal deck, while the core slab was 8 in. normal weight concrete."
+      },
+      "notes": "e.g. floors 9, 43, 77 (the 'floors above the mezzanines (e.g., floors 41, 42, and 43)' passage on the same page)."
+    },
+    {
+      "id": "towers.truss_floor_core_slab",
+      "applies_to": "towers",
+      "value": 6,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 88,
+        "printed_page": "56",
+        "section": "3.4.3 Concrete Slab and Metal Deck",
+        "quote": "Typically, inside the core, the beams acted compositely with a 6 in. formed concrete slab."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.primary_truss_depth_fig2_14",
+      "applies_to": "towers",
+      "value": 32,
+      "value_raw": "32\" Truss",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 91,
+        "printed_page": "29",
+        "section": "Figure 2-14. Prefabricated floor panel used in WTC 1 and WTC 2. (Source: PONYA 1967)",
+        "quote": "32\" Truss"
+      },
+      "notes": "CONFLICT: NCSTAR 1-2A pdf p80 states the primary trusses 'were 29 in. out-to-out of the chords' (towers.primary_truss_depth_out_to_out). The 32\" label is on a 1967 Port Authority drawing reproduced as the figure; NCSTAR 1-1 prose gives no truss depth. The reports do not say what the 32\" measures (it may include the knuckle projection or the seat), so both are recorded."
+    },
+    {
+      "id": "towers.bridging_truss_depth_fig2_14",
+      "applies_to": "towers",
+      "value": 24,
+      "value_raw": "24\" Bridging Truss",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 91,
+        "printed_page": "29",
+        "section": "Figure 2-14. Prefabricated floor panel used in WTC 1 and WTC 2. (Source: PONYA 1967)",
+        "quote": "24\" Bridging Truss"
+      },
+      "notes": "Agrees with NCSTAR 1-2A (towers.bridging_truss_depth)."
+    },
+    {
+      "id": "towers.primary_truss_depth_out_to_out",
+      "applies_to": "towers",
+      "value": 29,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 80,
+        "printed_page": "48",
+        "section": "3.3.1 Primary Trusses",
+        "quote": "The primary trusses consisted of double angle top and bottom chords, which were 29 in. out-to-out of the chords."
+      },
+      "notes": "See CONFLICT note on towers.primary_truss_depth_fig2_14 (32\"). The same passage: 'Dimensions for the short-span trusses were essentially identical to those for the long-span trusses.' Chord-centroid distance 28.05 in.; 30.0 in. was the modeling offset."
+    },
+    {
+      "id": "towers.bridging_truss_depth",
+      "applies_to": "towers",
+      "value": 24,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "49",
+        "section": "3.3.2 Bridging Trusses",
+        "quote": "The bridging trusses were 24 in. deep, edge-to-edge, with double angle chords."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.truss_pair_spacing_oc",
+      "applies_to": "towers",
+      "value": 80,
+      "value_raw": "6 ft 8 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Floor Framing System",
+        "quote": "Paired trusses, spaced at 6 ft 8 in. on center, were supported at every other exterior column."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.bridging_truss_spacing",
+      "applies_to": "towers",
+      "value": 160,
+      "value_raw": "13 ft 4 in.",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Floor Framing System",
+        "quote": "The metal deck which spanned parallel to the main trusses was directly supported by transverse bridging trusses spaced at 13 ft 4 in. and intermediate deck support angles spaced at 6 ft 8 in. from the transverse bridging trusses."
+      },
+      "notes": null
+    },
+    {
+      "id": "towers.truss_span_short_approx",
+      "applies_to": "towers",
+      "value": 35,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Floor Framing System",
+        "quote": "The typical floor consisted of three truss zones; a long-span zone, a short-span zone, and a two-way zone (see Fig. 2-15). The span of the trusses was about 35 ft in the short-span zone and 60 ft in the long-span zone."
+      },
+      "notes": "about."
+    },
+    {
+      "id": "towers.truss_span_long_approx",
+      "applies_to": "towers",
+      "value": 60,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Floor Framing System",
+        "quote": "The span of the trusses was about 35 ft in the short-span zone and 60 ft in the long-span zone."
+      },
+      "notes": "about."
+    },
+    {
+      "id": "towers.floor_panel_width_typical",
+      "applies_to": "towers",
+      "value": 20,
+      "unit": "ft",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 74,
+        "printed_page": "12",
+        "section": "2.2.2 Structural Description, Floor Framing System",
+        "quote": "The prefabricated floor panels were typically 20 ft wide, containing two sets of double trusses in the interior and a single truss along each edge."
+      },
+      "notes": "typically."
+    },
+    {
+      "id": "towers.fig2_15_col459_offset",
+      "applies_to": "towers",
+      "value": 2403,
+      "value_raw": "200'-3\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 92,
+        "printed_page": "30",
+        "section": "Figure 2-15. Typical WTC floor truss framing zone.",
+        "quote": "459 / 200'-3\""
+      },
+      "notes": "Distance along the 400-series face (left side of the figure) from the column reference line at the 300-series corner to column 459, as dimensioned. The figure carries no north arrow; faces are identified only by column series (100 top, 200 right, 300 bottom, 400 left). 200'-3\" + 6'-11\" = 207'-2\", the figure's overall dimension."
+    },
+    {
+      "id": "towers.fig2_15_col439_offset",
+      "applies_to": "towers",
+      "value": 1563,
+      "value_raw": "130'-3\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 92,
+        "printed_page": "30",
+        "section": "Figure 2-15. Typical WTC floor truss framing zone.",
+        "quote": "439 / 130'-3\""
+      },
+      "notes": "Upper boundary of the 'Short Span with Bridging' zone on the 400-series face."
+    },
+    {
+      "id": "towers.fig2_15_col422_offset",
+      "applies_to": "towers",
+      "value": 923,
+      "value_raw": "76'-11\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 92,
+        "printed_page": "30",
+        "section": "Figure 2-15. Typical WTC floor truss framing zone.",
+        "quote": "422 / 76'-11\""
+      },
+      "notes": "Lower boundary of the 'Short Span with Bridging' zone on the 400-series face."
+    },
+    {
+      "id": "towers.fig2_15_col401_offset",
+      "applies_to": "towers",
+      "value": 83,
+      "value_raw": "6'-11\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 92,
+        "printed_page": "30",
+        "section": "Figure 2-15. Typical WTC floor truss framing zone.",
+        "quote": "401 / 6'-11\""
+      },
+      "notes": "Corner column, at the chamfer dimension from the reference line."
+    },
+    {
+      "id": "towers.fig2_15_col359_offset",
+      "applies_to": "towers",
+      "value": 2403,
+      "value_raw": "200'-3\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 92,
+        "printed_page": "30",
+        "section": "Figure 2-15. Typical WTC floor truss framing zone.",
+        "quote": "359 / 200'-3\""
+      },
+      "notes": "Along the 300-series face (bottom of the figure), from the 400-series corner reference line."
+    },
+    {
+      "id": "towers.fig2_15_col342_offset",
+      "applies_to": "towers",
+      "value": 1723,
+      "value_raw": "143'-7\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 92,
+        "printed_page": "30",
+        "section": "Figure 2-15. Typical WTC floor truss framing zone.",
+        "quote": "342 / 143'-7\""
+      },
+      "notes": "One boundary of the 'Long Span with Bridging' zone on the 300-series face."
+    },
+    {
+      "id": "towers.fig2_15_col318_offset",
+      "applies_to": "towers",
+      "value": 763,
+      "value_raw": "63'-7\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 92,
+        "printed_page": "30",
+        "section": "Figure 2-15. Typical WTC floor truss framing zone.",
+        "quote": "318 / 63'-7\""
+      },
+      "notes": "Other boundary of the 'Long Span with Bridging' zone on the 300-series face."
+    },
+    {
+      "id": "towers.fig2_15_col301_offset",
+      "applies_to": "towers",
+      "value": 83,
+      "value_raw": "6'-11\"",
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 92,
+        "printed_page": "30",
+        "section": "Figure 2-15. Typical WTC floor truss framing zone.",
+        "quote": "301 / 6'-11\""
+      },
+      "notes": "Corner column, at the chamfer dimension from the reference line."
+    },
+    {
+      "id": "wtc2.height_fl2_to_fl110",
+      "applies_to": "wtc2",
+      "value": 1296,
+      "unit": "ft",
+      "value_raw": "108 @ 12' = 1296'",
+      "evidence": "reported",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 71,
+        "printed_page": "9",
+        "section": "2.2.2 Structural Description",
+        "quote": "with story heights of typically 12 ft."
+      },
+      "notes": "MODELING ASSUMPTION adopted by Chris Cousins on 2026-09-11 (paradata P-046), not a report value. NCSTAR 1-1 states story heights of typically 12 ft for both towers but itemizes only WTC 1. Floors 3 to 110 of WTC 2 are placed 12 ft apart above the cited floor 2 line (towers.floor_2_elevation). value_raw is this assumption's notation, in the form the generator reads, not a quotation from the report. Rendered visibly lighter."
+    },
+    {
+      "id": "wtc2.height_fl110_to_roof",
+      "applies_to": "wtc2",
+      "value": 44,
+      "unit": "ft",
+      "value_raw": null,
+      "evidence": "reported",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 34,
+        "printed_page": "12",
+        "section": "3.2 (WTC 2 model)",
+        "quote": "1,362 ft"
+      },
+      "notes": "MODELING ASSUMPTION adopted by Chris Cousins on 2026-09-11 (paradata P-046), not a report value. NCSTAR 1-1 states story heights of typically 12 ft for both towers but itemizes only WTC 1. Arithmetic remainder, not a story height: cited roof 1,362 ft above floor 1, minus 22 ft (floor 1 to cited floor 2) minus 1,296 ft (108 assumed stories) = 44 ft. It constrains the assumed schedule to the cited roof. For comparison WTC 1 has 21 ft from floor 110 to roof plus a 42 ft 8 in block over floors 107-110."
+    },
+    {
+      "id": "wtc2.story_concourse_to_fl2",
+      "applies_to": "wtc2",
+      "value": 22,
+      "unit": "ft",
+      "value_raw": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 81,
+        "printed_page": "19",
+        "section": "Figure 2-3",
+        "quote": "EL. 332'"
+      },
+      "notes": "Difference of two cited lines on Figure 2-3, lettered for both towers: floor 2 at EL. 332' (towers.floor_2_elevation) and floor 1 at EL. 310' (towers.floor_1_elevation). Added so the WTC 2 schedule walker has an edge from floor 1; carries no new information."
+    },
+    {
+      "id": "towers.exterior_cladding_material",
+      "applies_to": "towers",
+      "value": "aluminum sheets",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "The external cladding, which covers the columns and spandrel beams, consisted of aluminum sheets."
+      },
+      "notes": "Material only. No cladding projection, cover width or cover height is stated (unresolved towers.spandrel_cover_and_cladding_dimensions). OCR layer reads \"forni\" for \"form\" in the preceding sentence; corrected per the file convention."
+    },
+    {
+      "id": "towers.window_infill",
+      "applies_to": "towers",
+      "value": "glass in aluminum frames, neoprene gaskets",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "The window openings were infilled with glass fitted into aluminum frames and sealed with neoprene gaskets."
+      },
+      "notes": "Material only. Window width, sill and head heights are not stated (unresolved towers.window_width)."
+    },
+    {
+      "id": "towers.stairways_per_tower",
+      "applies_to": "towers",
+      "value": 3,
+      "unit": "stairs",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 50,
+        "printed_page": "xlviii",
+        "section": "Executive Summary, Egress",
+        "quote": "The primary egress system for the office spaces was the three stairways located in the building core. These included two 44 in. (designated A and C) and one 56 in. wide (designated B) stairs which provided exactly the code required capacity for an occupant load of 390 per floor (39,000 ft2 net at 100 ft2 per person)."
+      },
+      "notes": "Also pdf p235 (11.2 Code Compliance Summary Following the 1993 Bombing): 'The towers have three stairs for fire egress, rather than two required by code'. Stair positions are referred to NCSTAR 1-7 Table 2-1 (pdf p70), which is not among the sources used, so the stairs are not drawn."
+    },
+    {
+      "id": "towers.stair_a_c_width",
+      "applies_to": "towers",
+      "value": 44,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 50,
+        "printed_page": "xlviii",
+        "section": "Executive Summary, Egress",
+        "quote": "The primary egress system for the office spaces was the three stairways located in the building core. These included two 44 in. (designated A and C) and one 56 in. wide (designated B) stairs which provided exactly the code required capacity for an occupant load of 390 per floor (39,000 ft2 net at 100 ft2 per person)."
+      },
+      "notes": "Stairways A and C."
+    },
+    {
+      "id": "towers.stair_b_width",
+      "applies_to": "towers",
+      "value": 56,
+      "unit": "in",
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 50,
+        "printed_page": "xlviii",
+        "section": "Executive Summary, Egress",
+        "quote": "The primary egress system for the office spaces was the three stairways located in the building core. These included two 44 in. (designated A and C) and one 56 in. wide (designated B) stairs which provided exactly the code required capacity for an occupant load of 390 per floor (39,000 ft2 net at 100 ft2 per person)."
+      },
+      "notes": "Stairway B."
+    },
+    {
+      "id": "towers.stairs_location",
+      "applies_to": "towers",
+      "value": "within the core, except at the mechanical floors",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Three stairs were also located within the core except at the mechanical floors where the stairs were located outside the structural core area (the area enclosed by the four corner columns of the core). For detailed descriptions of the stair locations, see Table 2-1, NIST NCSTAR 1-7."
+      },
+      "notes": "Which edge of the core each stair sat on is not stated in NCSTAR 1-1 or 1-2A. pdf p216 (9.2) adds only that the stairs were 'at the edges of the core' and that transfer corridors on some floors 'brought the stairs quite close'."
+    },
+    {
+      "id": "towers.stairs_a_c_discharge_level",
+      "applies_to": "towers",
+      "value": "mezzanine level, at the Plaza level",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 211,
+        "printed_page": "149",
+        "section": "9.1.5 Egress Systems",
+        "quote": "The requirement for exit stairs to discharge to a public way was the subject of ongoing discussion with respect to the A and C stairs in WTC 1 and WTC 2 terminating at the mezzanine level, which was not at street level but rather at the Plaza level."
+      },
+      "notes": "The report goes on: 'The Port Authority's position was that the Plaza was a street and the Concourse was an underground street'. Where stair B discharged is not stated here. No mezzanine height or extent is given."
+    },
+    {
+      "id": "towers.local_elevator_shaft_termination",
+      "applies_to": "towers",
+      "value": "locals within a zone stacked in a common shaft; those serving the lower part of a zone terminated and the shaft space above returned to tenant space",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 39,
+        "printed_page": "xxxvii",
+        "section": "Executive Summary E.2, WTC 1 and WTC 2",
+        "quote": "In order to minimize the total floor space needed for elevators, each tower was divided vertically into three zones by skylobbies, which served to distribute passengers among express and local elevators. In this way, the local elevators within a zone were placed on top of one another within a common shaft. Local elevators serving the lower portion of a zone were terminated to return to the space occupied by those shafts to leasable tenant space."
+      },
+      "notes": "Which floors each local bank served is referred to NCSTAR 1-7 (pdf p70) and is not in the sources used."
+    },
+    {
+      "id": "towers.fig2_5_base_level",
+      "applies_to": "towers",
+      "value": "Plaza Level",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 83,
+        "printed_page": "21",
+        "section": "Figure 2-5. Arrangement of express and local elevators.",
+        "quote": "Plaza Level"
+      },
+      "notes": "The riser diagram letters 'Plaza Level' at the foot of the express and local shafts, 'Skylobby' twice, 'Mechanical Equipment Room' four times, 'Express Elevators' and 'Local Elevators'. It draws the locals in each zone as banks stopping at successively higher levels. No floor number is lettered, so the floor group served by each bank cannot be read from it."
+    },
+    {
+      "id": "towers.dedicated_express_elevators_top_floors",
+      "applies_to": "towers",
+      "value": "restaurant, bars and meeting rooms on floors 106 and 107 of WTC 1; observation deck in WTC 2",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 70,
+        "printed_page": "8",
+        "section": "2.2.1 Building Description",
+        "quote": "Each tower had 99 elevators within the core of the building, including seven freight elevators, most serving a particular zone, and dedicated express elevators that served the restaurant, bars, and meeting rooms on floors 106 and 107 of WTC 1, as well as the observation deck in WTC 2."
+      },
+      "notes": "Number of dedicated cars not stated. See towers.elevators_total for the 99-count wording conflict."
+    },
+    {
+      "id": "wtc2.observation_deck_dedicated_express",
+      "applies_to": "wtc2",
+      "value": "dedicated express elevator from the Concourse level",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 220,
+        "printed_page": "158",
+        "section": "10.1.2 Egress Provisions from Top of the World",
+        "quote": "The observation deck was open to the public daily and was accessed by a dedicated, express elevator from the Concourse level after paying an entrance fee."
+      },
+      "notes": "The same page places the observation deck on the 107th floor of WTC 2 ('there was a public observation deck on the 107th floor of WTC 2 called Top of the World'); see wtc2.floor_107_usage."
+    },
+    {
+      "id": "towers.main_lobby_inspection_items",
+      "applies_to": "towers",
+      "value": "Plaster ceilings in main lobby; Marble wall panel supports",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 188,
+        "printed_page": "126",
+        "section": "8.5.5 Structural Integrity Inspection Program",
+        "quote": "Plaster ceilings in main lobby"
+      },
+      "notes": "Two consecutive items ('Plaster ceilings in main lobby', 'Marble wall panel supports') in the list of things the structural integrity inspection program for WTC 1 and WTC 2 called for inspecting or monitoring. Attests that the finishes existed; gives no height, extent or position, so neither is drawn."
+    },
+    {
+      "id": "towers.core_bracing_lobby_atrium",
+      "applies_to": "towers",
+      "value": "diagonal core-column bracing at the lobby atrium levels",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-2a",
+      "locator": {
+        "pdf_page": 35,
+        "printed_page": "3",
+        "section": "1.1.1 Global Structural System",
+        "quote": "Diagonal bracing of the core columns existed at the lobby atrium levels, the mechanical levels, and in the area of the hat truss."
+      },
+      "notes": "Names the atrium levels (towers.atrium_levels: 3, 4, 5, 6, 7, 9) as the lobby atrium. No bracing geometry is given."
+    },
+    {
+      "id": "towers.atrium_area_extent",
+      "applies_to": "towers",
+      "value": "below floor 7 to the foundation",
+      "unit": null,
+      "evidence": "documented",
+      "source_id": "ncstar1-1",
+      "locator": {
+        "pdf_page": 72,
+        "printed_page": "10",
+        "section": "2.2.2 Structural Description",
+        "quote": "The columns in the interior core of the towers were designed to carry mainly the gravity (vertical) loads, except in the atrium area (below floor 7 to the foundation), where there were fewer perimeter columns in the outer walls; bracings were used in the outer perimeter of the core area to increase lateral stiffness."
+      },
+      "notes": "Read with NCSTAR 1-2A Table G-1 (floors 3-6 'Core Only (Storage)'): outside the core there was no floor between the Plaza lobby (floor 2) and floor 7. Floor 7's elevation is not lettered numerically (unresolved towers.floor_7_elevation), so no lobby ceiling height follows from this."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "towers.window_width",
+      "why": "NCSTAR 1-1 says only that 'the window openings were infilled with glass fitted into aluminum frames and sealed with neoprene gaskets' (pdf p70). No clear width between column faces, sill height, or head height is stated; the 40 in. on-center pitch and 14 in. approximate column width are stated separately and subtracting them is an inference this file does not make.",
+      "where_to_look": "NCSTAR 1-1A (architectural design documents); NCSTAR 1-5A (window breakage modeling states window dimensions); NCSTAR 1-3 (exterior column plate dimensions per panel). None of 1-1A / 1-5A were fetchable from the nvlpubs Legacy path on 2026-09-10 (404)."
+    },
+    {
+      "id": "wtc2.story_height_schedule",
+      "why": "Figure 2-2 (the only story-by-story schedule in NCSTAR 1-1) is the west elevation of WTC 1. NCSTAR 1-2A states WTC 2 was 1,362 ft, 6 ft shorter, so at least one interval differs, but neither report itemizes the WTC 2 stories. Searched again 2026-09-11 for the generator: the Tower B structural steel drawing index (NCSTAR 1-2A pdf p189-p191) lists framing plans by floor number with no elevation above floor 1; Table G-1 (pdf p224) lists floor usage and construction type without elevations; Figure 3-4 (WTC 2 model elevation, pdf p33) letters no elevations; the only WTC 2 height statement in either report is 1,362 ft (1-2A pdf p34) and NCSTAR 1-1 pdf p71 says only '6 ft taller than WTC 2'. MODELED MEANWHILE under the P-046 assumption (12 ft typical, evidence reported) per Chris Cousins 2026-09-11; a found schedule replaces wtc2.height_fl2_to_fl110 and wtc2.height_fl110_to_roof.",
+      "where_to_look": "NCSTAR 1-2 Chapter 2; NCSTAR 1-2A Appendix C drawing books (Book 2 / Book 4 exterior wall elevations for Tower B); NCSTAR 1-1A."
+    },
+    {
+      "id": "towers.plaza_elevation",
+      "why": "No figure or sentence letters a numeric elevation on the 'Plaza' line. Figure 2-2 draws the Plaza line above the Concourse without a number; Figure 2-3 letters 'Floor 2 / EL. 332''; NCSTAR 1-2A Table G-1 lists floor 2 as 'Plaza - Lobby'. Equating the three is a paradata decision, not a citation.",
+      "where_to_look": "NCSTAR 1-7 (occupant egress, lobby levels); NCSTAR 1-1A; PANYNJ drawing SB-8 'Framing plan floor 1' / Tower A equivalents cited in the NCSTAR 1-2A drawing index."
+    },
+    {
+      "id": "towers.floor_7_elevation",
+      "why": "Not lettered numerically. Figure 2-8 gives offsets from El. 363.00' (9'-4\" + 11'-4\" + 1'-2\" to the Floor 7 line) that a paradata-logged derivation could use; Figure 2-2 gives 104 ft from Concourse to FL 9 with no FL 7 tick.",
+      "where_to_look": "NCSTAR 1-2A Appendix C (Book 2, exterior wall trees) and Section 3.2.5 joint elevations; NCSTAR 1-1A."
+    },
+    {
+      "id": "towers.floor_9_elevation",
+      "why": "Not lettered numerically. Figure 2-8 gives 1'-4 1/2\" above the bottom of Level B; the tree-panel top is 418 ft 11 1/2 in. (NCSTAR 1-2A). Same derivation caveat as floor 7.",
+      "where_to_look": "NCSTAR 1-2A Appendix C (Book 2 / Book 4); NCSTAR 1-1A."
+    },
+    {
+      "id": "towers.gross_floor_area_per_floor",
+      "why": "NCSTAR 1-1 gives only 'approximately 31,000 ft2 per floor outside the core' (pdf p70), '39,000 ft2 net' as the egress basis (pdf p50), 'about 36,500 square feet net on the 106th floor' in a 1968 letter (pdf p280), and 'about 10 million ft2 of rentable floor area' for both towers (pdf p38). No gross-per-floor or rentable-per-floor figure is stated.",
+      "where_to_look": "NCSTAR 1-7 (occupant load tables); NCSTAR 1-1A; the Port Authority 'World Trade Center Fact Sheet' (April 1994) cited in NCSTAR 1-1 footnote, pdf p69."
+    },
+    {
+      "id": "complex.tower_positions_and_spacing",
+      "why": "Figure 2-1 'WTC site plan' (pdf p79) is a street map with no dimensions, no scale bar, and no coordinates. NCSTAR 1-1 states only that 'the presence of one tower had an effect on the wind pressures on the other tower' (pdf p70). Distance between the towers and their plan positions on the 16-acre site are not stated.",
+      "where_to_look": "NCSTAR 1-2 (wind tunnel interference study, Chapter on wind loads); NCSTAR 1-1A; NCSTAR 1-5A site geometry for fire modeling; PANYNJ site plan drawings."
+    },
+    {
+      "id": "towers.core_column_count",
+      "why": "Not stated in prose. Figure 2-12 letters the designations 501-508, 601-608, 701-708, 801-807, 901-908, 1001-1008 (recorded verbatim as towers.core_column_designations). Deriving a count from the labels is a paradata decision.",
+      "where_to_look": "NCSTAR 1-2 Chapter 2 (structural description states the core column count); NCSTAR 1-2A Section 3.2.3 Core Columns Modeling and Appendix C Drawing Book 3."
+    },
+    {
+      "id": "towers.core_plan_dimensions_exact",
+      "why": "Only 'approximately 135 ft by 87 ft' is stated (both reports). Figure 2-12 (core column layout) and Figure 2-13 (floor framing plan) carry no plan dimensions. Figure 2-15 letters zone-boundary column positions along two faces (recorded as towers.fig2_15_*), but the core rectangle itself is not dimensioned.",
+      "where_to_look": "NCSTAR 1-2A Appendix C Drawing Book 3 (core columns) column coordinates; NCSTAR 1-2 Chapter 2; NCSTAR 1-1A."
+    },
+    {
+      "id": "wtc1.antenna_geometry",
+      "why": "Only the 360 ft height is stated. Base elevation above the roof, mast diameter/taper, and plan position are not in NCSTAR 1-1 (Chapter 5 mentions design criteria for the antenna mast per WSHJ 1973 without dimensions).",
+      "where_to_look": "NCSTAR 1-1A Appendix (WSHJ 1973 antenna design criteria); NCSTAR 1-2A Section 4 (antenna gravity loads on the WTC 1 global model); NCSTAR 1-2."
+    },
+    {
+      "id": "towers.penthouse_and_roof_geometry",
+      "why": "NCSTAR 1-2A Table G-1 lists a 'PH Roof' level above floor 110 for both towers and Figure 2-2 gives 21 ft from FL 110 to Roof, but no penthouse footprint, parapet, or roof-slab dimensions are stated.",
+      "where_to_look": "NCSTAR 1-2A Appendix C Drawing Book 9 ('roof area column splice details'); NCSTAR 1-1A."
+    },
+    {
+      "id": "towers.corner_column_detail",
+      "why": "NCSTAR 1-1 pdf p72 describes corner spandrel plates and a box-shape vertical member at each corner attached at alternate stories, but gives no section dimensions for the corner member.",
+      "where_to_look": "NCSTAR 1-2A Section 2 (400 to 500 series exterior column types at corners) and Appendix C Drawing Book 4; NCSTAR 1-3."
+    },
+    {
+      "id": "towers.spandrel_cover_and_cladding_dimensions",
+      "why": "The aluminum cladding over columns and spandrels is described (pdf p70) but no cladding projection, spandrel-cover height, or column-cover width is stated.",
+      "where_to_look": "NCSTAR 1-1A (architectural drawings); NCSTAR 1-5A."
+    },
+    {
+      "id": "towers.local_elevator_floor_groups",
+      "why": "NCSTAR 1-1 gives 24 local elevators per zone but refers the floor groups served by each bank to NCSTAR 1-7.",
+      "where_to_look": "NCSTAR 1-7 Chapter 2 (elevator system description) and its Table 2-1."
+    },
+    {
+      "id": "towers.floor_1_ceiling_and_concourse_to_plaza_section",
+      "why": "NCSTAR 1-1 pdf p190 describes inspections 'between the Concourse Level ceiling and the underside of the Plaza Level slab' without dimensions.",
+      "where_to_look": "NCSTAR 1-1A; NCSTAR 1-7; PANYNJ drawings."
+    },
+    {
+      "id": "towers.base_column_section",
+      "why": "NCSTAR 1-1 states only that below floor 7 the columns were combined in groups of three to form single base columns spaced 10 ft on center (pdf p38, pdf p72). No plan dimension for a base column is lettered on Figure 2-3 (pdf p81, which dimensions only the 10 ft grid, the 6'-8\" end bay and the 6'-11\" corner offset), on Figure 2-8 (pdf p86, which dimensions only tree heights), or on NCSTAR 1-2A Figure 2-6 (pdf p55, column type 6000, elevations only). Without a width the generator cannot draw a base column box, so the base columns are omitted from the model (paradata P-039).",
+      "where_to_look": "NCSTAR 1-2A Appendix C Drawing Book 1 (Tower A / Tower B exterior wall to EL 363: column types and column schedule); NCSTAR 1-3 (exterior column plate dimensions); NCSTAR 1-1A."
+    },
+    {
+      "id": "towers.lobby_ceiling_height",
+      "why": "No lobby, mezzanine or atrium height is stated in NCSTAR 1-1 or 1-2A. The lobby is floor 2 ('Plaza - Lobby', Table G-1) and floors 3-6 are 'Core Only (Storage)', so the space outside the core rises to floor 7, whose elevation is not lettered (towers.floor_7_elevation). The mezzanine is named only as the discharge level of stairs A and C 'at the Plaza level' (pdf p211) with no dimension. Searched 2026-09-11 for 'lobby', 'mezzanine', 'atrium' in both reports; the only lobby finishes attested are plaster ceilings and marble wall panel supports (towers.main_lobby_inspection_items), undimensioned.",
+      "where_to_look": "NCSTAR 1-1A (architectural drawings), NCSTAR 1-7 (occupant behavior, egress: Table 2-1 stair locations), original Yamasaki/Emery Roth architectural sets"
+    },
+    {
+      "id": "towers.stair_positions",
+      "why": "NCSTAR 1-1 states three stairs per tower in the core (A and C 44 in., B 56 in.) and refers their locations to 'Table 2-1, NIST NCSTAR 1-7' (pdf p70). Neither report used here places them, so they are not drawn.",
+      "where_to_look": "NCSTAR 1-7, Table 2-1"
+    },
+    {
+      "id": "towers.elevator_shaft_positions_in_core",
+      "why": "Both reports say only that all elevators were within the core (pdf p39, p70). No bank position, shaft size or hoistway dimension is given; the elevator riser (Figure 2-5, pdf p83) is schematic with no plan information. The one plan clue, a floor 90 elevator lobby 'bounded by columns 702, 703, 902, and 903' (pdf p198), has no dimensioned core plan to place it on.",
+      "where_to_look": "NCSTAR 1-7 (elevator system description), NCSTAR 1-1A"
+    }
+  ]
+}

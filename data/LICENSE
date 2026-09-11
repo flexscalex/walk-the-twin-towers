@@ -1,0 +1,11 @@
+The files in this directory that were created by this project (tenants.clean.json,
+paradata.json, geometry-params.json, SCHEMA.md, SOURCE.md, exhibits/) are licensed
+under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Attribution: "Walk the Twin Towers, Chris Cousins / FlexScaleX LLC,
+https://github.com/flexscalex/walk-the-twin-towers".
+
+Not covered: the archived CNN pages (cnn_t*.html). They are CNN.com content, with a
+tenant list provided by CoStar Group, Inc., captured by the Internet Archive on
+2001-09-13, and are included here only as the cited source record.
