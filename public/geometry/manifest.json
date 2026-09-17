@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T20:14:00.275Z",
+  "generated_at": "2026-09-11T20:51:42.876Z",
   "generator": "scripts/generate-geometry.ts",
   "rule": "Every number in wtc1.glb and wtc2.glb comes from a parameter listed under `params`, by id. Nothing was estimated, scaled, rounded or averaged. Floors and members with no cited dimension are listed under each building's `omitted`.",
   "params_file": "data/geometry-params.json",
@@ -29694,19 +29694,22 @@
       }
     ],
     "gap": "Only buildings that stood in 2001 and still stand today are shown; neighbours demolished since 2001, and the seven World Trade Center buildings, are absent from the source and therefore from the model. Roof heights are the current roof heights. Massing is unlabeled and carries no names or addresses.",
-    "material": "context_massing: one flat light warm gray, a rendering choice so the towers read as the subject",
+    "material": "context_massing: one flat light warm gray shared by every building, a rendering choice so the towers read as the subject",
+    "nodes": "context_NNN, one node and one mesh per building in the data file's order, no identifier carried (P-069: the viewer fades a building that blocks the camera and keeps the eye out of its footprint). All meshes share one POSITION and one NORMAL accessor; each has its own index accessor, so a building's bounds must be computed from its indices.",
     "paradata": [
       "P-064",
       "P-065",
       "P-067",
-      "P-062"
+      "P-062",
+      "P-069"
     ],
     "stats": {
+      "buildings": 208,
       "triangles": 8382,
       "vertices": 14660,
-      "raw_bytes": 453424,
-      "packed_bytes": 200744,
-      "max_round_trip_error_m": 0.000030273437459982233,
+      "raw_bytes": 452240,
+      "packed_bytes": 253588,
+      "max_round_trip_error_m": 0.0004934387207029545,
       "extensions": [
         "EXT_meshopt_compression"
       ]

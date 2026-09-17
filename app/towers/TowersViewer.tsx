@@ -196,6 +196,8 @@ interface Props {
 
 export function TowersViewer({ data, geometry, manifest }: Props) {
   const [probe, setProbe] = useState<Probe | null>(null);
+  const [debug, setDebug] = useState(false);
+  useEffect(() => { try { setDebug(new URLSearchParams(window.location.search).get("debug") === "1"); } catch { /* ignore */ } }, []);
   const [hovered, setHovered] = useState<HoverInfo | null>(null);
   const [selected, setSelected] = useState<FloorRef | null>(null);
   const [stats, setStats] = useState<SceneStats | null>(null);
@@ -342,7 +344,7 @@ export function TowersViewer({ data, geometry, manifest }: Props) {
             </div>
           ) : null}
 
-          {probe ? (
+          {debug && probe ? (
             <p className="pointer-events-none absolute bottom-2 left-2 right-2 z-10 truncate rounded-sm bg-paper/85 px-2 py-1 font-mono text-[11px] text-ink-3" title={describeProbe(probe, floorCount)}>
               probe: {describeProbe(probe, floorCount)}
               {stats ? ` ${stats.floorMeshes} floor meshes, ${stats.bvhMeshes} meshes with bounds trees${stats.detailNodes ? `, ${stats.detailNodesHidden} of ${stats.detailNodes} detail nodes hidden` : ""}.` : ""}

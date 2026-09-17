@@ -9,6 +9,7 @@ import { ACESFilmicToneMapping, BackSide, BufferGeometry, Box3, Color, Group, Me
 import { acceleratedRaycast, computeBoundsTree, disposeBoundsTree } from "three-mesh-bvh";
 import { PAPER } from "@/lib/industry-colors";
 import type { FlightRequest, FloorRef, SceneProps, SceneStats } from "../types";
+import { buildEntry, disposeEntries, liftEyeClear, retarget, step, type ContextEntry } from "./context-fade";
 import { GltfTower, wireMeshopt } from "./GltfTower";
 import { PlaceholderTower } from "./PlaceholderTower";
 import { TowerGroup, type FloorEntry } from "./TowerGroup";
@@ -62,14 +63,22 @@ const NO_FLOORS: Map<number, FloorEntry> = new Map();
 // aspect. The orbit target sits at the pair's mid-height. The camera may look
 // straight up but never drops below MIN_EYE_HEIGHT_M, and can zoom in until one
 // story fills the frame.
+//
+// Street and Top (paradata P-068) are layout choices, recomputed from the
+// towers' bounds. Street: a standing eye (1.7 m) on the ground plane, 150 m
+// south-west of the pair's centre on the line that bisects the two towers,
+// aimed 45 m up the centre so the bases and the ground are in frame. Top: the
+// eye 55 degrees above the horizontal, fitted to the pair's height and plan,
+// which puts it above every context roof.
 const VIEW_FROM = new Vector3(-1, 0, 1).normalize();
 const VIEW_EYE_HEIGHT_M = 110;
-const MIN_EYE_HEIGHT_M = 2;
+const MIN_EYE_HEIGHT_M = 1.7;
 const MIN_DISTANCE_M = 6;
 const MAX_DISTANCE_M = 4000;
-const TOP_FROM = new Vector3(-1, 0.55, 1).normalize();
-const TOP_DISTANCE_M = 260;
-const TOP_TARGET_BELOW_ROOF_M = 25;
+const STREET_STANDOFF_M = 150;
+const STREET_EYE_HEIGHT_M = 1.7;
+const STREET_AIM_HEIGHT_M = 45;
+const TOP_TILT_RAD = (55 * Math.PI) / 180;
 const FLOOR_STANDOFF_M = 28; // from the facade to the eye when a floor is framed
 const FLOOR_EYE_ABOVE_M = 1.6;
 const FLIGHT_MS = 700;
@@ -116,18 +125,58 @@ function SkyDome() {
 
 // City context: buildings that stood in 2001 and still stand, from NYC Open
 // Data, extruded to today's roof heights (scripts/generate-context.ts, P-064).
-// Unlabeled massing in one light material from the file. Not pickable: the
-// raycast is disabled on every mesh, and it sits outside the tower groups.
-function ContextMassing({ url }: { url: string }) {
+// Unlabeled massing in one light material from the file, one mesh per building.
+// It sits outside the tower groups, so the pointer never picks it; the only rays
+// it sees are the occlusion rays in context-fade.ts (P-069).
+interface ContextProps {
+  url: string;
+  entriesRef: React.MutableRefObject<ContextEntry[]>;
+  towerBases: Vector3[];
+}
+
+function ContextMassing({ url, entriesRef, towerBases }: ContextProps) {
   const gltf = useGLTF(url, false, false, wireMeshopt);
-  const scene = useMemo(() => {
-    const s = gltf.scene;
-    s.traverse((o) => {
-      if (o instanceof Mesh) o.raycast = () => {};
+  const camera = useThree((s) => s.camera);
+  const controls = useThree((s) => s.controls) as unknown as ControlsLike | null;
+  const invalidate = useThree((s) => s.invalidate);
+  const moving = useRef(false);
+
+  const entries = useMemo(() => {
+    const out: ContextEntry[] = [];
+    gltf.scene.traverse((o) => {
+      if (o instanceof Mesh) out.push(buildEntry(o));
     });
-    return s;
+    return out;
   }, [gltf.scene]);
-  return <primitive object={scene} />;
+
+  useEffect(() => {
+    entriesRef.current = entries;
+    return () => {
+      entriesRef.current = [];
+      disposeEntries(entries);
+    };
+  }, [entries, entriesRef]);
+
+  // Retarget on every camera move (orbit, zoom, flight step); the eased opacities run in useFrame.
+  useEffect(() => {
+    if (!controls) return;
+    const fn = () => {
+      retarget(entries, camera.position, controls.target, towerBases);
+      moving.current = true;
+      invalidate();
+    };
+    controls.addEventListener("change", fn);
+    fn();
+    return () => controls.removeEventListener("change", fn);
+  }, [controls, camera, entries, towerBases, invalidate]);
+
+  useFrame((_, dt) => {
+    if (!moving.current) return;
+    moving.current = step(entries, dt);
+    if (moving.current) invalidate();
+  });
+
+  return <primitive object={gltf.scene} />;
 }
 
 function Ground() {
@@ -183,10 +232,21 @@ function establishingPose(box: Box3, aspect: number, fov: number): Pose {
   return { position, target: center };
 }
 
-function topPose(box: Box3): Pose {
+/** Standing on the plaza south-west of the pair, looking up the centre (P-068). */
+function streetPose(box: Box3): Pose {
   const center = box.getCenter(new Vector3());
-  const target = new Vector3(center.x, box.max.y - TOP_TARGET_BELOW_ROOF_M, center.z);
-  return { position: target.clone().addScaledVector(TOP_FROM, TOP_DISTANCE_M), target };
+  const position = new Vector3(center.x, STREET_EYE_HEIGHT_M, center.z).addScaledVector(VIEW_FROM, STREET_STANDOFF_M);
+  return { position, target: new Vector3(center.x, STREET_AIM_HEIGHT_M, center.z) };
+}
+
+/** Above the roofs, looking down 55 degrees at the pair's mid-height, fitted to the frame (P-068). */
+function topPose(box: Box3, aspect: number, fov: number): Pose {
+  const size = box.getSize(new Vector3());
+  const target = box.getCenter(new Vector3());
+  const extent = size.y * Math.cos(TOP_TILT_RAD) + Math.hypot(size.x, size.z) * Math.sin(TOP_TILT_RAD);
+  const dist = (extent * 0.55) / Math.tan((fov * Math.PI) / 360) / Math.min(1, aspect);
+  const dir = new Vector3(VIEW_FROM.x * Math.cos(TOP_TILT_RAD), Math.sin(TOP_TILT_RAD), VIEW_FROM.z * Math.cos(TOP_TILT_RAD));
+  return { position: target.clone().addScaledVector(dir, dist), target };
 }
 
 /** Eye level with the floor, outside the face of that tower nearest the camera's current side. */
@@ -218,10 +278,19 @@ interface RigProps {
   flight: FlightRequest | null;
   floorsByTower: Record<string, Map<number, FloorEntry>>;
   positions: Record<string, [number, number, number]>;
+  contextRef: React.MutableRefObject<ContextEntry[]>;
 }
 
-/** Establishing fit (snap), flights (700 ms eased tween, demand-safe) and the tilt guard. */
-function CameraRig({ root, ready, resetKey, flight, floorsByTower, positions }: RigProps) {
+declare global {
+  interface Window {
+    /** Test hook: place the eye and orbit target directly (metres, scene frame). */
+    __towersCamera?: (position: [number, number, number], target: [number, number, number]) => void;
+    __towersCameraState?: () => { position: number[]; target: number[] };
+  }
+}
+
+/** Establishing fit (snap), flights (700 ms eased tween, demand-safe), the tilt guard and the roof clamp. */
+function CameraRig({ root, ready, resetKey, flight, floorsByTower, positions, contextRef }: RigProps) {
   const camera = useThree((s) => s.camera);
   const controls = useThree((s) => s.controls) as unknown as ControlsLike | null;
   const invalidate = useThree((s) => s.invalidate);
@@ -241,17 +310,43 @@ function CameraRig({ root, ready, resetKey, flight, floorsByTower, positions }: 
     [camera],
   );
 
-  // Tilt guard: recomputed on every controls change (orbit, zoom, tween step).
+  // Tilt guard and roof clamp: recomputed on every controls change (orbit, zoom, tween step).
+  // The clamp lifts an eye that has entered a context building's bounds (P-069); it is
+  // skipped mid-flight because every flight ends at a legal pose.
   useEffect(() => {
     if (!controls) return;
     controls.minPolarAngle = 0.02;
     controls.minDistance = MIN_DISTANCE_M;
     controls.maxDistance = MAX_DISTANCE_M;
-    const fn = () => applyTiltLimit(controls, camera.position);
+    const fn = () => {
+      if (!tween.current && liftEyeClear(contextRef.current, camera.position)) {
+        controls.update();
+        invalidate();
+      }
+      applyTiltLimit(controls, camera.position);
+    };
     controls.addEventListener("change", fn);
     fn();
     return () => controls.removeEventListener("change", fn);
-  }, [controls, camera]);
+  }, [controls, camera, contextRef, invalidate]);
+
+  // Test hooks for the screenshot harness; harmless in production.
+  useEffect(() => {
+    if (!controls) return;
+    window.__towersCamera = (p, t) => {
+      tween.current = null;
+      camera.position.set(p[0], p[1], p[2]);
+      controls.target.set(t[0], t[1], t[2]);
+      setNearFar(camera.position.distanceTo(controls.target));
+      controls.update();
+      invalidate();
+    };
+    window.__towersCameraState = () => ({ position: camera.position.toArray(), target: controls.target.toArray() });
+    return () => {
+      delete window.__towersCamera;
+      delete window.__towersCameraState;
+    };
+  }, [controls, camera, invalidate, setNearFar]);
 
   // Establishing fit: once, again when the frame's aspect changes (phone rotation, window resize), and on Reset view.
   useEffect(() => {
@@ -278,8 +373,8 @@ function CameraRig({ root, ready, resetKey, flight, floorsByTower, positions }: 
     const box = new Box3().setFromObject(root.current);
     if (box.isEmpty()) return;
     let to: Pose | null = null;
-    if (flight.kind === "street") to = establishingPose(box, aspect, fov);
-    else if (flight.kind === "top") to = topPose(box);
+    if (flight.kind === "street") to = streetPose(box);
+    else if (flight.kind === "top") to = topPose(box, aspect, fov);
     else if (flight.kind === "floor" && flight.buildingId && flight.floor !== undefined) {
       const obj = root.current.getObjectByName(flight.buildingId);
       const entry = floorsByTower[flight.buildingId]?.get(flight.floor);
@@ -313,6 +408,7 @@ function CameraRig({ root, ready, resetKey, flight, floorsByTower, positions }: 
 export default function TowersScene(props: SceneProps) {
   const { data, geometry, probe, showContext, resetKey, flight, highlight, hovered, selected, onHover, onSelect, onLoaded, onError } = props;
   const root = useRef<Group>(null);
+  const contextRef = useRef<ContextEntry[]>([]);
   const [floorsByTower, setFloorsByTower] = useState<Record<string, Map<number, FloorEntry>>>({});
   const statsRef = useRef<Record<string, SceneStats>>({});
 
@@ -347,6 +443,9 @@ export default function TowersScene(props: SceneProps) {
     });
     return out;
   }, [data.towers]);
+
+  // Ground centre of each tower: the occlusion rays aim here as well as at the orbit target (P-069).
+  const towerBases = useMemo(() => Object.values(positions).map((p) => new Vector3(p[0], 0, p[2])), [positions]);
 
   useEffect(() => {
     document.body.style.cursor = hovered ? "pointer" : "";
@@ -385,7 +484,7 @@ export default function TowersScene(props: SceneProps) {
       {showContext && geometry.contextUrl ? (
         <LoadBoundary onError={(m) => console.warn(`city context not drawn: ${m}`)}>
           <Suspense fallback={null}>
-            <ContextMassing url={geometry.contextUrl} />
+            <ContextMassing url={geometry.contextUrl} entriesRef={contextRef} towerBases={towerBases} />
           </Suspense>
         </LoadBoundary>
       ) : null}
@@ -423,7 +522,7 @@ export default function TowersScene(props: SceneProps) {
       </group>
 
       <OrbitControls makeDefault enableDamping dampingFactor={0.12} minPolarAngle={0.02} maxPolarAngle={Math.PI * 0.6} minDistance={MIN_DISTANCE_M} maxDistance={MAX_DISTANCE_M} />
-      <CameraRig root={root} ready={ready} resetKey={resetKey} flight={flight} floorsByTower={floorsByTower} positions={positions} />
+      <CameraRig root={root} ready={ready} resetKey={resetKey} flight={flight} floorsByTower={floorsByTower} positions={positions} contextRef={contextRef} />
     </Canvas>
   );
 }

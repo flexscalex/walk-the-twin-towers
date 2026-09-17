@@ -1,7 +1,10 @@
 // scripts/generate-context.ts
 // Extrudes the cleaned NYC building footprints (data/context/buildings-standing-in-2001.json,
-// written by scripts/fetch-context.ts) into one flat-shaded mesh:
+// written by scripts/fetch-context.ts) into flat-shaded massing, one node per building:
 //   public/geometry/context.glb        (gitignored, meshopt-compressed, one material)
+// The nodes are named context_000, context_001, ... in file order and carry no identifier
+// (no BIN, no address). One mesh per building lets the viewer fade a building that blocks
+// the camera and keep the eye out of its footprint (P-069) without touching the others.
 // and records it under `context` in public/geometry/manifest.json, which
 // scripts/generate-geometry.ts must have written first (the build script runs them in order).
 //
@@ -29,7 +32,7 @@ const SCRATCH = process.env.GEOMETRY_SCRATCH ?? resolve(ROOT, ".geometry-build")
 const M_PER_FT = 0.3048;
 
 // Paradata rows in data/paradata.exterior.json that document the choices here.
-const PARADATA = { dataset: "P-064", origin: "P-065", groundPlane: "P-067", material: "P-062" } as const;
+const PARADATA = { dataset: "P-064", origin: "P-065", groundPlane: "P-067", material: "P-062", perBuilding: "P-069" } as const;
 
 interface Ring extends Array<[number, number]> {}
 interface Building {
@@ -128,34 +131,59 @@ async function main(): Promise<void> {
   ].map((r) => r.id);
   for (const id of Object.values(PARADATA)) if (!paradata.includes(id)) throw new ContextError(`paradata row ${id} is missing`);
 
-  const buf: MeshBuffers = { pos: [], nrm: [], idx: [], triangles: 0 };
+  // One MeshBuffers per building, in file order. Buildings with no height or no usable ring
+  // are skipped and counted; nothing is added, moved or resized.
+  const perBuilding: MeshBuffers[] = [];
   let built = 0, skipped = 0;
   let maxH = 0;
   for (const b of file.buildings) {
     const h = b.height_roof_ft * M_PER_FT;
     if (!(h > 0)) { skipped++; continue; }
+    const buf: MeshBuffers = { pos: [], nrm: [], idx: [], triangles: 0 };
     for (const poly of b.polygons) {
       const outer = clean(poly.outer);
       if (outer.length < 3) { skipped++; continue; }
       const holes = poly.holes.map(clean).filter((r) => r.length >= 3);
       extrude(buf, outer, holes, h);
     }
+    if (buf.triangles === 0) { skipped++; continue; }
+    perBuilding.push(buf);
     built++;
     maxH = Math.max(maxH, h);
   }
+  const totals = perBuilding.reduce((a, b) => ({ triangles: a.triangles + b.triangles, vertices: a.vertices + b.pos.length / 3 }), { triangles: 0, vertices: 0 });
 
   const doc = new Document();
   const buffer = doc.createBuffer();
   const scene = doc.createScene("context");
-  // One flat light-gray material: unlabeled massing, lighter than the towers' cladding so the
-  // towers read as the subject (rendering choice, P-062 / P-064).
-  const mat = doc.createMaterial("context_massing").setBaseColorFactor([0.9, 0.88, 0.84, 1]).setMetallicFactor(0).setRoughnessFactor(1);
-  const position = doc.createAccessor().setType("VEC3").setArray(new Float32Array(buf.pos)).setBuffer(buffer);
-  const normal = doc.createAccessor().setType("VEC3").setArray(new Float32Array(buf.nrm)).setBuffer(buffer);
-  const indices = doc.createAccessor().setType("SCALAR").setArray(new Uint32Array(buf.idx)).setBuffer(buffer);
-  const prim = doc.createPrimitive().setAttribute("POSITION", position).setAttribute("NORMAL", normal).setIndices(indices).setMaterial(mat);
-  const mesh = doc.createMesh("context_massing").addPrimitive(prim);
-  scene.addChild(doc.createNode("context_buildings").setMesh(mesh));
+  // One flat light-gray material shared by every building: unlabeled massing, lighter than the
+  // towers' cladding so the towers read as the subject (rendering choice, P-062 / P-064). The
+  // roughness is a little under 1 so the viewer's sky environment gives the faces a faint sheen.
+  const mat = doc.createMaterial("context_massing").setBaseColorFactor([0.9, 0.88, 0.84, 1]).setMetallicFactor(0).setRoughnessFactor(0.9);
+  const root = doc.createNode("context_buildings");
+  scene.addChild(root);
+  // One POSITION and one NORMAL accessor for the whole set (meshopt compresses one long
+  // vertex stream far better than 208 short ones), and one 16-bit index accessor per
+  // building pointing into it. The viewer computes each building's bounds from its own
+  // indices, since a shared attribute's bounds would be the whole city's.
+  if (totals.vertices > 65535) throw new ContextError(`${totals.vertices} vertices do not fit 16-bit indices`);
+  const allPos = new Float32Array(totals.vertices * 3), allNrm = new Float32Array(totals.vertices * 3);
+  let vOff = 0;
+  const indexArrays: Uint16Array<ArrayBuffer>[] = [];
+  for (const buf of perBuilding) {
+    allPos.set(buf.pos, vOff * 3);
+    allNrm.set(buf.nrm, vOff * 3);
+    indexArrays.push(new Uint16Array(buf.idx.map((k) => k + vOff)));
+    vOff += buf.pos.length / 3;
+  }
+  const position = doc.createAccessor("context_position").setType("VEC3").setArray(allPos).setBuffer(buffer);
+  const normal = doc.createAccessor("context_normal").setType("VEC3").setArray(allNrm).setBuffer(buffer);
+  perBuilding.forEach((_buf, i) => {
+    const indices = doc.createAccessor().setType("SCALAR").setArray(indexArrays[i]).setBuffer(buffer);
+    const prim = doc.createPrimitive().setAttribute("POSITION", position).setAttribute("NORMAL", normal).setIndices(indices).setMaterial(mat);
+    const name = `context_${String(i).padStart(3, "0")}`;
+    root.addChild(doc.createNode(name).setMesh(doc.createMesh(name).addPrimitive(prim)));
+  });
 
   mkdirSync(OUT_DIR, { recursive: true });
   mkdirSync(SCRATCH, { recursive: true });
@@ -166,19 +194,37 @@ async function main(): Promise<void> {
   const outPath = join(OUT_DIR, "context.glb");
   await new NodeIO().registerExtensions([EXTMeshoptCompression]).registerDependencies({ "meshopt.encoder": MeshoptEncoder }).write(outPath, doc);
 
-  // read back: same vertex and triangle counts, lossless positions
+  // read back: one node per building in order, and the same triangles. The meshopt encoder
+  // reorders vertices and triangles for cache locality (the geometry is unchanged, the index
+  // order is not), so each building is compared as a set of triangles keyed on their vertex
+  // positions rounded to 1 mm, the precision of the input. A key that does not match, or a
+  // decoded value more than 0.5 mm from its 1 mm grid, is a real loss and fails the build.
   await MeshoptDecoder.ready;
   const back = await new NodeIO().registerExtensions([EXTMeshoptCompression]).registerDependencies({ "meshopt.decoder": MeshoptDecoder }).read(outPath);
-  const bp = back.getRoot().listMeshes()[0].listPrimitives()[0];
-  const bpos = bp.getAttribute("POSITION")!.getArray()!;
-  const bidx = bp.getIndices()!;
-  if (bpos.length !== buf.pos.length || bidx.getCount() !== buf.idx.length) throw new ContextError("context.glb changed size after compression");
+  const backNodes = back.getRoot().listNodes().filter((n) => n.getMesh());
+  if (backNodes.length !== perBuilding.length) throw new ContextError(`context.glb has ${backNodes.length} building nodes, expected ${perBuilding.length}`);
+  const mm = (v: number) => Math.round(v * 1000);
+  const triangleKeys = (pos: ArrayLike<number>, idx: ArrayLike<number>): string => {
+    const keys: string[] = [];
+    for (let k = 0; k < idx.length; k += 3) {
+      const corners = [0, 1, 2].map((j) => { const a = idx[k + j] * 3; return `${mm(pos[a])},${mm(pos[a + 1])},${mm(pos[a + 2])}`; });
+      keys.push(corners.sort().join("|"));
+    }
+    return keys.sort().join("\n");
+  };
   let worst = 0;
-  for (let i = 0; i < bpos.length; i++) worst = Math.max(worst, Math.abs(bpos[i] - buf.pos[i]));
-  // The input is already rounded to 1 mm; the encoder's quantization may move a vertex by tens of
-  // micrometres. Anything beyond 1 mm would be a real loss and fails the build.
-  const TOLERANCE_M = 0.001;
-  if (worst > TOLERANCE_M) throw new ContextError(`context.glb compression changed a position by ${worst} m (tolerance ${TOLERANCE_M})`);
+  backNodes.forEach((n, i) => {
+    const buf = perBuilding[i];
+    if (n.getName() !== `context_${String(i).padStart(3, "0")}`) throw new ContextError(`context.glb node ${i} is named ${n.getName()}`);
+    const bp = n.getMesh()!.listPrimitives()[0];
+    const bpos = bp.getAttribute("POSITION")!.getArray()!;
+    const bidx = bp.getIndices()!.getArray()!;
+    if (bidx.length !== buf.idx.length) throw new ContextError(`context.glb building ${i} changed size after compression`);
+    if (triangleKeys(bpos, bidx) !== triangleKeys(Float32Array.from(buf.pos), buf.idx)) throw new ContextError(`context.glb building ${i} does not carry the triangles that were emitted`);
+    for (let k = 0; k < bidx.length; k++) { const a = bidx[k] * 3; for (let c = 0; c < 3; c++) worst = Math.max(worst, Math.abs(bpos[a + c] - mm(bpos[a + c]) / 1000)); }
+  });
+  const TOLERANCE_M = 0.0005;
+  if (worst > TOLERANCE_M) throw new ContextError(`context.glb compression moved a position ${worst} m off the 1 mm grid (tolerance ${TOLERANCE_M})`);
 
   const rawBytes = statSync(rawPath).size, packedBytes = statSync(outPath).size;
   const manifest = JSON.parse(readFileSync(MANIFEST, "utf8")) as Record<string, unknown>;
@@ -197,12 +243,13 @@ async function main(): Promise<void> {
     tallest_m: Math.round(maxH * 10) / 10,
     sources: file.sources,
     gap: "Only buildings that stood in 2001 and still stand today are shown; neighbours demolished since 2001, and the seven World Trade Center buildings, are absent from the source and therefore from the model. Roof heights are the current roof heights. Massing is unlabeled and carries no names or addresses.",
-    material: "context_massing: one flat light warm gray, a rendering choice so the towers read as the subject",
+    material: "context_massing: one flat light warm gray shared by every building, a rendering choice so the towers read as the subject",
+    nodes: "context_NNN, one node and one mesh per building in the data file's order, no identifier carried (P-069: the viewer fades a building that blocks the camera and keeps the eye out of its footprint). All meshes share one POSITION and one NORMAL accessor; each has its own index accessor, so a building's bounds must be computed from its indices.",
     paradata: Object.values(PARADATA),
-    stats: { triangles: buf.triangles, vertices: buf.pos.length / 3, raw_bytes: rawBytes, packed_bytes: packedBytes, max_round_trip_error_m: worst, extensions: ["EXT_meshopt_compression"] },
+    stats: { buildings: built, triangles: totals.triangles, vertices: totals.vertices, raw_bytes: rawBytes, packed_bytes: packedBytes, max_round_trip_error_m: worst, extensions: ["EXT_meshopt_compression"] },
   };
   writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + "\n");
-  console.log(`context: ${built} buildings (${skipped} skipped), ${buf.triangles} triangles, ${buf.pos.length / 3} vertices, ${rawBytes} B raw -> ${packedBytes} B packed (${(packedBytes / 1024).toFixed(1)} KiB), tallest ${maxH.toFixed(1)} m`);
+  console.log(`context: ${built} buildings (${skipped} skipped), ${totals.triangles} triangles, ${totals.vertices} vertices, ${rawBytes} B raw -> ${packedBytes} B packed (${(packedBytes / 1024).toFixed(1)} KiB), tallest ${maxH.toFixed(1)} m`);
 }
 
 main().catch((err) => {
