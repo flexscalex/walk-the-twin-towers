@@ -5,12 +5,14 @@
 import { Component, Suspense, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import { ACESFilmicToneMapping, BackSide, BufferGeometry, Box3, Color, Group, Mesh, SRGBColorSpace, Vector3 } from "three";
+import { ACESFilmicToneMapping, BufferGeometry, Box3, Group, Mesh, SRGBColorSpace, Vector3 } from "three";
 import { acceleratedRaycast, computeBoundsTree, disposeBoundsTree } from "three-mesh-bvh";
 import { PAPER } from "@/lib/industry-colors";
 import type { FlightRequest, FloorRef, SceneProps, SceneStats } from "../types";
 import { buildEntry, disposeEntries, liftEyeClear, retarget, step, type ContextEntry } from "./context-fade";
 import { GltfTower, wireMeshopt } from "./GltfTower";
+import { FOG_FAR_M, FOG_NEAR_M, GROUND_SIZE_M, HEMI_GROUND, HEMI_INTENSITY, HEMI_SKY, SKY_HORIZON, SKY_RADIUS_M, SkyDome, SUN_COLOR, SUN_INTENSITY } from "./SkyDome";
+import { towerPositionM } from "@/lib/viewer-layout";
 import { PlaceholderTower } from "./PlaceholderTower";
 import { TowerGroup, type FloorEntry } from "./TowerGroup";
 
@@ -22,39 +24,10 @@ BufferGeometry.prototype.computeBoundsTree = computeBoundsTree as unknown as Buf
 BufferGeometry.prototype.disposeBoundsTree = disposeBoundsTree;
 Mesh.prototype.raycast = acceleratedRaycast;
 
-// Where the towers sit. The .glb files are in metres about their own plan
-// centre (paradata P-043); the scene origin is the block centroid shared with
-// the city context (P-065). Positions on the block are a viewer layout choice,
-// not a cited dimension: complex.tower_positions_and_spacing is unresolved in
-// data/geometry-params.json. The pair is centred on the origin with 1 WTC north
-// and west of 2 WTC, centres 420 ft apart on a 45 degree diagonal (P-066).
-const M_PER_FT = 0.3048;
-export const VIEWER_LAYOUT_TOWER_SPACING_FT = 420;
-const LAYOUT_HALF_M = (VIEWER_LAYOUT_TOWER_SPACING_FT * M_PER_FT) / 2 / Math.SQRT2;
-const TOWER_POSITIONS_M: Record<string, [number, number, number]> = {
-  wtc1: [-LAYOUT_HALF_M, 0, -LAYOUT_HALF_M], // north-west (north is -z)
-  wtc2: [LAYOUT_HALF_M, 0, LAYOUT_HALF_M], // south-east
-};
+// Tower positions: lib/viewer-layout.ts (P-066), shared with Walk mode.
+export { VIEWER_LAYOUT_TOWER_SPACING_FT } from "@/lib/viewer-layout";
 
-// Light and sky. All of this is a rendering choice, not a reconstruction: no
-// photograph, weather record or sun table is cited for it. The brief is a
-// working weekday, mid-morning, clear: warm blue overhead, pale at the horizon,
-// one sun from the south-east. No shadows and no post-processing (budget rule,
-// BUILD-PLAN 3.3); tone mapping is ACES filmic, output sRGB. Paradata P-063.
-const SKY_ZENITH = "#4f86cc";
-const SKY_HORIZON = "#ece5d4";
-// The hemisphere light is paler and warmer than the dome's zenith so shaded
-// faces stay light and neutral instead of taking a blue cast.
-const HEMI_SKY = "#dfe4ea";
-const HEMI_GROUND = "#efe6d4";
-const SUN_COLOR = "#fff0d2";
-const SUN_INTENSITY = 2.2;
-const HEMI_INTENSITY = 1.6;
 const GROUND_TONE = PAPER; // the ground plane recedes in the site's paper tone
-const SKY_RADIUS_M = 12000;
-const GROUND_SIZE_M = 40000;
-const FOG_NEAR_M = 1800;
-const FOG_FAR_M = 9000;
 const NO_FLOORS: Map<number, FloorEntry> = new Map();
 
 // Camera. The establishing view is from the south-west (west is -x, south is
@@ -82,46 +55,6 @@ const TOP_TILT_RAD = (55 * Math.PI) / 180;
 const FLOOR_STANDOFF_M = 28; // from the facade to the eye when a floor is framed
 const FLOOR_EYE_ABOVE_M = 1.6;
 const FLIGHT_MS = 700;
-
-// Gradient sky: a large inverted sphere shaded from the horizon tone at and
-// below the eye line to the zenith tone overhead. Written in linear light and
-// run through three's tone-mapping and colour-space chunks so it matches the
-// lit geometry. Not fogged, not lit, drawn behind everything.
-const SKY_VERT = /* glsl */ `
-  varying vec3 vDir;
-  void main() {
-    vDir = normalize(position);
-    vec4 wp = modelMatrix * vec4(position, 1.0);
-    gl_Position = projectionMatrix * viewMatrix * wp;
-  }
-`;
-const SKY_FRAG = /* glsl */ `
-  uniform vec3 zenith;
-  uniform vec3 horizon;
-  varying vec3 vDir;
-  void main() {
-    float t = clamp(vDir.y, 0.0, 1.0);
-    // pale band near the horizon, blue gaining with height
-    float k = pow(t, 0.4);
-    vec3 c = mix(horizon, zenith, k);
-    gl_FragColor = vec4(c, 1.0);
-    #include <tonemapping_fragment>
-    #include <colorspace_fragment>
-  }
-`;
-
-function SkyDome() {
-  const uniforms = useMemo(
-    () => ({ zenith: { value: new Color(SKY_ZENITH) }, horizon: { value: new Color(SKY_HORIZON) } }),
-    [],
-  );
-  return (
-    <mesh renderOrder={-1} frustumCulled={false}>
-      <sphereGeometry args={[SKY_RADIUS_M, 32, 16]} />
-      <shaderMaterial vertexShader={SKY_VERT} fragmentShader={SKY_FRAG} uniforms={uniforms} side={BackSide} depthWrite={false} fog={false} toneMapped />
-    </mesh>
-  );
-}
 
 // City context: buildings that stood in 2001 and still stand, from NYC Open
 // Data, extruded to today's roof heights (scripts/generate-context.ts, P-064).
@@ -439,7 +372,7 @@ export default function TowersScene(props: SceneProps) {
   const positions = useMemo<Record<string, [number, number, number]>>(() => {
     const out: Record<string, [number, number, number]> = {};
     data.towers.forEach((t, i) => {
-      out[t.id] = TOWER_POSITIONS_M[t.id] ?? [i * LAYOUT_HALF_M * 2, 0, 0];
+      out[t.id] = towerPositionM(t.id, i);
     });
     return out;
   }, [data.towers]);

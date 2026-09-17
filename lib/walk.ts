@@ -15,6 +15,8 @@ import { buildTowersData, TOWER_IDS, type TenantLite, type TowerId } from "./flo
 import { makeCiter, type Citer, type WalkParam } from "./geometry-cite";
 import { buildJourneyData, type JourneyData } from "./journey";
 import { getBuilding, getTenants, isNumericFloor } from "./tenants";
+import { towerPositionM, VIEWER_LAYOUT_PARADATA } from "./viewer-layout";
+import { GEOMETRY_URL_BASE } from "./geometry-manifest";
 import type { Evidence } from "./types";
 
 export type { WalkParam } from "./geometry-cite";
@@ -81,6 +83,25 @@ export interface LobbyInfo {
   facts: { text: string; params: string[] }[];
 }
 
+/**
+ * What the visitor sees through the glass: the city context massing and both
+ * towers' exterior outlines, in the shared scene frame of /towers. The tower
+ * files put y = 0 at the floor 1 (Concourse) line and the context is extruded
+ * from y = 0 (P-067), so the Concourse line is taken as the ground, exactly as
+ * /towers draws it. Tower positions on the block are the viewer layout choice
+ * recorded in P-066. Paradata P-077.
+ */
+export interface WalkOutside {
+  contextUrl: string | null;
+  /** This tower's plan centre in the scene frame, metres (x east, z south). */
+  positionM: [number, number];
+  layoutParadata: string;
+  /** Floor 1 (Concourse) line, the y = 0 of the tower files. */
+  floor1: { ft: number; node: string };
+  /** Each tower's cited roof elevation on the drawing datum, for the exterior outline. */
+  towers: { id: TowerId; name: string; roofFt: number; roofNode: string; roofEvidence: Evidence; positionM: [number, number] }[];
+}
+
 export interface WalkData {
   kind: "floor" | "lobby";
   buildingId: TowerId;
@@ -97,6 +118,7 @@ export interface WalkData {
   dims: WalkDims;
   lobby: LobbyInfo | null;
   journey: JourneyData;
+  outside: WalkOutside | null;
   params: Record<string, WalkParam>;
   omitted: WalkOmission[];
   sourceCitation: string;
@@ -125,6 +147,34 @@ function readManifestFile(): Manifest | null {
   } catch {
     return null;
   }
+}
+
+/** The view out of the windows, or null when the manifest lacks a floor 1 or roof node for either tower. */
+function readOutside(manifest: Manifest | null, buildingId: TowerId, c: Citer): WalkOutside | null {
+  if (!manifest) return null;
+  const ids = TOWER_IDS.filter((id): id is TowerId => id in manifest.buildings);
+  if (!ids.includes(buildingId)) return null;
+  const own = manifest.buildings[buildingId].nodes.find((n) => n.kind === "floor_plate" && n.floor === 1);
+  if (!own) return null;
+  const towers: WalkOutside["towers"] = [];
+  for (const id of ids) {
+    const roof = manifest.buildings[id].nodes.find((n) => n.kind === "roof_plate");
+    const b = getBuilding(id);
+    if (!roof || !b) return null;
+    for (const pid of roof.params) c.cite(pid);
+    const [x, , z] = towerPositionM(id, ids.indexOf(id));
+    towers.push({ id, name: b.name, roofFt: roof.elevation_ft, roofNode: roof.name, roofEvidence: roof.evidence, positionM: [x, z] });
+  }
+  for (const pid of own.params) c.cite(pid);
+  const [x, , z] = towerPositionM(buildingId, ids.indexOf(buildingId));
+  const contextFile = path.join(process.cwd(), "public", "geometry", "context.glb");
+  return {
+    contextUrl: fs.existsSync(contextFile) ? `${GEOMETRY_URL_BASE}/context.glb` : null,
+    positionM: [x, z],
+    layoutParadata: VIEWER_LAYOUT_PARADATA,
+    floor1: { ft: own.elevation_ft, node: own.name },
+    towers,
+  };
 }
 
 export function isTowerId(id: string): id is TowerId {
@@ -271,6 +321,7 @@ export function buildWalkData(buildingId: TowerId, floor: number): WalkData | nu
     dims,
     lobby: null,
     journey,
+    outside: readOutside(manifest, buildingId, c),
     params: c.used,
     omitted,
     sourceCitation: towers.sourceCitation,
@@ -400,6 +451,7 @@ export function buildLobbyData(buildingId: TowerId): WalkData | null {
       facts,
     },
     journey,
+    outside: readOutside(manifest, buildingId, c),
     params: c.used,
     omitted,
     sourceCitation: towers.sourceCitation,

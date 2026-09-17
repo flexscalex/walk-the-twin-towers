@@ -21,12 +21,12 @@ const WalkScene = dynamic(() => import("../../scene/WalkScene"), {
 });
 
 const STORAGE_KEY = "nmsf.walk.illustration";
-export const ILLUSTRATION_LABEL = "Illustration. Furnishings are not a reconstruction.";
+export const ILLUSTRATION_LABEL = "Illustration. Furnishings and figures are not a reconstruction.";
 
 function describeWalkProbe(p: Probe, stats: WalkStats | null, illustration: boolean): string {
   const gpu = [`WebGL2 ${p.webgl2 ? "yes" : "no"}`, p.renderer ?? "renderer withheld", `DPR ${p.devicePixelRatio} used ${p.dprCap}`, p.tier === "reduced" ? `reduced (${p.reasons.join(", ")})` : "tier full"].join(" / ");
   const counts = stats
-    ? ` ${stats.zones} ${stats.zones === 1 ? "zone" : "zones"}, ${stats.columns} columns, ${stats.glassPanels} glass panels${illustration ? `, ${stats.desks} illustration desks` : ""}.`
+    ? ` ${stats.zones} ${stats.zones === 1 ? "zone" : "zones"}, ${stats.columns} columns, ${stats.glassPanels} glass panels${illustration ? `, ${stats.desks} illustration desks, ${stats.figures} figures` : ""}.`
     : "";
   return `probe: ${gpu}.${counts}`;
 }
@@ -370,7 +370,7 @@ export function WalkViewer({ data }: { data: WalkData }) {
           </ul>
           {!isLobby ? (
             <p className="mt-3 text-ink-3">
-              The illustration layer (desks, partitions, chairs, carpet, ceiling grid) is a generic office fit-out made of procedural boxes and cylinders. It is a hypothetical reconstruction, sized by nothing in the record, tied to no tenant, and drawn in its own stipple treatment. It is on by default and can be turned off above (paradata P-051).
+              The illustration layer (desks, partitions, chairs, carpet, ceiling grid, and the figures walking the aisles) is a generic office fit-out made of procedural boxes, cylinders and capsules. It is a hypothetical reconstruction, sized by nothing in the record, tied to no tenant, and drawn in its own stipple treatment; the only colour it borrows is the zone&rsquo;s industry tint, on the carpet and along the partitions, so a zone reads as one workplace. The figures have no faces, no names and no employer. It is on by default and can be turned off above (paradata P-051, P-078, P-079).
             </p>
           ) : null}
         </div>

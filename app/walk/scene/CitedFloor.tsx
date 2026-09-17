@@ -26,6 +26,7 @@ import type { TenantLite } from "@/lib/floors";
 import type { WalkData } from "@/lib/walk";
 import { INK, PAPER_2 } from "@/lib/industry-colors";
 import { boundarySegment, lobbyPlaquePoints, PRESENTATION, type Plan, type XZ, type Zone } from "./plan";
+import { Signs } from "./Signs";
 
 // Materials for the cited layer: flat, matte, in the site's palette. The
 // illustration layer never uses these (see Illustration.tsx).
@@ -427,6 +428,7 @@ export function CitedFloor({
       {zones.map((z) => (
         <Plaque key={`p-${z.key}`} zone={z} data={data} />
       ))}
+      {plan.kind === "floor" ? <Signs data={data} plan={plan} /> : null}
     </group>
   );
 }

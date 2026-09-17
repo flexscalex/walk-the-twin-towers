@@ -25,4 +25,6 @@ export interface WalkStats {
   columns: number;
   glassPanels: number;
   desks: number;
+  /** Illustration-layer figures on the floor (0 with the layer off). */
+  figures: number;
 }

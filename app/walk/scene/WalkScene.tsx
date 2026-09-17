@@ -2,19 +2,24 @@
 // The 3D bundle for Walk mode. Loaded with next/dynamic (ssr: false) from
 // WalkViewer so three.js stays out of the core JS bundle; three, fiber and
 // drei chunks are shared with /towers. WebGL2, no post-processing, no
-// shadows, warm daytime light, paper background outside the glass.
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+// shadows, the same daylight, sky and city context as /towers outside the
+// glass (Outside.tsx, P-077), and the floor's cited elevation setting how far
+// below the visitor the ground lies.
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { PAPER } from "@/lib/industry-colors";
+import { ACESFilmicToneMapping, SRGBColorSpace } from "three";
 import type { WalkSceneProps } from "../types";
 import { CitedFloor } from "./CitedFloor";
 import { Illustration } from "./Illustration";
+import { Outside, WALK_FOG_FAR_M, WALK_FOG_NEAR_M } from "./Outside";
 import { buildPlan, layoutZones } from "./plan";
 import { newTouchInput, Player, type TouchInput } from "./Player";
+import { HEMI_GROUND, HEMI_SKY, SKY_HORIZON, SUN_COLOR } from "../../towers/scene/SkyDome";
 
-const DIRECTIONAL_COLOR = "#fff3dc";
-const SKY_COLOR = "#f5efe2";
-const GROUND_COLOR = "#dfd4bf";
+// Interior light: a touch stronger than the /towers exterior so the fit-out
+// stays legible under the slab, same colours as the shared sky.
+const HEMI_INTENSITY_IN = 1.9;
+const SUN_INTENSITY_IN = 1.1;
 const JOYSTICK_RADIUS_PX = 48;
 
 /** Left half: joystick. Right half: drag to look. Touch only; hidden otherwise. */
@@ -115,10 +120,10 @@ export default function WalkScene({ data, probe, illustration, inputMode, onLock
   const plan = useMemo(() => buildPlan(data), [data]);
   const zones = useMemo(() => layoutZones(data, plan), [data, plan]);
   const touch = useMemo(() => newTouchInput(), []);
-  const counts = useRef({ columns: 0, glass: 0, desks: 0 });
+  const counts = useRef({ columns: 0, glass: 0, desks: 0, figures: 0 });
 
   const report = useCallback(() => {
-    onStats({ zones: zones.length, columns: counts.current.columns, glassPanels: counts.current.glass, desks: counts.current.desks });
+    onStats({ zones: zones.length, columns: counts.current.columns, glassPanels: counts.current.glass, desks: counts.current.desks, figures: counts.current.figures });
   }, [onStats, zones.length]);
   const onCounts = useCallback(
     (columns: number, glass: number) => {
@@ -135,23 +140,45 @@ export default function WalkScene({ data, probe, illustration, inputMode, onLock
     },
     [report],
   );
+  const onFigures = useCallback(
+    (n: number) => {
+      counts.current.figures = n;
+      report();
+    },
+    [report],
+  );
   useEffect(() => {
-    if (!illustration) onDesks(0);
-  }, [illustration, onDesks]);
+    if (!illustration) {
+      onDesks(0);
+      onFigures(0);
+    }
+  }, [illustration, onDesks, onFigures]);
 
   return (
     <div className="absolute inset-0">
       <Canvas
         frameloop="always"
         dpr={probe.dprCap}
-        gl={{ antialias: true, alpha: false, powerPreference: "high-performance", stencil: false }}
-        camera={{ fov: 70, near: 0.05, far: 600, position: [0, 1.6, 0] }}
+        gl={{
+          antialias: true,
+          alpha: false,
+          powerPreference: "high-performance",
+          stencil: false,
+          toneMapping: ACESFilmicToneMapping,
+          toneMappingExposure: 1.0,
+          outputColorSpace: SRGBColorSpace,
+        }}
+        camera={{ fov: 70, near: 0.05, far: 30000, position: [0, 1.6, 0] }}
       >
-        <color attach="background" args={[PAPER]} />
-        <hemisphereLight args={[SKY_COLOR, GROUND_COLOR, 1.9]} />
-        <directionalLight position={[-60, 90, 40]} intensity={1.1} color={DIRECTIONAL_COLOR} />
+        <color attach="background" args={[SKY_HORIZON]} />
+        <fog attach="fog" args={[SKY_HORIZON, WALK_FOG_NEAR_M, WALK_FOG_FAR_M]} />
+        <hemisphereLight args={[HEMI_SKY, HEMI_GROUND, HEMI_INTENSITY_IN]} />
+        <directionalLight position={[2600, 2400, 1900]} intensity={SUN_INTENSITY_IN} color={SUN_COLOR} />
+        <Suspense fallback={null}>
+          <Outside data={data} plan={plan} />
+        </Suspense>
         <CitedFloor data={data} plan={plan} zones={zones} onCounts={onCounts} />
-        {illustration && plan.kind === "floor" ? <Illustration plan={plan} zones={zones} onDesks={onDesks} /> : null}
+        {illustration && plan.kind === "floor" ? <Illustration plan={plan} zones={zones} onDesks={onDesks} onFigures={onFigures} /> : null}
         <Player plan={plan} inputMode={inputMode} touch={touch} onLockChange={onLockChange} onNearCore={onNearCore} />
       </Canvas>
       {inputMode === "touch" ? <TouchOverlay input={touch} /> : null}

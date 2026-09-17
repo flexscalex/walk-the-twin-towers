@@ -1,10 +1,12 @@
 "use client";
 // The illustration layer. A generic late-1990s office fit-out made of boxes
-// and cylinders. It is a hypothetical reconstruction in London Charter terms:
-// nothing here is sized from a source, nothing is tied to a tenant, and the
-// HUD carries a persistent label while it is on. It shares no material with
-// the cited layer: everything is a muted, grayscale-warm stipple so it cannot
-// be read as evidence. Paradata P-051.
+// and cylinders, plus stylised figures (Figures.tsx). It is a hypothetical
+// reconstruction in London Charter terms: nothing here is sized from a source,
+// nothing is tied to a tenant, and the HUD carries a persistent label while it
+// is on. It shares no material with the cited layer: furnishings are a muted,
+// grayscale-warm stipple, and the only colour is the zone's industry tint on
+// the carpet and on a strip along each partition, so a zone reads as one
+// workplace without any furnishing claiming to be evidence. Paradata P-051, P-078.
 import { useEffect, useMemo, useRef } from "react";
 import {
   BoxGeometry,
@@ -25,13 +27,14 @@ import {
   SRGBColorSpace,
   Vector3,
 } from "three";
+import { Figures } from "./Figures";
 import { pointInPolygon, startPose, type Plan, type XZ, type Zone } from "./plan";
 
 /**
  * Furnishing sizes. Generic, uncited, and declared as such on screen. They
  * describe the illustration, not the building.
  */
-const FIT_OUT = {
+export const FIT_OUT = {
   deskW: 1.6,
   deskD: 0.8,
   deskH: 0.74,
@@ -46,12 +49,15 @@ const FIT_OUT = {
   glassMargin: 2.5,
   /** No furniture within this radius of the start position, so the visitor arrives in an aisle. */
   startPocket: 4.0,
+  /** No furniture under a zone plaque, so the plaque can be read and a figure can stand at it. */
+  plaquePocket: 1.7,
   coreMargin: 1.2,
   boundaryMargin: 0.25,
   ceilingCell: 0.6,
   ceilingDrop: 0.03,
   tileSize: 0.58,
   tileT: 0.02,
+  accentH: 0.06,
   carpetTile: 0.5,
   maxDesks: 600,
   maxTiles: 3600,
@@ -91,9 +97,11 @@ function carpetTexture(): CanvasTexture {
   return t;
 }
 
-interface Placement {
+export interface Placement {
   x: number;
   z: number;
+  /** Index into the zones array the desk was placed in. */
+  zone: number;
 }
 
 /** Footprint corners of a desk-and-partition cluster centred at (x, z). */
@@ -128,12 +136,13 @@ function placeDesks(plan: Plan, zones: Zone[]): Placement[] {
   const out: Placement[] = [];
   const lim = plan.halfM;
   const start = startPose(plan);
-  for (const zone of zones) {
+  zones.forEach((zone, zi) => {
     const inZone = (p: XZ) => (zone.ring ? true : pointInPolygon(p, zone.polygon));
     for (let z = -lim + FIT_OUT.gridZ / 2; z < lim; z += FIT_OUT.gridZ) {
       for (let x = -lim + FIT_OUT.gridX / 2; x < lim; x += FIT_OUT.gridX) {
         const corners = footprint(x, z);
         if (Math.hypot(x - start.x, z - start.z) < FIT_OUT.startPocket) continue;
+        if (Math.hypot(x - zone.plaque[0], z - zone.plaque[1]) < FIT_OUT.plaquePocket) continue;
         if (!corners.every((c) => insideGlass(plan, c) && !inCore(plan, c) && inZone(c))) continue;
         if (!zone.ring) {
           // Keep a little air between the cluster and the boundary wall.
@@ -146,10 +155,10 @@ function placeDesks(plan: Plan, zones: Zone[]): Placement[] {
           ];
           if (!padded.every((c) => inZone(c))) continue;
         }
-        out.push({ x, z });
+        out.push({ x, z, zone: zi });
       }
     }
-  }
+  });
   if (out.length <= FIT_OUT.maxDesks) return out;
   const step = out.length / FIT_OUT.maxDesks;
   const thinned: Placement[] = [];
@@ -189,7 +198,7 @@ function shapeXZ(points: XZ[], holes: XZ[][] = []): Shape {
   return s;
 }
 
-export function Illustration({ plan, zones, onDesks }: { plan: Plan; zones: Zone[]; onDesks: (n: number) => void }) {
+export function Illustration({ plan, zones, onDesks, onFigures }: { plan: Plan; zones: Zone[]; onDesks: (n: number) => void; onFigures: (n: number) => void }) {
   const stipple = useMemo(() => stippleTexture(), []);
   const carpet = useMemo(() => carpetTexture(), []);
   const mats = useMemo(
@@ -197,9 +206,10 @@ export function Illustration({ plan, zones, onDesks }: { plan: Plan; zones: Zone
       desk: new MeshStandardMaterial({ map: stipple, color: new Color("#f2eee8"), roughness: 1, metalness: 0 }),
       partition: new MeshStandardMaterial({ map: stipple, color: new Color("#f6f3ee"), roughness: 1, metalness: 0 }),
       chair: new MeshStandardMaterial({ map: stipple, color: new Color("#d9d3ca"), roughness: 1, metalness: 0 }),
-      tile: new MeshStandardMaterial({ map: stipple, color: new Color("#faf8f4"), roughness: 1, metalness: 0 }),
-      carpet: new MeshStandardMaterial({ map: carpet, color: new Color("#ffffff"), roughness: 1, metalness: 0, transparent: true, opacity: 0.5, side: DoubleSide, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 }),
-      grid: new LineBasicMaterial({ color: new Color("#a39b8f") }),
+      tile: new MeshStandardMaterial({ map: stipple, color: new Color("#fcfbf8"), roughness: 1, metalness: 0 }),
+      /** One accent material; the zone colour is per instance. */
+      accent: new MeshStandardMaterial({ color: new Color("#ffffff"), roughness: 0.9, metalness: 0 }),
+      grid: new LineBasicMaterial({ color: new Color("#d2cbc0") }),
     }),
     [stipple, carpet],
   );
@@ -221,6 +231,7 @@ export function Illustration({ plan, zones, onDesks }: { plan: Plan; zones: Zone
       back: new BoxGeometry(FIT_OUT.chairR * 1.6, FIT_OUT.chairBackH, 0.05),
       post: new CylinderGeometry(0.03, 0.03, FIT_OUT.chairSeatH, 8),
       tile: new BoxGeometry(FIT_OUT.tileSize, FIT_OUT.tileT, FIT_OUT.tileSize),
+      accent: new BoxGeometry(FIT_OUT.deskW + 0.2, FIT_OUT.accentH, FIT_OUT.partitionT + 0.02),
     }),
     [],
   );
@@ -255,7 +266,7 @@ export function Illustration({ plan, zones, onDesks }: { plan: Plan; zones: Zone
   useEffect(() => () => gridGeom.dispose(), [gridGeom]);
 
   const tiles = useMemo(() => {
-    const out: Placement[] = [];
+    const out: { x: number; z: number }[] = [];
     const cells = Math.floor((2 * inner) / FIT_OUT.ceilingCell);
     const span = (cells * FIT_OUT.ceilingCell) / 2;
     for (let i = 0; i < cells; i++) {
@@ -272,12 +283,58 @@ export function Illustration({ plan, zones, onDesks }: { plan: Plan; zones: Zone
   }, [plan, inner]);
   const tileRef = useInstances(tiles.length, (set) => tiles.forEach((t, i) => set(i, t.x, plan.ceilingM - FIT_OUT.ceilingDrop - FIT_OUT.tileT, t.z)));
 
-  const carpetGeom = useMemo(() => new ShapeGeometry(shapeXZ(plan.plate, [plan.core])), [plan]);
-  useEffect(() => () => carpetGeom.dispose(), [carpetGeom]);
+  // Carpet: one tile-textured sheet per zone in the zone's industry colour, over the
+  // cited tint. A no-record zone gets the pale no-record tone at low opacity, and a
+  // reported tenant's carpet is lighter, so the evidence scale still reads through.
+  const carpets = useMemo(
+    () =>
+      zones.map((z) => {
+        const reported = z.tenant?.evidence === "reported";
+        return {
+          key: z.key,
+          geom: new ShapeGeometry(z.ring ? shapeXZ(plan.plate, [plan.core]) : shapeXZ(z.polygon)),
+          mat: new MeshStandardMaterial({
+            map: carpet,
+            color: new Color(z.color),
+            roughness: 1,
+            metalness: 0,
+            transparent: true,
+            opacity: z.tenant ? (reported ? 0.35 : 0.6) : 0.2,
+            side: DoubleSide,
+            depthWrite: false,
+            polygonOffset: true,
+            polygonOffsetFactor: -3,
+            polygonOffsetUnits: -3,
+          }),
+        };
+      }),
+    [zones, plan, carpet],
+  );
+  useEffect(() => () => carpets.forEach((c) => { c.geom.dispose(); c.mat.dispose(); }), [carpets]);
+
+  // Accent strip along the top of each partition, coloured per instance by the desk's zone.
+  const accentRef = useRef<InstancedMesh>(null);
+  useEffect(() => {
+    const mesh = accentRef.current;
+    if (!mesh || n === 0) return;
+    const m = new Matrix4();
+    const q = new Quaternion();
+    const one = new Vector3(1, 1, 1);
+    const c = new Color();
+    desks.forEach((d, i) => {
+      mesh.setMatrixAt(i, m.compose(new Vector3(d.x, FIT_OUT.partitionH + FIT_OUT.accentH / 2, d.z - FIT_OUT.deskD / 2 - FIT_OUT.partitionT), q, one));
+      mesh.setColorAt(i, c.set(zones[d.zone]?.color ?? "#ffffff"));
+    });
+    mesh.instanceMatrix.needsUpdate = true;
+    if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
+    mesh.computeBoundingSphere();
+  }, [desks, zones, n]);
 
   return (
     <group name="illustration-layer">
-      <mesh geometry={carpetGeom} material={mats.carpet} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.004, 0]} />
+      {carpets.map((c) => (
+        <mesh key={c.key} geometry={c.geom} material={c.mat} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.004, 0]} />
+      ))}
       <lineSegments geometry={gridGeom} material={mats.grid} />
       <instancedMesh ref={tileRef} args={[geoms.tile, mats.tile, tiles.length]} frustumCulled={false} />
       {n > 0 ? (
@@ -289,8 +346,10 @@ export function Illustration({ plan, zones, onDesks }: { plan: Plan; zones: Zone
           <instancedMesh ref={seatRef} args={[geoms.seat, mats.chair, n]} frustumCulled={false} />
           <instancedMesh ref={backRef} args={[geoms.back, mats.chair, n]} frustumCulled={false} />
           <instancedMesh ref={postRef} args={[geoms.post, mats.chair, n]} frustumCulled={false} />
+          <instancedMesh ref={accentRef} args={[geoms.accent, mats.accent, n]} frustumCulled={false} />
         </>
       ) : null}
+      <Figures plan={plan} zones={zones} desks={desks} onCount={onFigures} />
     </group>
   );
 }
